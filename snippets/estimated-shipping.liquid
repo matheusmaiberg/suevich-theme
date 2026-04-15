@@ -1,8 +1,8 @@
 <dynamic-dates
   class="estimated-shipping{% if block.settings.icon_alignment == 'middle' %} estimated-shipping--align-center{% endif %}"
   data-date-format="{{ block.settings.date_format }}"
-  data-day-labels="{{ block.settings.days_labels }}"
-  data-month-labels="{{ block.settings.months_labels }}"
+  data-day-labels=""
+  data-month-labels=""
   {{ block.shopify_attributes }}
   style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
 >
@@ -32,9 +32,30 @@
 
   <script>
     (function () {
-      const textEl = document.currentScript.previousElementSibling;
-      if (!textEl || !textEl.classList.contains('estimated-shipping__text')) return;
-      if (!textEl.dataset.text || !textEl.dataset.text.includes('[carrier]')) return;
+      const parent = document.currentScript.parentElement;
+      const locale = {{ localization.language.iso_code | json }} || 'en';
+
+      // Generate localized day labels for DynamicDates
+      const dayFormatter = new Intl.DateTimeFormat(locale, { weekday: 'long' });
+      const days = [];
+      for (let i = 0; i < 7; i++) {
+        const d = new Date(2024, 0, i + 1);
+        days.push(dayFormatter.format(d));
+      }
+      parent.dataset.dayLabels = days.join(',');
+
+      // Generate localized month labels for DynamicDates
+      const monthFormatter = new Intl.DateTimeFormat(locale, { month: 'long' });
+      const months = [];
+      for (let i = 0; i < 12; i++) {
+        const d = new Date(2024, i, 1);
+        months.push(monthFormatter.format(d));
+      }
+      parent.dataset.monthLabels = months.join(',');
+
+      // Carrier replacement logic
+      const textEl = parent.querySelector('.estimated-shipping__text');
+      if (!textEl || !textEl.dataset.text || !textEl.dataset.text.includes('[carrier]')) return;
 
       const country = {{ localization.country.iso_code | json }};
       const carrierListRaw = {{ block.settings.carrier_list | json }};
