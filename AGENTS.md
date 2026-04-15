@@ -12,7 +12,7 @@
 | **Versão** | 1.0.4 |
 | **Autor** | Ck-Ecomm |
 | **Plataforma** | Shopify Online Store 2.0 |
-| **Loja** | suevich-2.myshopify.com |
+| **Loja** | suevich-2.myshopify.com (domínio customizado: suevich.com) |
 | **Tecnologias** | Liquid, CSS, Vanilla JS |
 
 - **Arquitetura**: OS 2.0 com `sections`, `blocks` e templates `.json` + `.liquid`.
@@ -65,6 +65,8 @@ Sections nativas + customizadas do Ck-Ecomm. As principais:
 ---
 
 ## 3. Apps & Integrações de Terceiros
+
+> **ATENÇÃO:** Os snippets de `bucks-cc.liquid`, `pandectes-rules.liquid` e `pandectes-settings.json` ainda contêm dados hardcoded de lojas antigas (ex: `088f7b.myshopify.com`, `Tema Vizelki` / ID `91360231708`). Eles precisam ser reconfigurados diretamente nos apps no admin da Shopify para regenerar com os dados corretos de `suevich.com`.
 
 > **NUNCA remova snippets de apps sem confirmar com o lojista.** Eles podem quebrar funcionalidades de compliance ou conversão.
 
@@ -137,6 +139,7 @@ O tema possui **features agressivas de proteção** ativadas via `settings_schem
 
 ```bash
 # Pull das últimas alterações do tema ativo
+# Nota: o Shopify CLI requer o domínio myshopify, não funciona com domínio customizado
 shopify theme pull --store suevich-2.myshopify.com --path .
 
 # Servir localmente com live-reload
