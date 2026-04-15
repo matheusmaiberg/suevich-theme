@@ -21,7 +21,7 @@
     </div>
   {% endunless %}
   <div
-    class="estimated-shipping__text"
+    class="estimated-shipping__text estimated-shipping__text--{{ block.settings.text_size }}"
     data-dynamic-date="true"
     data-text="{{ block.settings.message }}"
     data-min-days="{{ block.settings.min_shipping_days }}"

@@ -29,3 +29,21 @@ html {scroll-behavior: smooth;}img, video {max-width: 100%;height: auto;vertical
 #template--20841770451084__main__estimated_shipping_NinKw3 * {
   font-size: 12px !important;
 }
+
+/* Estimated shipping text sizes + bold fix */
+.estimated-shipping__text b,
+.estimated-shipping__text strong {
+  font-weight: bold;
+}
+.estimated-shipping__text--small p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.estimated-shipping__text--medium p {
+  font-size: 1.6rem;
+  line-height: 2.75rem;
+}
+.estimated-shipping__text--large p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
