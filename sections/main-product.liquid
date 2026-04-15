@@ -5920,26 +5920,6 @@
         },
         {
           "type": "select",
-          "id": "icon_size",
-          "options": [
-            {
-              "value": "small",
-              "label": "Small"
-            },
-            {
-              "value": "medium",
-              "label": "Medium"
-            },
-            {
-              "value": "large",
-              "label": "Large"
-            }
-          ],
-          "default": "medium",
-          "label": "Icon size"
-        },
-        {
-          "type": "select",
           "id": "icon_alignment",
           "options": [
             {
@@ -5960,6 +5940,28 @@
           "label": "Text",
           "default": "<p>Get it between <strong>[start_date]</strong> and <strong>[end_date]</strong></p>",
           "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive. Use [carrier] to display the shipping carrier name."
+        },
+        {
+          "type": "radio",
+          "id": "icon_size",
+          "label": "Icon size",
+          "options": [
+            { "value": "small", "label": "S" },
+            { "value": "medium", "label": "M" },
+            { "value": "large", "label": "L" }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "radio",
+          "id": "text_size",
+          "label": "Text size",
+          "options": [
+            { "value": "small", "label": "S" },
+            { "value": "medium", "label": "M" },
+            { "value": "large", "label": "L" }
+          ],
+          "default": "medium"
         },
         {
           "type": "textarea",
@@ -6019,26 +6021,6 @@
           "label": "Default carrier name",
           "default": "Standard Shipping",
           "info": "Shown when the visitor's country isn't in the list above. Leave blank to hide the carrier if not found."
-        },
-        {
-          "type": "select",
-          "id": "text_size",
-          "label": "Text size",
-          "options": [
-            {
-              "value": "small",
-              "label": "Small"
-            },
-            {
-              "value": "medium",
-              "label": "Medium"
-            },
-            {
-              "value": "large",
-              "label": "Large"
-            }
-          ],
-          "default": "medium"
         },
         {
           "type": "number",

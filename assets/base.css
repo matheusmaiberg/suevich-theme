@@ -36,14 +36,14 @@ html {scroll-behavior: smooth;}img, video {max-width: 100%;height: auto;vertical
   font-weight: bold;
 }
 .estimated-shipping__text--small p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.estimated-shipping__text--medium p {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
-.estimated-shipping__text--medium p {
-  font-size: 1.6rem;
-  line-height: 2.75rem;
-}
 .estimated-shipping__text--large p {
-  font-size: 1.8rem;
-  line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
 }
