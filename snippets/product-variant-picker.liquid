@@ -36,6 +36,93 @@
   >
     {%- for option in product.options_with_values -%}
       {% assign type = types_array[forloop.index0] | strip | replace: ' ', '-' %}
+      {%- if block.settings.enable_sizing_chart and block.settings.sizing_chart_position == forloop.index -%}
+        <modal-v2
+          class="sizing-chart sizing-chart--button-left modal-v2"
+          data-open="false"
+          style="float: right; margin: 0;"
+        >
+          <button class="sizing-chart__button{% if block.settings.sizing_chart_button_underline %} sizing-chart__button--underline{% endif %} flex-center modal-v2__open-btn font-size--desktop-auto" style="--font-size: 1.7rem;">
+            {% if block.settings.sizing_chart_button_icon != blank %}
+              {% render 'material-icon', icon: block.settings.sizing_chart_button_icon, filled: false %}
+            {% endif %}
+            <span class="sizing-chart__button__text">{{ block.settings.sizing_chart_button_label }}</span>
+          </button>
+          <div class="modal-v2__overlay modal-v2__close-btn">&nbsp;</div>
+          <div class="sizing-chart__modal modal-v2__modal color-{{ block.settings.sizing_chart_color_scheme }}">
+            <button class="popup-modal__close popup-modal__close--borderless modal-v2__close-btn">
+              <span></span>
+              <span></span>
+            </button>
+            {% if block.settings.sizing_chart_headline != blank %}
+              <p class="sizing-chart__title h3 center {{ block.settings.sizing_chart_heading_size }}">
+                {{ block.settings.sizing_chart_headline }}
+              </p>
+            {% endif %}
+            {% if block.settings.sizing_chart_top_image != blank %}
+              <div class="sizing-chart__top-image">
+                {%- capture sizes -%}
+                  (min-width: 750px) 800px / 2), calc((100vw - 50px))
+                {%- endcapture -%}
+                {{
+                  block.settings.sizing_chart_top_image
+                  | image_url: width: 1500
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1250, 1500'
+                }}
+              </div>
+            {% endif %}
+
+            <table class="sizing-chart-table">
+              {% if block.settings.sizing_chart_table_header != blank %}
+                {% assign columns = block.settings.sizing_chart_table_header | split: ',' %}
+                <thead>
+                  <tr>
+                    {% for column in columns %}
+                      <th class="sizing-chart-table__th color-{{ block.settings.sizing_chart_table_header_color_scheme }}" align="center">
+                        {{ column | strip }}
+                      </th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+              {% endif %}
+              <tbody>
+                {% assign rows = block.settings.sizing_chart_table_content | split: '</p><p>' %}
+                {% for row in rows %}
+                  <tr>
+                    {% assign columns = row | remove: '<p>' | remove: '</p>' | split: ',' %}
+                    {% for column in columns %}
+                      <td class="sizing-chart-table__td" align="center">
+                        {{ column | strip }}
+                      </td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+
+            {% if block.settings.sizing_chart_caption != blank %}
+              <p
+                class="sizing-chart__caption {{ block.settings.sizing_chart_caption_alignment }}"
+                style="--text-size:{{ block.settings.sizing_chart_caption_size }};--text-color:{{ block.settings.sizing_chart_caption_color }};"
+              >
+                {{ block.settings.sizing_chart_caption }}
+              </p>
+            {% endif %}
+            {% if block.settings.sizing_chart_bottom_image != blank %}
+              <div class="sizing-chart__top-image">
+                {%- capture sizes -%}
+                  (min-width: 750px) 800px / 2), calc((100vw - 50px))
+                {%- endcapture -%}
+                {{
+                  block.settings.sizing_chart_bottom_image
+                  | image_url: width: 1500
+                  | image_tag: loading: 'lazy', sizes: sizes, widths: '165, 360, 535, 750, 1070, 1250, 1500'
+                }}
+              </div>
+            {% endif %}
+          </div>
+        </modal-v2>
+      {%- endif -%}
       <div
         class="product-form__input product-form__input--{{ type }}{% if block.settings.full_width_dropdowns %} product-form__input--full{% endif %}"
       >
@@ -110,6 +197,44 @@
     </script>
   </variant-selects>
 {%- endunless -%}
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const headerSection = document.querySelector('.section-header.shopify-section-group-header-group');
+  const headerGroup = document.querySelector('.shopify-section-group-header-group');
+
+  function lowerHeaderZIndex() {
+    if (headerSection) headerSection.style.zIndex = '1';
+    if (headerGroup) headerGroup.style.zIndex = '1';
+  }
+
+  function restoreHeaderZIndex() {
+    if (headerSection) headerSection.style.zIndex = '5';
+    if (headerGroup) headerGroup.style.zIndex = '4';
+  }
+
+  const allModals = document.querySelectorAll('.modal-v2');
+
+  allModals.forEach(modal => {
+    const openButton = modal.querySelector('.modal-v2__open-btn');
+    const closeButtons = modal.querySelectorAll('.modal-v2__close-btn');
+
+    if (openButton) {
+      openButton.addEventListener('click', function() {
+        modal.setAttribute('data-open', 'true');
+        lowerHeaderZIndex();
+      });
+    }
+
+    closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        modal.setAttribute('data-open', 'false');
+        restoreHeaderZIndex();
+      });
+    });
+  });
+});
+</script>
 
 <noscript
   class="product-form__noscript-wrapper-{{ section.id }}"

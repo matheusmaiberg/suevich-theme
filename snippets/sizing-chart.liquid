@@ -56,23 +56,17 @@
         </thead>
       {% endif %}
       <tbody>
-        {%- assign raw_content = block.settings.table_content | strip -%}
-        {%- if raw_content != blank -%}
-          {%- assign rows = raw_content | split: newline -%}
-          {%- for row in rows -%}
-            {%- assign trimmed_row = row | strip -%}
-            {%- if trimmed_row != blank -%}
-              {%- assign columns = trimmed_row | split: ',' -%}
-              <tr>
-                {%- for column in columns -%}
-                  <td class="sizing-chart-table__td" align="center">
-                    {{ column | strip }}
-                  </td>
-                {%- endfor -%}
-              </tr>
-            {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
+        {% assign rows = block.settings.table_content | split: '</p><p>' %}
+        {% for row in rows %}
+          <tr>
+            {% assign columns = row | remove: '<p>' | remove: '</p>' | split: ',' %}
+            {% for column in columns %}
+              <td class="sizing-chart-table__td" align="center">
+                {{ column | strip }}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
 
