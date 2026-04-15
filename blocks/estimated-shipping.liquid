@@ -134,3 +134,154 @@
     })();
   </script>
 </dynamic-dates>
+
+{% schema %}
+{
+  "name": "Estimated shipping",
+  "settings": [
+    {
+      "type": "text",
+      "id": "icon",
+      "default": "local_shipping",
+      "label": "Icon",
+      "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+    },
+    {
+      "type": "checkbox",
+      "id": "filled_icon",
+      "default": false,
+      "label": "Filled icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_icon",
+      "label": "Custom icon"
+    },
+    {
+      "type": "select",
+      "id": "icon_alignment",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "middle", "label": "Middle" }
+      ],
+      "default": "top",
+      "label": "Icon alignment"
+    },
+    {
+      "type": "richtext",
+      "id": "message",
+      "label": "Text",
+      "default": "<p>Get it between <strong>[start_date]</strong> and <strong>[end_date]</strong></p>",
+      "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive. Use [carrier] to display the shipping carrier name."
+    },
+    {
+      "type": "radio",
+      "id": "icon_size",
+      "label": "Icon size",
+      "options": [
+        { "value": "small", "label": "S" },
+        { "value": "medium", "label": "M" },
+        { "value": "large", "label": "L" }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "radio",
+      "id": "text_size",
+      "label": "Text size",
+      "options": [
+        { "value": "small", "label": "S" },
+        { "value": "medium", "label": "M" },
+        { "value": "large", "label": "L" }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "textarea",
+      "id": "carrier_list",
+      "label": "Carrier list by country",
+      "default": "DE: DHL Standard Shipping (CAINIAO)\nBR: Correios Frete Segurado",
+      "info": "Format: COUNTRY_CODE: Carrier Name. One per line. Example: DE: DHL Express"
+    },
+    {
+      "type": "select",
+      "id": "carrier_prefix",
+      "label": "Carrier prefix",
+      "default": "with",
+      "info": "Preposition displayed before the carrier name. Add more options to this list as needed.",
+      "options": [
+        { "value": "with", "label": "with (EN)" },
+        { "value": "mit", "label": "mit (DE)" },
+        { "value": "com", "label": "com (PT)" },
+        { "value": "avec", "label": "avec (FR)" },
+        { "value": "con", "label": "con (ES/IT)" },
+        { "value": "met", "label": "met (NL)" },
+        { "value": "via", "label": "via (universal)" },
+        { "value": "por", "label": "por (PT/ES)" },
+        { "value": "", "label": "None (carrier name only)" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "carrier_fallback",
+      "label": "Default carrier name",
+      "default": "Standard Shipping",
+      "info": "Shown when the visitor's country isn't in the list above. Leave blank to hide the carrier if not found."
+    },
+    {
+      "type": "number",
+      "id": "min_shipping_days",
+      "label": "Minimum shipping days",
+      "default": 7
+    },
+    {
+      "type": "number",
+      "id": "max_shipping_days",
+      "label": "Maximum shipping days",
+      "default": 15
+    },
+    {
+      "type": "radio",
+      "id": "date_format",
+      "label": "Date format",
+      "options": [
+        { "value": "long", "label": "Mon, 21 April 2025" },
+        { "value": "day_month", "label": "Mon, 21 April" },
+        { "value": "month_day", "label": "21 April" },
+        { "value": "medium", "label": "21 Apr 2025" },
+        { "value": "numeric", "label": "21.04.2025" },
+        { "value": "short", "label": "21/04/2025" }
+      ],
+      "default": "long"
+    },
+    {
+      "type": "header",
+      "content": "Estimated shipping settings"
+    },
+    {
+      "type": "header",
+      "content": "Block margin"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 45,
+      "step": 3,
+      "unit": "px",
+      "label": "Top margin",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 45,
+      "step": 3,
+      "unit": "px",
+      "label": "Bottom margin",
+      "default": 24
+    }
+  ]
+}
+{% endschema %}
