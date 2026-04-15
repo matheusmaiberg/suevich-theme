@@ -1,0 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "estados-unidos"
+  },
+  "sections": {
+    "image_banner_i3trxV": {
+      "blocks": {
+        "heading_KRaFVY": {
+          "settings": {
+            "heading": "ELEGANCE, ELEVATED COMFORT AND MASTERY"
+          }
+        },
+        "text_bWqPJU": {
+          "settings": {
+            "text": "VIP STATUS: FROM 2 ITEMS EXCLUSIVE 10% | FROM 3 ITEMS EXCLUSIVE 15%"
+          }
+        },
+        "buttons_APxtdV": {
+          "settings": {
+            "button_label_1": "All Products"
+          }
+        }
+      }
+    },
+    "featured_collection_y7xHzt": {
+      "settings": {
+        "title": "HANDPICKED HIGHLIGHTS FOR THE MODERN GENTLEMAN",
+        "description": "<p>Various products for those who seek quality and elegance in every accessory.</p>"
+      }
+    },
+    "image_banner_adfLqE": {
+      "blocks": {
+        "heading_JFDJWi": {
+          "settings": {
+            "heading": "QUALITY & STYLE"
+          }
+        },
+        "text_MPX9gq": {
+          "settings": {
+            "text": "DISCOVER OUR COLLECTION"
+          }
+        }
+      }
+    },
+    "featured_collection_ze4Bi3": {
+      "settings": {
+        "title": "EXCLUSIVE WRISTWATCHES",
+        "description": "<p>Invest in the essential – for timeless style and unwavering quality.</p>"
+      }
+    },
+    "image_banner_VxDYxL": {
+      "blocks": {
+        "heading_kY3Rqr": {
+          "settings": {
+            "heading": "ELEGANCE FOR EVERY MOMENT"
+          }
+        },
+        "text_bbGEyP": {
+          "settings": {
+            "text": "DISCOVER ACCESSORIES FOR EVERY OCCASION"
+          }
+        }
+      }
+    },
+    "featured_collection_btF7Yj": {
+      "settings": {
+        "title": "TIMELESS STYLE FOR THE MODERN GENTLEMAN",
+        "description": "<p>Various products for those who seek quality and elegance in every accessory.</p>"
+      }
+    },
+    "icon_bar_yfkcz8": {
+      "blocks": {
+        "column_xDTY4K": {
+          "settings": {
+            "icon": "Auto-renew",
+            "title": "14-DAY RETURN",
+            "text": "<p>If you are not satisfied with your order.</p>"
+          }
+        },
+        "column_V3ec7F": {
+          "settings": {
+            "title": "FREE SHIPPING",
+            "text": "<p>Free, trackable shipping for all orders.</p>"
+          }
+        },
+        "column_mY6r9m": {
+          "settings": {
+            "title": "PREMIUM QUALITY",
+            "text": "<p>Quality seal on selected products.</p>"
+          }
+        },
+        "column_TR6FWz": {
+          "settings": {
+            "title": "CUSTOMER SERVICE",
+            "text": "<p>High-quality support team to help you.</p>"
+          }
+        }
+      }
+    }
+  }
+}

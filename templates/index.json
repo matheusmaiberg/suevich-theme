@@ -1,0 +1,385 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_i3trxV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_KRaFVY": {
+          "type": "heading",
+          "settings": {
+            "heading": "ELEGANCE, REFINED COMFORT AND MASTERY",
+            "heading_size": "h1"
+          }
+        },
+        "text_bWqPJU": {
+          "type": "text",
+          "settings": {
+            "text": "VIP STATUS: 2+ ITEMS — 10% OFF | 3+ ITEMS — 15% OFF",
+            "text_style": "body"
+          }
+        },
+        "buttons_APxtdV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "All Products",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KRaFVY",
+        "text_bWqPJU",
+        "buttons_APxtdV"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/hero_image_01.png",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "url": "",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "transparent_container_color": "white",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "collection_list_DULLAj": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_JLe77h": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "deals"
+          }
+        },
+        "featured_collection_7hiEwH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hosen"
+          }
+        },
+        "featured_collection_iypnUz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tops"
+          }
+        },
+        "featured_collection_dYWc6r": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-watches"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_JLe77h",
+        "featured_collection_7hiEwH",
+        "featured_collection_iypnUz",
+        "featured_collection_dYWc6r"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h0",
+        "image_ratio": "portrait",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_y7xHzt": {
+      "type": "featured-collection",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "HANDPICKED HIGHLIGHTS FOR THE MODERN GENTLEMAN",
+        "heading_size": "h2",
+        "description": "<p>Various products for those who seek quality and elegance in every accessory.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "altius",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "stretch_cards": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "badges": "regular",
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_adfLqE": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JFDJWi": {
+          "type": "heading",
+          "settings": {
+            "heading": "QUALITY & STYLE",
+            "heading_size": "h1"
+          }
+        },
+        "text_MPX9gq": {
+          "type": "text",
+          "settings": {
+            "text": "DISCOVER OUR COLLECTION",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JFDJWi",
+        "text_MPX9gq"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/hero_03.png",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "url": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "transparent_container_color": "white",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "featured_collection_ze4Bi3": {
+      "type": "featured-collection",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "EXCLUSIVE WRISTWATCHES",
+        "heading_size": "h2",
+        "description": "<p>Invest in what matters – for timeless style and unwavering quality.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "mens-watches",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "stretch_cards": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "badges": "regular",
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_VxDYxL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_kY3Rqr": {
+          "type": "heading",
+          "settings": {
+            "heading": "ELEGANCE FOR EVERY MOMENT",
+            "heading_size": "h1"
+          }
+        },
+        "text_bbGEyP": {
+          "type": "text",
+          "settings": {
+            "text": "DISCOVER ACCESSORIES FOR EVERY OCCASION",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kY3Rqr",
+        "text_bbGEyP"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/hero_02.png",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 60,
+        "image_height": "medium",
+        "url": "",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "transparent_container_color": "white",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "featured_collection_btF7Yj": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "TIMELESS STYLE FOR THE MODERN GENTLEMAN",
+        "heading_size": "h2",
+        "description": "<p>Various products for those who seek quality and elegance in every accessory.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "accessoires",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "stretch_cards": true,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "badges": "regular",
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "icon_bar_yfkcz8": {
+      "type": "icon-bar",
+      "blocks": {
+        "column_xDTY4K": {
+          "type": "column",
+          "settings": {
+            "icon": "Autorenew",
+            "filled_icon": false,
+            "title": "29-DAY RETURNS",
+            "text": "<p>If you are not satisfied with your order.</p>"
+          }
+        },
+        "column_V3ec7F": {
+          "type": "column",
+          "settings": {
+            "icon": "Local Shippingrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "FREE SHIPPING",
+            "text": "<p>Free, trackable shipping on all orders.</p>"
+          }
+        },
+        "column_mY6r9m": {
+          "type": "column",
+          "settings": {
+            "icon": "Workspace Premiumrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "PREMIUM QUALITY",
+            "text": "<p>Quality seal on selected products.</p>"
+          }
+        },
+        "column_TR6FWz": {
+          "type": "column",
+          "settings": {
+            "icon": "Support Agentrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "CUSTOMER SERVICE",
+            "text": "<p>Premium support team to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_xDTY4K",
+        "column_V3ec7F",
+        "column_mY6r9m",
+        "column_TR6FWz"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h1",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "vertical",
+        "icon_size": "medium",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "bg-overlay",
+        "type": "slide",
+        "autoplay": true,
+        "autoplay_speed": 2,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": false,
+        "columns_desktop": 4,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 40,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "under",
+        "desktop_arrows_position": "sides",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "enable_mobile_preview": false,
+        "mobile_adaptive_height": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "under",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_i3trxV",
+    "collection_list_DULLAj",
+    "featured_collection_y7xHzt",
+    "image_banner_adfLqE",
+    "featured_collection_ze4Bi3",
+    "image_banner_VxDYxL",
+    "featured_collection_btF7Yj",
+    "icon_bar_yfkcz8"
+  ]
+}

@@ -1,0 +1,706 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "a6eb81db-40e4-43e0-972f-32db010a4a56": {
+          "type": "rating_stars",
+          "disabled": true,
+          "settings": {
+            "rating": 4.7,
+            "star_color": "#ffcc00",
+            "bg_stars_style": "full",
+            "bg_star_color": "#ececec",
+            "label": "1144 Bewertungen",
+            "size": 14,
+            "alignment": "flex-start",
+            "scroll_id": "",
+            "margin_top": 6,
+            "margin_bottom": 9
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h2",
+            "title_alignment": "left",
+            "uppercase_title": true,
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "custom_liquid_8YxY79": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"aus-pilot\">\n<style>     .tp-widget-stars {        \nwidth: 94%;    \n}  \ndiv#tp-widget-stars {      \nmax-width: 100px;  \n}  \n.aus-pilot {    \ndisplay: flex;    \nalign-items:center;   \nmargin-bottom:10px;  \n}\n.aus-pilot > span {\ndisplay: inline-block;\nmargin-left: 5px;\nfont-size: 16px;  }\na.review-badge {\ntext-decoration: none;\ncolor: #444;\n}\n</style>\n<div id=\"tp-widget-stars\" class=\"tp-widget-stars\">\n<div class=\"\">\n<div class=\"tp-stars tp-stars--4 tp-stars--4--half\">\n<div style=\"position: relative;height: 0;width: 100%;padding: 0;padding-bottom: 18.326693227091635%;\">\n<svg role=\"img\" aria-labelledby=\"starRating\" viewBox=\"0 0 251 46\" xmlns=\"http://www.w3.org/2000/svg\" style=\"position: absolute; height: 100%; width: 100%; left: 0; top: 0;\">\n<path class=\"tp-star__canvas\" fill=\"#00B67A\" d=\"M0 46.330002h46.375586V0H0z\"></path><path class=\"tp-star__shape\" d=\"M39.533936 19.711433L13.230239 38.80065l3.838216-11.797827L7.02115 19.711433h12.418975l3.837417-11.798624 3.837418 11.798624h12.418975zM23.2785 31.510075l7.183595-1.509576 2.862114 8.800152L23.2785 31.510075z\" fill=\"#FFF\"></path></g>\n<g class=\"tp-star\">\n<path class=\"tp-star__canvas\" fill=\"#00B67A\" d=\"M51.24816 46.330002h46.375587V0H51.248161z\"></path>\n<path class=\"tp-star__canvas--half\" fill=\"#00B67A\" d=\"M51.24816 46.330002h23.187793V0H51.248161z\"></path>\n<path class=\"tp-star__shape\" d=\"M74.990978 31.32991L81.150908 30 84 39l-9.660206-7.202786L64.30279 39l3.895636-11.840666L58 19.841466h12.605577L74.499595 8l3.895637 11.841466H91L74.990978 31.329909z\" fill=\"#FFF\"></path></g><g class=\"tp-star\">\n<path class=\"tp-star__canvas\" fill=\"#00B67A\" d=\"M102.532209 46.330002h46.375586V0h-46.375586z\"></path>\n<path class=\"tp-star__canvas--half\" fill=\"#00B67A\" d=\"M102.532209 46.330002h23.187793V0h-23.187793z\"></path>\n<path class=\"tp-star__shape\" d=\"M142.066994 19.711433L115.763298 38.80065l3.838215-11.797827-10.047304-7.291391h12.418975l3.837418-11.798624 3.837417 11.798624h12.418975zM125.81156 31.510075l7.183595-1.509576 2.862113 8.800152-10.045708-7.290576z\" fill=\"#FFF\"></path></g><g class=\"tp-star\">\n<path class=\"tp-star__canvas\" fill=\"#00B67A\" d=\"M153.815458 46.330002h46.375586V0h-46.375586z\"></path>\n<path class=\"tp-star__canvas--half\" fill=\"#00B67A\" d=\"M153.815458 46.330002h23.187793V0h-23.187793z\"></path>\n<path class=\"tp-star__shape\" d=\"M193.348355 19.711433L167.045457 38.80065l3.837417-11.797827-10.047303-7.291391h12.418974l3.837418-11.798624 3.837418 11.798624h12.418974zM177.09292 31.510075l7.183595-1.509576 2.862114 8.800152-10.045709-7.290576z\" fill=\"#FFF\"></path></g><g class=\"tp-star\">\n<path class=\"tp-star__canvas\" fill=\"#dcdce6\" d=\"M205.064416 46.330002h46.375587V0h-46.375587z\"></path>\n<path class=\"tp-star__canvas--half\" fill=\"#00B67A\" d=\"M205.064416 46.330002h23.187793V0h-23.187793z\"></path>\n<path class=\"tp-star__shape\" d=\"M244.597022 19.711433l-26.3029 19.089218 3.837419-11.797827-10.047304-7.291391h12.418974l3.837418-11.798624 3.837418 11.798624h12.418975zm-16.255436 11.798642l7.183595-1.509576 2.862114 8.800152-10.045709-7.290576z\" fill=\"#FFF\">\n</path></g></svg></div></div></div></div>\n\n{% if request.locale.iso_code == 'sv' %} \n<span>4.7/5 (+2.796 Recensioner)</span>\n{% elsif request.locale.iso_code == 'nl' %}\n<span><strong>4.9</strong>/5 (+2.796 Beoordelingen)</span>\n{% elsif request.locale.iso_code == 'en' %}\n<span><strong>4.9</strong>/5 (+2 796 reviews)</span>\n{% else %}\n<span><strong>4.9</strong>/5 (+2.796 bewertungen)</span>\n{% endif %}\n</div>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "layout": "price_second",
+            "price_color": "accent-1",
+            "compare_price_color": "outline-button",
+            "hide_sale_badge": false,
+            "margin_top": 9,
+            "margin_bottom": 15
+          }
+        },
+        "icon_with_text_G3TN4Q": {
+          "type": "icon_with_text",
+          "settings": {
+            "layout": "vertical",
+            "icon_color": "accent-1",
+            "desktop_icon_size": 20,
+            "desktop_spacing": 8,
+            "desktop_text_size": 12,
+            "mobile_icon_size": 20,
+            "mobile_spacing": 8,
+            "mobile_text_size": 12,
+            "icon_1": "favorite",
+            "icon_1_fill": false,
+            "image_1": "shopify://shop_images/delivery_truck_speed_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24_49adb829-92f6-47dd-8e8a-df502590a033_1.svg",
+            "heading_1": "Kostenloser Versand",
+            "icon_2": "undo",
+            "icon_2_fill": false,
+            "image_2": "shopify://shop_images/undo_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24_e5c683c8-6164-4766-9f68-9ed40d5e943a_1.svg",
+            "heading_2": "14-tägige Geld-zurück-Garantie",
+            "icon_3": "local_shipping",
+            "icon_3_fill": false,
+            "image_3": "shopify://shop_images/box_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24_9639c9b3-7e78-499d-8c9b-26cc6094371a_2.svg",
+            "heading_3": "Auf Lager bereit zum Versand",
+            "margin_top": 9,
+            "margin_bottom": 12
+          }
+        },
+        "emoji_benefits_QVtPyB": {
+          "type": "emoji_benefits",
+          "disabled": true,
+          "settings": {
+            "benefits": "<p>🚚 Kostenloser Versand</p><p>🔄 14-tägige Geld-zurück-Garantie</p><p>📦 Auf Lager bereit zum Versand</p>",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches,dropdown",
+            "custom_labels": "[name] - [selected]",
+            "swatches_size": "medium",
+            "swatches_border_radius": 8,
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #6D388B, #0000FF, #FFCC00",
+            "full_width_dropdowns": true,
+            "breaks_style": "normal",
+            "breaks_headline": "OFFRE PREND FIN BIENTÔT",
+            "breaks_color_scheme": "accent-1",
+            "breaks_badges": "[empty], Most popular, [empty]",
+            "breaks_displayed_images": "variant_images",
+            "breaks_custom_images": "",
+            "breaks_image_width": 70,
+            "breaks_space_images": true,
+            "breaks_labels": "[name], [name], [name]",
+            "breaks_benefits": "[empty], Free Shipping, Free Shipping",
+            "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+            "breaks_price_texts": "[price], [price], [price]",
+            "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": true,
+            "style": "normal",
+            "headline": "ANGEBOT ENDET UM 23:59 UHR",
+            "preselected": "option_1",
+            "enable_variant_selectors": true,
+            "enable_variant_selectors_on_quantity_of_1": false,
+            "hide_pickers_overlay": true,
+            "image_width": 70,
+            "space_images": true,
+            "color_scheme": "accent-1",
+            "option_1_quantity": 1,
+            "option_1_badge": "",
+            "option_1_label": "[quantity] Einheit",
+            "option_1_benefit": "-50%",
+            "option_1_caption": "",
+            "option_1_percentage_off_text": "0",
+            "option_1_fixed_amount_off": "0",
+            "option_1_price_text": "[price]",
+            "option_1_compare_price": "compare_price",
+            "option_1_compare_price_text": "[compare_price]",
+            "option_2_quantity": 2,
+            "option_2_badge": "SONDERANGEBOT",
+            "option_2_label": "[quantity] Einheiten",
+            "option_2_benefit": "-60%",
+            "option_2_caption": "50% + 10% Extra Rabatt",
+            "option_2_percentage_off_text": "10",
+            "option_2_fixed_amount_off": "0",
+            "option_2_price_text": "[price]",
+            "option_2_compare_price": "compare_price",
+            "option_2_compare_price_text": "[compare_price]",
+            "option_3_quantity": 0,
+            "option_3_badge": "",
+            "option_3_label": "[quantity]+ Einheiten",
+            "option_3_benefit": "",
+            "option_3_caption": "20% Extra Rabatt",
+            "option_3_percentage_off_text": "20",
+            "option_3_fixed_amount_off": "0",
+            "option_3_price_text": "[price]",
+            "option_3_compare_price": "compare_price",
+            "option_3_compare_price_text": "[compare_price]",
+            "option_4_quantity": 0,
+            "option_4_badge": "",
+            "option_4_label": "Buy [quantity]",
+            "option_4_benefit": "",
+            "option_4_caption": "You save [amount_saved]",
+            "option_4_percentage_off_text": "0",
+            "option_4_fixed_amount_off": "0",
+            "option_4_price_text": "[price]",
+            "option_4_compare_price": "compare_price",
+            "option_4_compare_price_text": "[compare_price]",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "skip_cart": false,
+            "uppercase_text": true,
+            "display_price": false,
+            "enable_custom_color": false,
+            "custom_color": "#53af01",
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "product_upsell_tDjY9a": {
+          "type": "product_upsell",
+          "disabled": true,
+          "settings": {
+            "style": "toggle_switch",
+            "btn_position": "right",
+            "toggle_element": "button",
+            "stacking": "row",
+            "accent_color": "accent-1",
+            "color_scheme": "background-1",
+            "product_list": [
+              "taktischer-gurte"
+            ],
+            "prdouct_1_preselected": false,
+            "product_1_desc": "Perfekt zur Hose – Halt, Funktionalität und verstellbarer Sitz für jede Mission.",
+            "product_1_percentage_discount": "0",
+            "product_1_fixed_amount_discount": "0",
+            "prdouct_2_preselected": false,
+            "product_2_desc": "",
+            "product_2_percentage_discount": "0",
+            "product_2_fixed_amount_discount": "0",
+            "prdouct_3_preselected": false,
+            "product_3_desc": "",
+            "product_3_percentage_discount": "0",
+            "product_3_fixed_amount_discount": "0",
+            "show_images": true,
+            "images_size": "4.25",
+            "images_corner_radius": 0,
+            "title_size": "1.2",
+            "title_link": false,
+            "desc_size": "1.05",
+            "price_position": "next_to_title",
+            "price_size": "1.2",
+            "hide_compare_price": false,
+            "show_variant_picker": false,
+            "corner_radius": 8,
+            "show_box_shadow": false,
+            "show_border": false,
+            "regular_border_color": "#e6e6e6",
+            "selected_border_color": "#6d388b",
+            "show_custom_bg": false,
+            "regular_bg_color": "#f2f2f2",
+            "selected_bg_color": "#f2f2f2",
+            "margin_top": 21,
+            "margin_bottom": 21
+          }
+        },
+        "payment_badges_VwEUEL": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "american_express, apple_pay, klarna, master, paypal, shopify_pay, visa, ideal",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_Ugj6qL": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"bandeiras-background-top\" style=\"margin-top: var(--margin-gar-s)!important; margin-bottom: var(--margin-gar-i); padding: 12px 15px 8px 15px; border-radius: 6px; background: \n#F2F2F2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;\">\n\n  {% if request.locale.iso_code == 'en' %}\n    <span style=\"color: black; font-size: 14px; line-height: 1.25;\">\n      <b>4.9</b> / 5 based on <u><b>2 796 reviews.</b></u> 5-star rating.\n    </span>\n  {% elsif request.locale.iso_code == 'sv' %}\n    <span style=\"color: black; font-size: 14px; line-height: 1.25;\">\n      <b>4.9</b> / 5 baserat på <u><b>2 796 recensioner.</b></u> 5-stjärnigt betyg.\n    </span>\n  {% elsif request.locale.iso_code == 'nl' %}\n    <span style=\"color: black; font-size: 14px; line-height: 1.25;\">\n      <b>4.9</b> / 5 gebaseerd op <u><b>2 796 beoordelingen.</b></u> 5-sterrenbeoordeling.\n    </span>\n  {% else %}\n    <span style=\"color: black; font-size: 14px; line-height: 1.25;\">\n      <b>4,9</b> / 5 basierend auf <u><b>2 796 Bewertungen.</b></u></span>\n  {% endif %}\n\n  <img style=\"width: 90px; margin-top: 2px; margin-bottom: 5px;\" src=\"https://upload.wikimedia.org/wikipedia/commons/7/78/Trustpilot_Logo_%282022%29.svg\" alt=\"Trustpilot Logo\">\n</div>"
+          }
+        },
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5": {
+          "type": "sticky_atc",
+          "settings": {
+            "function": "scroll_#ProductInfo-id",
+            "display_when": "after_scroll",
+            "button_label": "IN DEN WARENKORB",
+            "enable_custom_btn_color": false,
+            "custom_btn_color": "#dd1d1d",
+            "color_scheme": "background-1",
+            "star_color": "#ffcc00",
+            "stars_label": "(xxxx Reviews)",
+            "picker_type": "combined",
+            "desktop_show_image": true,
+            "desktop_show_title": true,
+            "desktop_rating_stars": false,
+            "desktop_show_price": true,
+            "desktop_show_sale_badge": true,
+            "desktop_variant_picker": true,
+            "desktop_full_button_width": false,
+            "desktop_show_price_in_button": false,
+            "desktop_transparent_bg": false,
+            "mobile_show_image": false,
+            "mobile_show_title": false,
+            "mobile_rating_stars": false,
+            "mobile_show_price": false,
+            "mobile_show_sale_badge": false,
+            "mobile_variant_picker": false,
+            "mobile_full_button_width": false,
+            "mobile_show_price_in_button": false,
+            "mobile_transparent_bg": true
+          }
+        },
+        "de158e68-5d0d-4819-a625-e2dabdff87d1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Wählen Sie Ihre Größe",
+            "heading_size": "large",
+            "icon": "straighten",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "",
+            "page": "size-chart-este-pullover",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "margin_top": 24,
+            "margin_bottom": 24
+          }
+        },
+        "collapsible_tab_rf6mgd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Versand & Lieferung",
+            "heading_size": "large",
+            "icon": "Local Shippingrefreshcontent_copy",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<ul><li><strong>KOSTENLOSER Standardversand: </strong>3-7 Tage Verfolgter Versand.</li></ul><p>Versicherter Weltweiter Versand: Jede Bestellung beinhaltet Echtzeit-Verfolgungsinformationen und Versicherungsschutz für den unwahrscheinlichen Fall, dass ein Paket auf dem Versandweg verloren geht oder gestohlen wird.</p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_KB7YpP": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "14 Tage Einfache Rückgabe",
+            "heading_size": "large",
+            "icon": "Autorenew",
+            "filled_icon": false,
+            "collapse_icon": "carret",
+            "display_top_border": true,
+            "content": "<p>Wir bieten eine 14-tägige Rückgabe- oder Umtauschpolitik, wenn Sie aus irgendeinem Grund mit Ihrer Bestellung nicht zufrieden sind.</p>",
+            "page": "",
+            "margin_top": 24,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "a6eb81db-40e4-43e0-972f-32db010a4a56",
+        "title",
+        "custom_liquid_8YxY79",
+        "price",
+        "icon_with_text_G3TN4Q",
+        "emoji_benefits_QVtPyB",
+        "5fcc0428-e768-4cb7-bea3-eb0274198dd1",
+        "04ba004e-2f54-4936-8b1c-8bcadf6573f6",
+        "buy_buttons",
+        "product_upsell_tDjY9a",
+        "payment_badges_VwEUEL",
+        "custom_liquid_Ugj6qL",
+        "e7a28cbe-03cb-4c9d-a2c4-0e3e76ffb3e5",
+        "de158e68-5d0d-4819-a625-e2dabdff87d1",
+        "description",
+        "collapsible_tab_rf6mgd",
+        "collapsible_tab_KB7YpP"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": false,
+        "display_variant_image_first": true,
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "desktop_thumbnails_count": 5,
+        "mobile_thumbnails": "show",
+        "mobile_media_corner_radius": 2,
+        "mobile_spacing": true,
+        "mobile_preview_media": true,
+        "mobile_thumbnails_count": 5,
+        "mobile_pagination": "numeric",
+        "hide_arrows": true,
+        "dots_color_scheme": "inverse",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "ss_testimonial_14_3hnAwq": {
+      "type": "ss-testimonial-14",
+      "blocks": {
+        "slide_PibBBg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/25.png",
+            "text": "<p>Einfach traumhaft! Die Pantoffeln sind weich, warm und kamen super schnell an. Wirklich top!</p>",
+            "author": "Anna Müller"
+          }
+        },
+        "slide_TQBxi8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/22_b130479f-9553-46bf-bcc6-1f9e3344c937.png",
+            "text": "<p>So bequem und warm! Ich trage sie jeden Abend. Lieferung war in nur 3 Tagen da.</p>",
+            "author": "Lena Schneider"
+          }
+        },
+        "slide_KxfBb7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/24_b3aa3e43-28d9-4b6c-bc8f-87615510535f.png",
+            "text": "<p>Perfekte Größe, tolle Qualität! Habe gleich zwei Paare bestellt. Die Farbe ist wunderschön.</p>",
+            "author": "Julia Weber S."
+          }
+        },
+        "slide_hT9fJH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20_a20315ec-a430-4770-b2d2-575a2632146a.png",
+            "text": "<p>Die Pantoffeln sind so warm und flauschig. Ideal für kalte Tage! Lieferung war blitzschnell.</p>",
+            "author": "Maria H."
+          }
+        },
+        "slide_HrRj43": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/21_962f5123-cb22-4d30-b8d6-2f04f07bc134.png",
+            "text": "<p>Ich habe sie meiner Mutter geschenkt, sie liebt sie! Wirklich sehr weich und bequem.</p>",
+            "author": "Sarah B."
+          }
+        },
+        "slide_KQnxNQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20_a20315ec-a430-4770-b2d2-575a2632146a.png",
+            "text": "<p>Super Qualität, sehen toll aus! Ich bestelle gleich noch ein Paar in einer anderen Farbe.</p>",
+            "author": "Katharina Fischer"
+          }
+        },
+        "slide_yyLCng": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/23_d03afb67-9895-4d2f-891f-0d4b00879fbd.png",
+            "text": "<p>Die Lieferung war schneller als erwartet. Die Pantoffeln passen perfekt und halten warm.</p>",
+            "author": "Laura Berger"
+          }
+        },
+        "slide_ijmkKf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/S91f60d23240445cca6ba2b73f23dc402g_jpg_960x960q75_jpg.avif",
+            "text": "<p>Sehr gute Verarbeitung, nichts rutscht oder drückt. Bin total zufrieden und bestelle wieder!</p>",
+            "author": "Emilia Steiner"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PibBBg",
+        "slide_TQBxi8",
+        "slide_KxfBb7",
+        "slide_hT9fJH",
+        "slide_HrRj43",
+        "slide_KQnxNQ",
+        "slide_yyLCng",
+        "slide_ijmkKf"
+      ],
+      "settings": {
+        "stars_count": 0,
+        "stars_size": 40,
+        "stars_align": "center",
+        "stars_align_mobile": "center",
+        "heading": "<p>SCHLIESSE DICH ÜBER 50.000 KUNDEN AN</p>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 38,
+        "heading_size_mobile": 26,
+        "heading_height": 120,
+        "heading_mt": 22,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "<p>Lass uns hören, was einige von ihnen zu sagen haben.</p>",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 20,
+        "sub_heading_size_mobile": 16,
+        "sub_heading_height": 130,
+        "sub_heading_mt": 16,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 1.1,
+        "slider_gap": 28,
+        "slider_gap_mobile": 20,
+        "slider_mt": 56,
+        "card_padding_vertical": 30,
+        "card_padding_vertical_mobile": 20,
+        "card_padding_horizontal": 30,
+        "card_padding_horizontal_mobile": 20,
+        "card_radius": 4,
+        "card_border_thickness": 0,
+        "card_image_size": 80,
+        "card_image_size_mobile": 70,
+        "card_image_radius": 100,
+        "card_image_align": "center",
+        "card_image_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "text_mt": 0,
+        "text_align": "center",
+        "text_align_mobile": "center",
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 15,
+        "author_size_mobile": 15,
+        "author_height": 130,
+        "author_mt": 24,
+        "author_align": "center",
+        "author_align_mobile": "center",
+        "verify_customer": true,
+        "verify_icon_size": 18,
+        "verify_icon_size_mobile": 18,
+        "verify_text": "Verifizierter Käufer",
+        "verify_custom": false,
+        "verify_font": "josefin_sans_n4",
+        "verify_size": 13,
+        "verify_size_mobile": 13,
+        "verify_height": 130,
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "rating_text": "Ausgezeichnet",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 40,
+        "rating": 4.7,
+        "rating_hide": true,
+        "rating_text_hide": false,
+        "rating_align": "center",
+        "rating_align_mobile": "center",
+        "rating_stars_count": 4.5,
+        "rating_stars_size": 28,
+        "rating_stars_size_mobile": 24,
+        "right_text": "<p>2.796 Bewertungen auf <strong>Trustpilot</strong></p>",
+        "right_text_custom": false,
+        "right_text_font": "josefin_sans_n4",
+        "right_text_size": 20,
+        "right_text_size_mobile": 16,
+        "right_text_height": 130,
+        "card_bg_color": "#f9f4ea",
+        "card_border_color": "#43ab4c",
+        "text_color": "#00493b",
+        "author_color": "#00493b",
+        "verify_color": "#00493b",
+        "verify_icon_color": "#43ab4c",
+        "arrow_color": "#ffffff",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#43ab4c",
+        "arrow_bg_hover_color": "#43ab4c",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "rating_text_color": "#ffffff",
+        "rating_stars_bg_color": "#00b67a",
+        "rating_stars_color": "#ffffff",
+        "right_text_color": "#ffffff",
+        "stars_color": "#ffba53",
+        "heading_color": "#ffffff",
+        "sub_heading_color": "#ffffff",
+        "background_color": "#00493b",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 44,
+        "margin_bottom": 40,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 2.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "9876068a35658273da": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "display_id": false,
+        "heading": "Das könnte Ihnen auch gefallen",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "icon_bar_mkPfUe": {
+      "type": "icon-bar",
+      "blocks": {
+        "column_wri3R6": {
+          "type": "column",
+          "settings": {
+            "icon": "Autorenew",
+            "filled_icon": false,
+            "title": "14-TÄGIGE RÜCKGABE",
+            "text": "<p>Wenn Sie mit Ihrer Bestellung nicht zufrieden sind.</p>"
+          }
+        },
+        "column_xHzNwG": {
+          "type": "column",
+          "settings": {
+            "icon": "Local Shippingrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "KOSTENLOSER VERSAND",
+            "text": "<p>Kostenloser, verfolgbarer Versand für alle Bestellungen.</p>"
+          }
+        },
+        "column_je8xj4": {
+          "type": "column",
+          "settings": {
+            "icon": "Workspace Premiumrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "PREMIUM-QUALITÄT",
+            "text": "<p>Qualitätssiegel auf ausgewählten Produkten.</p>"
+          }
+        },
+        "column_tVUjVf": {
+          "type": "column",
+          "settings": {
+            "icon": "Support Agentrefreshcontent_copy",
+            "filled_icon": false,
+            "title": "KUNDENSERVICE",
+            "text": "<p>Hochwertiges Support-Team, um Ihnen zu helfen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_wri3R6",
+        "column_xHzNwG",
+        "column_je8xj4",
+        "column_tVUjVf"
+      ],
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "color_scheme": "background-1",
+        "icon_layout": "vertical",
+        "icon_size": "medium",
+        "icon_color": "accent-1",
+        "cards_color_scheme": "bg-overlay",
+        "type": "slide",
+        "autoplay": true,
+        "autoplay_speed": 2,
+        "arrows_color_scheme": "inverse",
+        "transparent_arrows": true,
+        "dots_color_scheme": "inverse",
+        "desktop_full_page": false,
+        "columns_desktop": 4,
+        "slider_desktop": false,
+        "per_move_desktop": 1,
+        "desktop_spacing": 40,
+        "desktop_side_padding": 0,
+        "desktop_padding_calc": true,
+        "desktop_adaptive_height": false,
+        "desktop_dots_position": "under",
+        "desktop_arrows_position": "sides",
+        "columns_mobile": "1",
+        "slider_mobile": true,
+        "enable_mobile_preview": false,
+        "mobile_adaptive_height": true,
+        "mobile_dots_position": "under",
+        "mobile_arrows_position": "under",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_testimonial_14_3hnAwq",
+    "9876068a35658273da",
+    "related-products",
+    "icon_bar_mkPfUe"
+  ]
+}

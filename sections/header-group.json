@@ -1,0 +1,236 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "custom_liquid_TaLgcx": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "custom_liquid": "{%- liquid\n  # 1. Obter o mês atual (de 1 a 12) e o idioma\n  assign current_month = 'now' | date: \"%m\" | plus: 0\n  assign language = request.locale.iso_code\n  \n  # 2. Detetar o Hemisfério automaticamente com base no país do visitante\n  assign country_code = localization.country.iso_code\n  # Lista dos principais países do Hemisfério Sul (códigos ISO)\n  assign paises_sul = 'BR,AU,AR,ZA,NZ,CL,PE,UY,PY,BO,AO,MZ' | split: ','\n\n  if paises_sul contains country_code\n    assign hemisphere = 'south'\n  else\n    assign hemisphere = 'north'\n  endif\n\n  # 3. Lógica automática das estações com base no mês e hemisfério\n  if hemisphere == 'south'\n    if current_month >= 3 and current_month <= 5\n      assign season_pt = \"O Outono\"\n      assign season_en = \"Autumn\"\n      assign season_de = \"Der Herbst\"\n    elsif current_month >= 6 and current_month <= 8\n      assign season_pt = \"O Inverno\"\n      assign season_en = \"Winter\"\n      assign season_de = \"Der Winter\"\n    elsif current_month >= 9 and current_month <= 11\n      assign season_pt = \"A Primavera\"\n      assign season_en = \"Spring\"\n      assign season_de = \"Der Frühling\"\n    else\n      assign season_pt = \"O Verão\"\n      assign season_en = \"Summer\"\n      assign season_de = \"Der Sommer\"\n    endif\n  else\n    if current_month >= 3 and current_month <= 5\n      assign season_pt = \"A Primavera\"\n      assign season_en = \"Spring\"\n      assign season_de = \"Der Frühling\"\n    elsif current_month >= 6 and current_month <= 8\n      assign season_pt = \"O Verão\"\n      assign season_en = \"Summer\"\n      assign season_de = \"Der Sommer\"\n    elsif current_month >= 9 and current_month <= 11\n      assign season_pt = \"O Outono\"\n      assign season_en = \"Autumn\"\n      assign season_de = \"Der Herbst\"\n    else\n      assign season_pt = \"O Inverno\"\n      assign season_en = \"Winter\"\n      assign season_de = \"Der Winter\"\n    endif\n  endif\n\n  # 4. Construção das frases finais com o idioma detetado\n  case language\n    when 'en'\n      assign msg_estacao = season_en | append: \" is here, it's time for a wardrobe upgrade!\"\n      assign msg_frete = \"Free shipping\"\n    when 'de'\n      assign msg_estacao = season_de | append: \" ist da, Zeit für ein Upgrade deiner Garderobe!\"\n      assign msg_frete = \"Kostenloser Versand\"\n    else\n      assign msg_estacao = season_pt | append: \" chegou, está na hora de um upgrade no seu guarda-roupa!\"\n      assign msg_frete = \"Frete grátis\"\n  endcase\n-%}\n\n<!-- Estrutura HTML -->\n<div class=\"announcement-bar-custom\" id=\"announcement-bar\">\n  <div class=\"announcement-message active\" data-index=\"0\">\n    <p>{{ msg_estacao }}</p>\n  </div>\n  <div class=\"announcement-message\" data-index=\"1\">\n    <p>{{ msg_frete }}</p>\n  </div>\n</div>\n\n<!-- Estilos CSS -->\n<style>\n  .announcement-bar-custom {\n    background-color: #000;\n    color: #fff;\n    padding: 0 10px;\n    text-align: center;\n    font-size: 14px;\n    height: 35px; /* Altura exata de 35px */\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    overflow: hidden;\n    position: relative;\n    text-transform: uppercase;\n    letter-spacing: 1px;\n  }\n\n  .announcement-message {\n    position: absolute;\n    width: 100%;\n    opacity: 0;\n    transition: all 0.6s ease-in-out;\n    transform: translateY(10px);\n    visibility: hidden;\n  }\n\n  .announcement-message.active {\n    opacity: 1;\n    visibility: visible;\n    transform: translateY(0);\n  }\n\n  .announcement-message p {\n    margin: 0;\n    padding: 0 20px;\n    font-weight: 600;\n  }\n</style>\n\n<!-- Script de Animação -->\n<script>\n  document.addEventListener('DOMContentLoaded', function() {\n    const messages = document.querySelectorAll('.announcement-message');\n    if (messages.length > 1) {\n      let currentIndex = 0;\n      setInterval(function() {\n        messages[currentIndex].classList.remove('active');\n        currentIndex = (currentIndex + 1) % messages.length;\n        messages[currentIndex].classList.add('active');\n      }, 5000); // Rotação a cada 5 segundos\n    }\n  });\n</script>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_countdown_bar_HrPrrV": {
+      "type": "ss-countdown-bar",
+      "blocks": {
+        "text_Dygh8b": {
+          "type": "text",
+          "settings": {
+            "heading": "Flash Sale - Ends In:",
+            "color": "#ffffff",
+            "font_size": 17
+          }
+        },
+        "timer_XYxFef": {
+          "type": "timer",
+          "settings": {
+            "year": "2024",
+            "month": "01",
+            "day": "01",
+            "hour": "00",
+            "minute": "00",
+            "hide_timer_on_completed": false,
+            "color": "#ffffff",
+            "font_size_number": 16,
+            "font_size_text": 12
+          }
+        }
+      },
+      "block_order": [
+        "text_Dygh8b",
+        "timer_XYxFef"
+      ],
+      "disabled": true,
+      "name": "SS - Countdown Timer Bar",
+      "settings": {
+        "target_selector": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper, .onboarding-header",
+        "use_cross": false,
+        "days_text": "Days",
+        "hours_text": "Hrs",
+        "mins_text": "Mins",
+        "seconds_text": "Secs",
+        "background-color": "#000000"
+      }
+    },
+    "horizontal_ticker_DhnwCA": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "text_R9mpCj": {
+          "type": "text",
+          "settings": {
+            "title": "★★★★★ +50.000 Zufriedene Kunden"
+          }
+        },
+        "text_MVyD4t": {
+          "type": "text",
+          "settings": {
+            "title": "Kaufe 1 Stück Erhalte Kostenlosen Versand"
+          }
+        },
+        "text_qkJdaU": {
+          "type": "text",
+          "settings": {
+            "title": "Kaufe 2 Stücke Erhalte Extra 5% Rabatt"
+          }
+        },
+        "text_3LAYcr": {
+          "type": "text",
+          "settings": {
+            "title": "Kaufe 3+ Stücke Erhalte Extra 10% Rabatt"
+          }
+        },
+        "text_3bYXdp": {
+          "type": "text",
+          "settings": {
+            "title": "Kaufe 5+ Stücke Erhalte Extra 20% Rabatt"
+          }
+        }
+      },
+      "block_order": [
+        "text_R9mpCj",
+        "text_MVyD4t",
+        "text_qkJdaU",
+        "text_3LAYcr",
+        "text_3bYXdp"
+      ],
+      "disabled": true,
+      "settings": {
+        "visibility": "always-display",
+        "speed": 1.5,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "accent-1",
+        "mobile_text_size": 16,
+        "desktop_text_size": 16,
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 28,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 16,
+        "desktop_padding_bottom": 16
+      }
+    },
+    "announcement_bar_i4QjKT": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "columns_desktop": 1,
+        "columns_mobile": 1,
+        "desktop_spacing": 28,
+        "mobile_spacing": 16,
+        "show_separator": false,
+        "color_scheme": "accent-2",
+        "slider_mobile": true,
+        "slider_desktop": false,
+        "type": "loop",
+        "autoplay": false,
+        "autoplay_speed": 3,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "sticky_header_type": "always",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "logo_position": "middle-center",
+        "menu": "main-menu",
+        "highlight_active_link": true,
+        "highlighted_link_color_scheme": "accent-1",
+        "products_mega_menu_links": "Departments",
+        "products_mega_menu_display_collection_products": true,
+        "products_mega_menu_display_collection_images": true,
+        "products_mega_menu_display_collection_images_on_mobile": true,
+        "mobile_menu_title": "Menu",
+        "secondary_menu": "departments",
+        "menu_color_scheme": "background-1",
+        "mobile_logo_position": "center",
+        "display_search": true,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "horizontal_ticker_n8XVkT": {
+      "type": "horizontal-ticker",
+      "blocks": {
+        "text_4pUXx8": {
+          "type": "text",
+          "settings": {
+            "title": "+50,000 Happy Customers"
+          }
+        },
+        "text_yHrB9p": {
+          "type": "text",
+          "settings": {
+            "title": "Free Shipping on All Orders"
+          }
+        },
+        "text_8Gcdma": {
+          "type": "text",
+          "settings": {
+            "title": "30-Day Returns & Exchanges"
+          }
+        }
+      },
+      "block_order": [
+        "text_4pUXx8",
+        "text_yHrB9p",
+        "text_8Gcdma"
+      ],
+      "settings": {
+        "visibility": "always-display",
+        "speed": 1.5,
+        "mobile_spacing": 60,
+        "desktop_spacing": 100,
+        "color_scheme": "background-2",
+        "mobile_text_size": 16,
+        "desktop_text_size": 16,
+        "italic_text": false,
+        "uppercase_text": false,
+        "bold_text": false,
+        "mobile_image_height": 26,
+        "desktop_image_height": 28,
+        "hidden_products": "",
+        "enable_specific_display": false,
+        "displayed_products": "",
+        "mobile_padding_top": 12,
+        "mobile_padding_bottom": 12,
+        "desktop_padding_top": 12,
+        "desktop_padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_TaLgcx",
+    "ss_countdown_bar_HrPrrV",
+    "horizontal_ticker_DhnwCA",
+    "announcement_bar_i4QjKT",
+    "header",
+    "horizontal_ticker_n8XVkT"
+  ]
+}
