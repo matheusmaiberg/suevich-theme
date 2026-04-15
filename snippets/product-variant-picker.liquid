@@ -34,9 +34,10 @@
     style="--margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;--margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
     {{ block.shopify_attributes }}
   >
+    {%- assign sizing_chart_pos = block.settings.sizing_chart_position | default: '1' | plus: 0 -%}
     {%- for option in product.options_with_values -%}
       {% assign type = types_array[forloop.index0] | strip | replace: ' ', '-' %}
-      {%- if block.settings.enable_sizing_chart and block.settings.sizing_chart_position == forloop.index -%}
+      {%- if block.settings.enable_sizing_chart and sizing_chart_pos == forloop.index -%}
         <modal-v2
           class="sizing-chart sizing-chart--button-left modal-v2"
           data-open="false"
