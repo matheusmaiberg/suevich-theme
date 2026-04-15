@@ -82,22 +82,6 @@
           startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(startDate);
           endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(endDate);
           break;
-        // Legacy fallbacks: map old DynamicDates formats to localized equivalents
-        case 'day_mm_dd':
-        case 'mm_dd':
-          startFormatted = new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric' }).format(startDate);
-          endFormatted = new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric' }).format(endDate);
-          break;
-        case 'day_dd_mm':
-        case 'dd_mm':
-          startFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(startDate);
-          endFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(endDate);
-          break;
-        case 'day_dd_mm_numeric':
-        case 'dd_mm_numeric':
-          startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' }).format(startDate).replace(/\//g, '.');
-          endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' }).format(endDate).replace(/\//g, '.');
-          break;
         default:
           startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(startDate);
           endFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(endDate);
