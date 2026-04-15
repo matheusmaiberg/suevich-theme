@@ -39,34 +39,24 @@
       const minDays = parseInt(textEl.dataset.minDays, 10) || 0;
       const maxDays = parseInt(textEl.dataset.maxDays, 10) || 0;
 
-      // Generate localized day labels for DynamicDates compatibility
+      // Generate localized day/month labels for DynamicDates compatibility
       const dayFormatter = new Intl.DateTimeFormat(locale, { weekday: 'long' });
       const days = [];
-      for (let i = 0; i < 7; i++) {
-        const d = new Date(2024, 0, i + 1);
-        days.push(dayFormatter.format(d));
-      }
+      for (let i = 0; i < 7; i++) days.push(dayFormatter.format(new Date(2024, 0, i + 1)));
       parent.dataset.dayLabels = days.join(',');
 
-      // Generate localized month labels for DynamicDates compatibility
       const monthFormatter = new Intl.DateTimeFormat(locale, { month: 'long' });
       const months = [];
-      for (let i = 0; i < 12; i++) {
-        const d = new Date(2024, i, 1);
-        months.push(monthFormatter.format(d));
-      }
+      for (let i = 0; i < 12; i++) months.push(monthFormatter.format(new Date(2024, i, 1)));
       parent.dataset.monthLabels = months.join(',');
 
       // Calculate dates
       const today = new Date();
-      const startDate = new Date(today);
-      startDate.setDate(today.getDate() + minDays);
-      const endDate = new Date(today);
-      endDate.setDate(today.getDate() + maxDays);
+      const startDate = new Date(today); startDate.setDate(today.getDate() + minDays);
+      const endDate = new Date(today); endDate.setDate(today.getDate() + maxDays);
 
-      // Format dates based on selected format
+      // Format based on selected format
       let startFormatted, endFormatted;
-      
       switch (dateFormat) {
         case 'long':
           startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }).format(startDate);
@@ -92,10 +82,32 @@
           startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(startDate);
           endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(endDate);
           break;
+        // Legacy fallbacks: map old DynamicDates formats to localized equivalents
+        case 'day_mm_dd':
+        case 'mm_dd':
+          startFormatted = new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { month: 'long', day: 'numeric' }).format(endDate);
+          break;
+        case 'day_dd_mm':
+        case 'dd_mm':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(endDate);
+          break;
+        case 'day_dd_mm_numeric':
+        case 'dd_mm_numeric':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' }).format(startDate).replace(/\//g, '.');
+          endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit' }).format(endDate).replace(/\//g, '.');
+          break;
         default:
           startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(startDate);
           endFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(endDate);
       }
+
+      // Pre-bake dates into data-text so DynamicDates leaves them alone
+      let bakedText = textEl.dataset.text || '';
+      bakedText = bakedText.replace(/\[start_date\]/g, startFormatted);
+      bakedText = bakedText.replace(/\[end_date\]/g, endFormatted);
+      textEl.dataset.text = bakedText;
 
       // Carrier replacement logic
       const country = {{ localization.country.iso_code | json }};
@@ -120,30 +132,21 @@
         ? (carrierPrefix ? carrierPrefix + ' ' + carrierName : carrierName)
         : '';
 
-      function applyReplacements() {
-        let html = textEl.innerHTML;
-        if (html.includes('[start_date]')) {
-          html = html.replace(/\[start_date\]/g, startFormatted);
+      function applyCarrier() {
+        if (!textEl.innerHTML.includes('[carrier]')) return;
+        if (carrierDisplay) {
+          textEl.innerHTML = textEl.innerHTML.replace(/\[carrier\]/g, carrierDisplay);
+        } else {
+          textEl.innerHTML = textEl.innerHTML.replace(/\s*\[carrier\]/g, '');
         }
-        if (html.includes('[end_date]')) {
-          html = html.replace(/\[end_date\]/g, endFormatted);
-        }
-        if (html.includes('[carrier]')) {
-          if (carrierDisplay) {
-            html = html.replace(/\[carrier\]/g, carrierDisplay);
-          } else {
-            html = html.replace(/\s*\[carrier\]/g, '');
-          }
-        }
-        textEl.innerHTML = html;
       }
 
       const observer = new MutationObserver(function () {
-        applyReplacements();
+        applyCarrier();
       });
       observer.observe(textEl, { childList: true, characterData: true, subtree: true });
 
-      applyReplacements();
+      applyCarrier();
     })();
   </script>
 </dynamic-dates>
