@@ -33,9 +33,13 @@
   <script>
     (function () {
       const parent = document.currentScript.parentElement;
+      const textEl = parent.querySelector('.estimated-shipping__text');
       const locale = {{ localization.language.iso_code | json }} || 'en';
+      const dateFormat = {{ block.settings.date_format | json }} || 'long';
+      const minDays = parseInt(textEl.dataset.minDays, 10) || 0;
+      const maxDays = parseInt(textEl.dataset.maxDays, 10) || 0;
 
-      // Generate localized day labels for DynamicDates
+      // Generate localized day labels for DynamicDates compatibility
       const dayFormatter = new Intl.DateTimeFormat(locale, { weekday: 'long' });
       const days = [];
       for (let i = 0; i < 7; i++) {
@@ -44,7 +48,7 @@
       }
       parent.dataset.dayLabels = days.join(',');
 
-      // Generate localized month labels for DynamicDates
+      // Generate localized month labels for DynamicDates compatibility
       const monthFormatter = new Intl.DateTimeFormat(locale, { month: 'long' });
       const months = [];
       for (let i = 0; i < 12; i++) {
@@ -53,10 +57,47 @@
       }
       parent.dataset.monthLabels = months.join(',');
 
-      // Carrier replacement logic
-      const textEl = parent.querySelector('.estimated-shipping__text');
-      if (!textEl || !textEl.dataset.text || !textEl.dataset.text.includes('[carrier]')) return;
+      // Calculate dates
+      const today = new Date();
+      const startDate = new Date(today);
+      startDate.setDate(today.getDate() + minDays);
+      const endDate = new Date(today);
+      endDate.setDate(today.getDate() + maxDays);
 
+      // Format dates based on selected format
+      let startFormatted, endFormatted;
+      
+      switch (dateFormat) {
+        case 'long':
+          startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long', year: 'numeric' }).format(endDate);
+          break;
+        case 'day_month':
+          startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(endDate);
+          break;
+        case 'month_day':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(endDate);
+          break;
+        case 'medium':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', year: 'numeric' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'short', year: 'numeric' }).format(endDate);
+          break;
+        case 'numeric':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(startDate).replace(/\//g, '.');
+          endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(endDate).replace(/\//g, '.');
+          break;
+        case 'short':
+          startFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { day: '2-digit', month: '2-digit', year: 'numeric' }).format(endDate);
+          break;
+        default:
+          startFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(startDate);
+          endFormatted = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' }).format(endDate);
+      }
+
+      // Carrier replacement logic
       const country = {{ localization.country.iso_code | json }};
       const carrierListRaw = {{ block.settings.carrier_list | json }};
       const carrierPrefix = {{ block.settings.carrier_prefix | json }};
@@ -79,21 +120,30 @@
         ? (carrierPrefix ? carrierPrefix + ' ' + carrierName : carrierName)
         : '';
 
-      function applyCarrier() {
-        if (!textEl.innerHTML.includes('[carrier]')) return;
-        if (carrierDisplay) {
-          textEl.innerHTML = textEl.innerHTML.replace(/\[carrier\]/g, carrierDisplay);
-        } else {
-          textEl.innerHTML = textEl.innerHTML.replace(/\s*\[carrier\]/g, '');
+      function applyReplacements() {
+        let html = textEl.innerHTML;
+        if (html.includes('[start_date]')) {
+          html = html.replace(/\[start_date\]/g, startFormatted);
         }
+        if (html.includes('[end_date]')) {
+          html = html.replace(/\[end_date\]/g, endFormatted);
+        }
+        if (html.includes('[carrier]')) {
+          if (carrierDisplay) {
+            html = html.replace(/\[carrier\]/g, carrierDisplay);
+          } else {
+            html = html.replace(/\s*\[carrier\]/g, '');
+          }
+        }
+        textEl.innerHTML = html;
       }
 
       const observer = new MutationObserver(function () {
-        applyCarrier();
+        applyReplacements();
       });
       observer.observe(textEl, { childList: true, characterData: true, subtree: true });
 
-      applyCarrier();
+      applyReplacements();
     })();
   </script>
 </dynamic-dates>
