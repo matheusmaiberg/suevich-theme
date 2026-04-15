@@ -41,6 +41,7 @@
         }}
       </div>
     {% endif %}
+
     <table class="sizing-chart-table">
       {% if block.settings.table_header_content != blank %}
         {% assign columns = block.settings.table_header_content | split: ',' %}
@@ -68,6 +69,7 @@
         {% endfor %}
       </tbody>
     </table>
+
     {% if block.settings.caption != blank %}
       <p
         class="sizing-chart__caption {{ block.settings.caption_alignment }}"
@@ -93,53 +95,36 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Seleciona os elementos do cabeçalho que queremos controlar.
-  // Fazemos isso fora do loop, pois eles são únicos na página.
   const headerSection = document.querySelector('.section-header.shopify-section-group-header-group');
   const headerGroup = document.querySelector('.shopify-section-group-header-group');
 
-  // Função para diminuir o z-index do cabeçalho (quando o modal abre)
   function lowerHeaderZIndex() {
-    if (headerSection) {
-      headerSection.style.zIndex = '1';
-    }
-    // A verificação 'if (headerGroup)' é uma segurança caso o elemento não exista.
-    if (headerGroup) {
-      headerGroup.style.zIndex = '1';
-    }
+    if (headerSection) headerSection.style.zIndex = '1';
+    if (headerGroup) headerGroup.style.zIndex = '1';
   }
 
-  // Função para restaurar o z-index original do cabeçalho (quando o modal fecha)
   function restoreHeaderZIndex() {
-    if (headerSection) {
-      headerSection.style.zIndex = '5';
-    }
-    if (headerGroup) {
-      headerGroup.style.zIndex = '4';
-    }
+    if (headerSection) headerSection.style.zIndex = '5';
+    if (headerGroup) headerGroup.style.zIndex = '4';
   }
 
-  // Encontra TODOS os modais na página para que cada um funcione de forma independente.
   const allModals = document.querySelectorAll('.modal-v2');
 
   allModals.forEach(modal => {
-    // Para cada modal, encontramos seus botões específicos.
     const openButton = modal.querySelector('.modal-v2__open-btn');
     const closeButtons = modal.querySelectorAll('.modal-v2__close-btn');
 
-    // Evento para abrir o modal
     if (openButton) {
       openButton.addEventListener('click', function() {
         modal.setAttribute('data-open', 'true');
-        lowerHeaderZIndex(); // Chama a função para diminuir o z-index
+        lowerHeaderZIndex();
       });
     }
 
-    // Evento para fechar o modal (funciona no 'X' e no fundo escuro)
     closeButtons.forEach(button => {
       button.addEventListener('click', function() {
         modal.setAttribute('data-open', 'false');
-        restoreHeaderZIndex(); // Chama a função para restaurar o z-index
+        restoreHeaderZIndex();
       });
     });
   });
