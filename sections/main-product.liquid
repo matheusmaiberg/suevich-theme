@@ -5959,7 +5959,66 @@
           "id": "message",
           "label": "Text",
           "default": "<p>Get it between <strong>[start_date]</strong> and <strong>[end_date]</strong>.</p>",
-          "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive."
+          "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive. Use [carrier] to display the shipping carrier name."
+        },
+        {
+          "type": "textarea",
+          "id": "carrier_list",
+          "label": "Carrier list by country",
+          "default": "DE: DHL Standard Shipping (CAINIAO)\nBR: Correios Frete Segurado",
+          "info": "Format: COUNTRY_CODE: Carrier Name. One per line. Example: DE: DHL Express"
+        },
+        {
+          "type": "select",
+          "id": "carrier_prefix",
+          "label": "Carrier prefix",
+          "default": "with",
+          "info": "Preposition displayed before the carrier name. Add more options to this list as needed.",
+          "options": [
+            {
+              "value": "with",
+              "label": "with (EN)"
+            },
+            {
+              "value": "mit",
+              "label": "mit (DE)"
+            },
+            {
+              "value": "com",
+              "label": "com (PT)"
+            },
+            {
+              "value": "avec",
+              "label": "avec (FR)"
+            },
+            {
+              "value": "con",
+              "label": "con (ES/IT)"
+            },
+            {
+              "value": "met",
+              "label": "met (NL)"
+            },
+            {
+              "value": "via",
+              "label": "via (universal)"
+            },
+            {
+              "value": "por",
+              "label": "por (PT/ES)"
+            },
+            {
+              "value": "",
+              "label": "None (carrier name only)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "carrier_fallback",
+          "label": "Default carrier name",
+          "default": "Standard Shipping",
+          "info": "Shown when the visitor's country isn't in the list above. Leave blank to hide the carrier if not found."
         },
         {
           "type": "number",

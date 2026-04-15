@@ -29,4 +29,50 @@
   >
     {{ block.settings.message | replace: '[start_date]', '-' | replace: '[end_date]', '-' }}
   </div>
+
+  <script>
+    (function () {
+      const textEl = document.currentScript.previousElementSibling;
+      if (!textEl || !textEl.classList.contains('estimated-shipping__text')) return;
+      if (!textEl.dataset.text || !textEl.dataset.text.includes('[carrier]')) return;
+
+      const country = {{ localization.country.iso_code | json }};
+      const carrierListRaw = {{ block.settings.carrier_list | json }};
+      const carrierPrefix = {{ block.settings.carrier_prefix | json }};
+      const carrierFallback = {{ block.settings.carrier_fallback | json }};
+
+      const map = {};
+      if (carrierListRaw) {
+        carrierListRaw.split('\n').forEach(function (line) {
+          const idx = line.indexOf(':');
+          if (idx > -1) {
+            const code = line.slice(0, idx).trim().toUpperCase();
+            const name = line.slice(idx + 1).trim();
+            map[code] = name;
+          }
+        });
+      }
+
+      const carrierName = map[country] || carrierFallback || '';
+      const carrierDisplay = carrierName
+        ? (carrierPrefix ? carrierPrefix + ' ' + carrierName : carrierName)
+        : '';
+
+      function applyCarrier() {
+        if (!textEl.innerHTML.includes('[carrier]')) return;
+        if (carrierDisplay) {
+          textEl.innerHTML = textEl.innerHTML.replace(/\[carrier\]/g, carrierDisplay);
+        } else {
+          textEl.innerHTML = textEl.innerHTML.replace(/\s*\[carrier\]/g, '');
+        }
+      }
+
+      const observer = new MutationObserver(function () {
+        applyCarrier();
+      });
+      observer.observe(textEl, { childList: true, characterData: true, subtree: true });
+
+      applyCarrier();
+    })();
+  </script>
 </dynamic-dates>
