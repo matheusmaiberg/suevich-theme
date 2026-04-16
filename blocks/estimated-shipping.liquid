@@ -137,130 +137,130 @@
 
 {% schema %}
 {
-  "name": "Estimated shipping",
+  "name": "t:blocks.estimated-shipping.name",
   "settings": [
     {
       "type": "text",
       "id": "icon",
       "default": "local_shipping",
-      "label": "Icon",
-      "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+      "label": "t:blocks.estimated-shipping.settings.icon.label",
+      "info": "t:blocks.estimated-shipping.settings.icon.info"
     },
     {
       "type": "checkbox",
       "id": "filled_icon",
       "default": false,
-      "label": "Filled icon"
+      "label": "t:blocks.estimated-shipping.settings.filled_icon.label"
     },
     {
       "type": "image_picker",
       "id": "custom_icon",
-      "label": "Custom icon"
+      "label": "t:blocks.estimated-shipping.settings.custom_icon.label"
     },
     {
       "type": "select",
       "id": "icon_alignment",
       "options": [
-        { "value": "top", "label": "Top" },
-        { "value": "middle", "label": "Middle" }
+        { "value": "top", "label": "t:blocks.estimated-shipping.settings.icon_alignment.options__1.label" },
+        { "value": "middle", "label": "t:blocks.estimated-shipping.settings.icon_alignment.options__2.label" }
       ],
       "default": "top",
-      "label": "Icon alignment"
+      "label": "t:blocks.estimated-shipping.settings.icon_alignment.label"
     },
     {
       "type": "richtext",
       "id": "message",
-      "label": "Text",
+      "label": "t:blocks.estimated-shipping.settings.message.label",
       "default": "<p>Get it between <strong>[start_date]</strong> and <strong>[end_date]</strong></p>",
-      "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive. Use [carrier] to display the shipping carrier name."
+      "info": "t:blocks.estimated-shipping.settings.message.info"
     },
     {
       "type": "radio",
       "id": "icon_size",
-      "label": "Icon size",
+      "label": "t:blocks.estimated-shipping.settings.icon_size.label",
       "options": [
-        { "value": "small", "label": "S" },
-        { "value": "medium", "label": "M" },
-        { "value": "large", "label": "L" }
+        { "value": "small", "label": "t:blocks.estimated-shipping.settings.icon_size.options__1.label" },
+        { "value": "medium", "label": "t:blocks.estimated-shipping.settings.icon_size.options__2.label" },
+        { "value": "large", "label": "t:blocks.estimated-shipping.settings.icon_size.options__3.label" }
       ],
       "default": "medium"
     },
     {
       "type": "radio",
       "id": "text_size",
-      "label": "Text size",
+      "label": "t:blocks.estimated-shipping.settings.text_size.label",
       "options": [
-        { "value": "small", "label": "S" },
-        { "value": "medium", "label": "M" },
-        { "value": "large", "label": "L" }
+        { "value": "small", "label": "t:blocks.estimated-shipping.settings.text_size.options__1.label" },
+        { "value": "medium", "label": "t:blocks.estimated-shipping.settings.text_size.options__2.label" },
+        { "value": "large", "label": "t:blocks.estimated-shipping.settings.text_size.options__3.label" }
       ],
       "default": "medium"
     },
     {
       "type": "textarea",
       "id": "carrier_list",
-      "label": "Carrier list by country",
+      "label": "t:blocks.estimated-shipping.settings.carrier_list.label",
       "default": "DE: DHL Standard Shipping (CAINIAO)\nBR: Correios Frete Segurado",
-      "info": "Format: COUNTRY_CODE: Carrier Name. One per line. Example: DE: DHL Express"
+      "info": "t:blocks.estimated-shipping.settings.carrier_list.info"
     },
     {
       "type": "select",
       "id": "carrier_prefix",
-      "label": "Carrier prefix",
+      "label": "t:blocks.estimated-shipping.settings.carrier_prefix.label",
       "default": "with",
-      "info": "Preposition displayed before the carrier name. Add more options to this list as needed.",
+      "info": "t:blocks.estimated-shipping.settings.carrier_prefix.info",
       "options": [
-        { "value": "with", "label": "with (EN)" },
-        { "value": "mit", "label": "mit (DE)" },
-        { "value": "com", "label": "com (PT)" },
-        { "value": "avec", "label": "avec (FR)" },
-        { "value": "con", "label": "con (ES/IT)" },
-        { "value": "met", "label": "met (NL)" },
-        { "value": "via", "label": "via (universal)" },
-        { "value": "por", "label": "por (PT/ES)" },
-        { "value": "", "label": "None (carrier name only)" }
+        { "value": "with", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__1.label" },
+        { "value": "mit", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__2.label" },
+        { "value": "com", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__3.label" },
+        { "value": "avec", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__4.label" },
+        { "value": "con", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__5.label" },
+        { "value": "met", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__6.label" },
+        { "value": "via", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__7.label" },
+        { "value": "por", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__8.label" },
+        { "value": "", "label": "t:blocks.estimated-shipping.settings.carrier_prefix.options__9.label" }
       ]
     },
     {
       "type": "text",
       "id": "carrier_fallback",
-      "label": "Default carrier name",
+      "label": "t:blocks.estimated-shipping.settings.carrier_fallback.label",
       "default": "Standard Shipping",
-      "info": "Shown when the visitor's country isn't in the list above. Leave blank to hide the carrier if not found."
+      "info": "t:blocks.estimated-shipping.settings.carrier_fallback.info"
     },
     {
       "type": "number",
       "id": "min_shipping_days",
-      "label": "Minimum shipping days",
+      "label": "t:blocks.estimated-shipping.settings.min_shipping_days.label",
       "default": 7
     },
     {
       "type": "number",
       "id": "max_shipping_days",
-      "label": "Maximum shipping days",
+      "label": "t:blocks.estimated-shipping.settings.max_shipping_days.label",
       "default": 15
     },
     {
       "type": "radio",
       "id": "date_format",
-      "label": "Date format",
+      "label": "t:blocks.estimated-shipping.settings.date_format.label",
       "options": [
-        { "value": "long", "label": "Mon, 21 April 2025" },
-        { "value": "day_month", "label": "Mon, 21 April" },
-        { "value": "month_day", "label": "21 April" },
-        { "value": "medium", "label": "21 Apr 2025" },
-        { "value": "numeric", "label": "21.04.2025" },
-        { "value": "short", "label": "21/04/2025" }
+        { "value": "long", "label": "t:blocks.estimated-shipping.settings.date_format.options__1.label" },
+        { "value": "day_month", "label": "t:blocks.estimated-shipping.settings.date_format.options__2.label" },
+        { "value": "month_day", "label": "t:blocks.estimated-shipping.settings.date_format.options__3.label" },
+        { "value": "medium", "label": "t:blocks.estimated-shipping.settings.date_format.options__4.label" },
+        { "value": "numeric", "label": "t:blocks.estimated-shipping.settings.date_format.options__5.label" },
+        { "value": "short", "label": "t:blocks.estimated-shipping.settings.date_format.options__6.label" }
       ],
       "default": "long"
     },
     {
       "type": "header",
-      "content": "Estimated shipping settings"
+      "content": "t:blocks.estimated-shipping.settings.header__1.content"
     },
     {
       "type": "header",
-      "content": "Block margin"
+      "content": "t:blocks.estimated-shipping.settings.header__2.content"
     },
     {
       "type": "range",
@@ -269,7 +269,7 @@
       "max": 45,
       "step": 3,
       "unit": "px",
-      "label": "Top margin",
+      "label": "t:blocks.estimated-shipping.settings.margin_top.label",
       "default": 24
     },
     {
@@ -279,7 +279,7 @@
       "max": 45,
       "step": 3,
       "unit": "px",
-      "label": "Bottom margin",
+      "label": "t:blocks.estimated-shipping.settings.margin_bottom.label",
       "default": 24
     }
   ]

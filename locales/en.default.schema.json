@@ -1004,7 +1004,7 @@
         "margin_top": {
           "label": "Top margin"
         },
-         "header__9": {
+        "header__9": {
           "content": "Follow on Shop",
           "info": "Display follow button for your storefront on the Shop app. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
         },
@@ -1925,6 +1925,110 @@
               "options__2": {
                 "label": "Pills"
               }
+            },
+            "header__sizing_chart": {
+              "content": "Sizing chart"
+            },
+            "enable_sizing_chart": {
+              "label": "Enable sizing chart"
+            },
+            "sizing_chart_position": {
+              "label": "Show above option",
+              "info": "The sizing chart button will appear above the selected variant option.",
+              "options__1": {
+                "label": "Option 1"
+              },
+              "options__2": {
+                "label": "Option 2"
+              },
+              "options__3": {
+                "label": "Option 3"
+              }
+            },
+            "sizing_chart_button_label": {
+              "label": "Button label"
+            },
+            "sizing_chart_button_icon": {
+              "label": "Button icon",
+              "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+            },
+            "sizing_chart_button_underline": {
+              "label": "Button underlined text"
+            },
+            "sizing_chart_headline": {
+              "label": "Popup heading"
+            },
+            "sizing_chart_color_scheme": {
+              "label": "Popup color scheme"
+            },
+            "sizing_chart_table_header": {
+              "label": "Table header",
+              "info": "Split the words with a comma to create columns. If you wish to leave a cell empty, use [empty]. Avoid styling the comma with bold,italic etc. to avoid unexpected content styling."
+            },
+            "sizing_chart_table_header_color_scheme": {
+              "label": "Header color scheme"
+            },
+            "sizing_chart_table_content": {
+              "label": "Table body",
+              "info": "Go into a new line to create rows. Split the words with a comma to create columns. If you wish to leave a cell empty, use [empty]. Avoid styling the comma with bold,italic etc. to avoid unexpected content styling."
+            },
+            "sizing_chart_caption": {
+              "label": "Caption"
+            },
+            "sizing_chart_caption_size": {
+              "label": "Caption size",
+              "options__1": {
+                "label": "Small"
+              },
+              "options__2": {
+                "label": "Medium"
+              },
+              "options__3": {
+                "label": "Large"
+              }
+            },
+            "sizing_chart_caption_color": {
+              "label": "Caption color"
+            },
+            "sizing_chart_caption_alignment": {
+              "label": "Caption alignment",
+              "options__1": {
+                "label": "Left"
+              },
+              "options__2": {
+                "label": "Center"
+              },
+              "options__3": {
+                "label": "Right"
+              }
+            },
+            "sizing_chart_top_image": {
+              "label": "Top image",
+              "info": "Displayed above the table."
+            },
+            "sizing_chart_bottom_image": {
+              "label": "Bottom image",
+              "info": "Displayed bellow the table and the caption."
+            },
+            "header__block_margin": {
+              "content": "Block margin"
+            },
+            "margin_top": {
+              "label": "Top margin"
+            },
+            "margin_bottom": {
+              "label": "Bottom margin"
+            },
+            "header__general": {
+              "content": "General"
+            },
+            "picker_types": {
+              "label": "Type for each option",
+              "info": "Choose picker type for each option individually by splitting them with a comma. Available options are \"pills\", \"dropdown\", \"swatches\" and \"quantity breaks\". Example: \"swatches, dropdown, quantity breaks\"."
+            },
+            "custom_labels": {
+              "label": "Custom labels",
+              "info": "If empty, the option name will be displayed. Available dynamic values: [count] - option index, [name] - option name, [name_lowercase] - option name in lowercase, [name_uppercase] - option name in uppercase, [selected] - selected option. Not applied to \"Quantity breaks\" picker heading."
             }
           }
         },
@@ -3244,6 +3348,138 @@
       },
       "presets": {
         "name": "Collapsible content"
+      }
+    }
+  },
+  "blocks": {
+    "estimated-shipping": {
+      "name": "Estimated shipping",
+      "settings": {
+        "icon": {
+          "label": "Icon",
+          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+        },
+        "filled_icon": {
+          "label": "Filled icon"
+        },
+        "custom_icon": {
+          "label": "Custom icon"
+        },
+        "icon_alignment": {
+          "label": "Icon alignment",
+          "options__1": {
+            "label": "Top"
+          },
+          "options__2": {
+            "label": "Middle"
+          }
+        },
+        "message": {
+          "label": "Text",
+          "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive. Use [carrier] to display the shipping carrier name."
+        },
+        "icon_size": {
+          "label": "Icon size",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "text_size": {
+          "label": "Text size",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "carrier_list": {
+          "label": "Carrier list by country",
+          "info": "Format: COUNTRY_CODE: Carrier Name. One per line. Example: DE: DHL Express"
+        },
+        "carrier_prefix": {
+          "label": "Carrier prefix",
+          "info": "Preposition displayed before the carrier name. Add more options to this list as needed.",
+          "options__1": {
+            "label": "with (EN)"
+          },
+          "options__2": {
+            "label": "mit (DE)"
+          },
+          "options__3": {
+            "label": "com (PT)"
+          },
+          "options__4": {
+            "label": "avec (FR)"
+          },
+          "options__5": {
+            "label": "con (ES/IT)"
+          },
+          "options__6": {
+            "label": "met (NL)"
+          },
+          "options__7": {
+            "label": "via (universal)"
+          },
+          "options__8": {
+            "label": "por (PT/ES)"
+          },
+          "options__9": {
+            "label": "None (carrier name only)"
+          }
+        },
+        "carrier_fallback": {
+          "label": "Default carrier name",
+          "info": "Shown when the visitor's country isn't in the list above. Leave blank to hide the carrier if not found."
+        },
+        "min_shipping_days": {
+          "label": "Minimum shipping days"
+        },
+        "max_shipping_days": {
+          "label": "Maximum shipping days"
+        },
+        "date_format": {
+          "label": "Date format",
+          "options__1": {
+            "label": "Mon, 21 April 2025"
+          },
+          "options__2": {
+            "label": "Mon, 21 April"
+          },
+          "options__3": {
+            "label": "21 April"
+          },
+          "options__4": {
+            "label": "21 Apr 2025"
+          },
+          "options__5": {
+            "label": "21.04.2025"
+          },
+          "options__6": {
+            "label": "21/04/2025"
+          }
+        },
+        "header__1": {
+          "content": "Estimated shipping settings"
+        },
+        "header__2": {
+          "content": "Block margin"
+        },
+        "margin_top": {
+          "label": "Top margin"
+        },
+        "margin_bottom": {
+          "label": "Bottom margin"
+        }
       }
     }
   }

@@ -1583,6 +1583,110 @@
               "options__2": {
                 "label": "Kapseln"
               }
+            },
+            "header__sizing_chart": {
+              "content": "Größentabelle"
+            },
+            "enable_sizing_chart": {
+              "label": "Größentabelle aktivieren"
+            },
+            "sizing_chart_position": {
+              "label": "Über Option anzeigen",
+              "info": "Der Größentabelle-Button erscheint über der ausgewählten Varianten-Option.",
+              "options__1": {
+                "label": "Option 1"
+              },
+              "options__2": {
+                "label": "Option 2"
+              },
+              "options__3": {
+                "label": "Option 3"
+              }
+            },
+            "sizing_chart_button_label": {
+              "label": "Button-Label"
+            },
+            "sizing_chart_button_icon": {
+              "label": "Button-Symbol",
+              "info": "[Alle verfügbaren Symbole anzeigen](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+            },
+            "sizing_chart_button_underline": {
+              "label": "Button-Unterstreichung"
+            },
+            "sizing_chart_headline": {
+              "label": "Popup-Überschrift"
+            },
+            "sizing_chart_color_scheme": {
+              "label": "Popup-Farbschema"
+            },
+            "sizing_chart_table_header": {
+              "label": "Tabellenkopf",
+              "info": "Trennen Sie die Wörter mit einem Komma, um Spalten zu erstellen. Wenn Sie eine Zelle leer lassen möchten, verwenden Sie [empty]. Vermeiden Sie Formatierungen des Kommas (fett, kursiv usw.), um unerwartete Stilprobleme zu vermeiden."
+            },
+            "sizing_chart_table_header_color_scheme": {
+              "label": "Kopfzeilen-Farbschema"
+            },
+            "sizing_chart_table_content": {
+              "label": "Tabelleninhalt",
+              "info": "Gehen Sie in eine neue Zeile, um Zeilen zu erstellen. Trennen Sie die Wörter mit einem Komma, um Spalten zu erstellen. Wenn Sie eine Zelle leer lassen möchten, verwenden Sie [empty]. Vermeiden Sie Formatierungen des Kommas (fett, kursiv usw.), um unerwartete Stilprobleme zu vermeiden."
+            },
+            "sizing_chart_caption": {
+              "label": "Beschriftung"
+            },
+            "sizing_chart_caption_size": {
+              "label": "Beschriftungsgröße",
+              "options__1": {
+                "label": "Klein"
+              },
+              "options__2": {
+                "label": "Mittel"
+              },
+              "options__3": {
+                "label": "Groß"
+              }
+            },
+            "sizing_chart_caption_color": {
+              "label": "Beschriftungsfarbe"
+            },
+            "sizing_chart_caption_alignment": {
+              "label": "Beschriftungsausrichtung",
+              "options__1": {
+                "label": "Links"
+              },
+              "options__2": {
+                "label": "Zentriert"
+              },
+              "options__3": {
+                "label": "Rechts"
+              }
+            },
+            "sizing_chart_top_image": {
+              "label": "Oberes Bild",
+              "info": "Wird über der Tabelle angezeigt."
+            },
+            "sizing_chart_bottom_image": {
+              "label": "Unteres Bild",
+              "info": "Wird unter der Tabelle und der Beschriftung angezeigt."
+            },
+            "header__block_margin": {
+              "content": "Block-Abstand"
+            },
+            "margin_top": {
+              "label": "Oberer Abstand"
+            },
+            "margin_bottom": {
+              "label": "Unterer Abstand"
+            },
+            "header__general": {
+              "content": "Allgemein"
+            },
+            "picker_types": {
+              "label": "Typ für jede Option",
+              "info": "Wählen Sie den Auswahltyp für jede Option einzeln durch Komma-Trennung. Verfügbare Optionen sind \"pills\", \"dropdown\", \"swatches\" und \"quantity breaks\". Beispiel: \"swatches, dropdown, quantity breaks\"."
+            },
+            "custom_labels": {
+              "label": "Benutzerdefinierte Labels",
+              "info": "Wenn leer, wird der Optionsname angezeigt. Verfügbare dynamische Werte: [count] - Optionsindex, [name] - Optionsname, [name_lowercase] - Optionsname in Kleinbuchstaben, [name_uppercase] - Optionsname in Großbuchstaben, [selected] - ausgewählte Option. Wird nicht auf \"Quantity breaks\" Überschrift angewendet."
             }
           }
         },
@@ -3244,6 +3348,138 @@
       },
       "presets": {
         "name": "Mehrreihig"
+      }
+    }
+  },
+  "blocks": {
+    "estimated-shipping": {
+      "name": "Geschätzter Versand",
+      "settings": {
+        "icon": {
+          "label": "Symbol",
+          "info": "[Alle verfügbaren Symbole anzeigen](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+        },
+        "filled_icon": {
+          "label": "Gefülltes Symbol"
+        },
+        "custom_icon": {
+          "label": "Benutzerdefiniertes Symbol"
+        },
+        "icon_alignment": {
+          "label": "Symbol-Ausrichtung",
+          "options__1": {
+            "label": "Oben"
+          },
+          "options__2": {
+            "label": "Mitte"
+          }
+        },
+        "message": {
+          "label": "Text",
+          "info": "Verwenden Sie [start_date] für das früheste Ankunftsdatum und [end_date] für das späteste Ankunftsdatum. Verwenden Sie [carrier] für den Namen des Versanddienstleisters."
+        },
+        "icon_size": {
+          "label": "Symbolgröße",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "text_size": {
+          "label": "Textgröße",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "carrier_list": {
+          "label": "Versanddienstleister nach Land",
+          "info": "Format: LANDESCODE: Dienstleister-Name. Einer pro Zeile. Beispiel: DE: DHL Express"
+        },
+        "carrier_prefix": {
+          "label": "Dienstleister-Präfix",
+          "info": "Präposition, die vor dem Dienstleister-Namen angezeigt wird.",
+          "options__1": {
+            "label": "with (EN)"
+          },
+          "options__2": {
+            "label": "mit (DE)"
+          },
+          "options__3": {
+            "label": "com (PT)"
+          },
+          "options__4": {
+            "label": "avec (FR)"
+          },
+          "options__5": {
+            "label": "con (ES/IT)"
+          },
+          "options__6": {
+            "label": "met (NL)"
+          },
+          "options__7": {
+            "label": "via (universal)"
+          },
+          "options__8": {
+            "label": "por (PT/ES)"
+          },
+          "options__9": {
+            "label": "Keine (nur Dienstleister-Name)"
+          }
+        },
+        "carrier_fallback": {
+          "label": "Standard-Dienstleister-Name",
+          "info": "Wird angezeigt, wenn das Land des Besuchers nicht in der Liste oben steht. Leer lassen, um den Dienstleister auszublenden, wenn er nicht gefunden wird."
+        },
+        "min_shipping_days": {
+          "label": "Minimale Versandtage"
+        },
+        "max_shipping_days": {
+          "label": "Maximale Versandtage"
+        },
+        "date_format": {
+          "label": "Datumsformat",
+          "options__1": {
+            "label": "Mo, 21 April 2025"
+          },
+          "options__2": {
+            "label": "Mo, 21 April"
+          },
+          "options__3": {
+            "label": "21 April"
+          },
+          "options__4": {
+            "label": "21 Apr 2025"
+          },
+          "options__5": {
+            "label": "21.04.2025"
+          },
+          "options__6": {
+            "label": "21/04/2025"
+          }
+        },
+        "header__1": {
+          "content": "Einstellungen geschätzter Versand"
+        },
+        "header__2": {
+          "content": "Block-Abstand"
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        }
       }
     }
   }
