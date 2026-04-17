@@ -15,7 +15,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.comparison-slider.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -118,13 +118,13 @@
 
 {% schema %}
 {
-  "name": "Before & After slider",
+  "name": "t:sections.comparison-slider.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.comparison-slider.settings.s0.label",
+      "info": "t:sections.comparison-slider.settings.s22.info",
       "default": false
     },
     {
@@ -133,29 +133,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.comparison-slider.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.comparison-slider.settings.h25.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Before & After slider",
-      "label": "Heading"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "select",
@@ -181,7 +181,7 @@
       "type": "richtext",
       "id": "text",
       "default": "<p>Highlight key differences between before and after using your product.</p>",
-      "label": "Text"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "text",
@@ -203,19 +203,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.comparison-slider.settings.display_id.label",
+      "info": "t:sections.comparison-slider.settings.display_id.info"
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "t:sections.comparison-slider.settings.display_id.label",
+      "info": "t:sections.comparison-slider.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "select",
@@ -247,7 +247,7 @@
     },
     {
       "type": "header",
-      "content": "Slider"
+      "content": "t:sections.comparison-slider.settings.h26.content"
     },
     {
       "type": "select",
@@ -255,26 +255,26 @@
       "options": [
         {
           "value": "slider_first",
-          "label": "Slider first"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         },
         {
           "value": "slider_second",
-          "label": "Slider second"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         }
       ],
       "default": "slider_second",
-      "label": "Desktop slider placement"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "text",
       "id": "before_label",
-      "label": "Before label",
+      "label": "t:sections.comparison-slider.settings.display_id.label",
       "default": "Before"
     },
     {
       "type": "text",
       "id": "after_label",
-      "label": "After label",
+      "label": "t:sections.comparison-slider.settings.display_id.label",
       "default": "After"
     },
     {
@@ -303,7 +303,7 @@
         }
       ],
       "default": "accent-1",
-      "label": "Labels color scheme"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "select",
@@ -331,7 +331,7 @@
         }
         ],
       "default": "background-1",
-      "label": "Separator line color"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "select",
@@ -339,25 +339,25 @@
       "options": [
         {
           "value": "classic",
-          "label": "Classic"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         },
         {
           "value": "circle",
-          "label": "Circle around"
+          "label": "t:sections.comparison-slider.settings.display_id.label"
         }
       ],
       "default": "circle",
-      "label": "Arrows style"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "image_picker",
       "id": "before_image",
-      "label": "Before image"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "image_picker",
       "id": "after_image",
-      "label": "After image"
+      "label": "t:sections.comparison-slider.settings.display_id.label"
     },
     {
       "type": "header",
@@ -386,7 +386,7 @@
   ],
   "presets": [
     {
-      "name": "Before & After slider"
+      "name": "t:sections.comparison-slider.name"
     }
   ],
   "disabled_on": {
