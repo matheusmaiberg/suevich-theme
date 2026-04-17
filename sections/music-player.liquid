@@ -67,7 +67,7 @@
 
 {% schema %}
 {
-    "name": "Music Player",
+    "name": "t:sections.music-player.name",
     "limit": 1,
     "disabled_on": {
         "groups": ["header", "footer"]
@@ -75,13 +75,13 @@
     "settings": [
         {
           "type": "paragraph",
-          "content": "NOTE: This is a music player that is displayed separaly on each page. If you wish to have it enabled for the whole store with a same song click on Global Music Player."
+          "content": "t:sections.music-player.settings.h11.content"
         },
         {
             "type": "text",
             "id": "audio_src",
-            "label": "Audio source",
-            "info": "Go to Shopify admin > Content > Files > Upload an mp3 file, copy the link and paste it in the field above"
+            "label": "t:sections.music-player.settings.s0.label",
+            "info": "t:sections.music-player.settings.s9.info"
         },
         {
             "type": "range",
@@ -90,7 +90,7 @@
             "max": 100,
             "step": 1,
             "unit": "%",
-            "label": "Volume",
+            "label": "t:sections.music-player.settings.audio_src.label",
             "default": 10
         },
         {
@@ -99,19 +99,19 @@
           "options": [
             {
               "value": "bottom-left",
-              "label": "Bottom left"
+              "label": "t:sections.music-player.settings.audio_src.label"
             },
             {
               "value": "bottom-center",
-              "label": "Bottom center"
+              "label": "t:sections.music-player.settings.audio_src.label"
             },
             {
               "value": "bottom-right",
-              "label": "Bottom right"
+              "label": "t:sections.music-player.settings.audio_src.label"
             }
           ],
           "default": "bottom-left",
-          "label": "Position"
+          "label": "t:sections.music-player.settings.audio_src.label"
         },
         {
           "type": "range",
@@ -120,9 +120,9 @@
           "max": 100,
           "step": 4,
           "unit": "px",
-          "label": "Offset X",
+          "label": "t:sections.music-player.settings.audio_src.label",
           "default": 20,
-          "info": "Not applied when the button is centered"
+          "info": "t:sections.music-player.settings.audio_src.info"
         },
         {
           "type": "range",
@@ -131,13 +131,13 @@
           "max": 150,
           "step": 5,
           "unit": "px",
-          "label": "Offset Y",
+          "label": "t:sections.music-player.settings.audio_src.label",
           "default": 20
         },
         {
           "type": "checkbox",
           "id": "btn_animation",
-          "label": "Display ripple animation",
+          "label": "t:sections.music-player.settings.audio_src.label",
           "default": true
         },
         {
@@ -171,7 +171,7 @@
     ],
     "presets": [
         {
-            "name": "Music Player"
+            "name": "t:sections.music-player.name"
         }
     ]
 }
