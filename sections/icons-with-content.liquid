@@ -15,7 +15,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.icons-with-content.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -189,7 +189,7 @@
 
 {% schema %}
 {
-  "name": "Icons with content",
+  "name": "t:sections.icons-with-content.name",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -198,8 +198,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.icons-with-content.settings.s0.label",
+      "info": "t:sections.icons-with-content.settings.s54.info",
       "default": false
     },
     {
@@ -208,18 +208,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.icons-with-content.settings.display_id.label",
       "default": "always-display"
     },
     {
@@ -252,36 +252,36 @@
     },
     {
       "type": "header",
-      "content": "Icons section"
+      "content": "t:sections.icons-with-content.settings.h57.content"
     },
     {
       "type": "select",
       "id": "icon_size",
-      "label": "Icon size",
+      "label": "t:sections.icons-with-content.settings.display_id.label",
       "options": [
         {
           "value": "xs",
-          "label": "Extra small"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "s",
-          "label": "Small"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "m",
-          "label": "Medium"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "l",
-          "label": "Large"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "xl",
-          "label": "Extra large"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "xxl",
-          "label": "Double extra large"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "m"
@@ -292,18 +292,18 @@
       "options": [
         {
           "value": "above",
-          "label": "Above title & text"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "next-to-title",
-          "label": "Next to title"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "next-to-text",
-          "label": "Next to text & title"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
-      "label": "Icon position",
+      "label": "t:sections.icons-with-content.settings.display_id.label",
       "default": "next-to-title"
     },
     {
@@ -328,11 +328,11 @@
         },
         {
           "value": "text",
-          "label": "Text"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "accent-1",
-      "label": "Icon color"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "select",
@@ -340,23 +340,23 @@
       "options": [
         {
           "value": "h5",
-          "label": "Extra small"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "h4",
-          "label": "Small"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "h3",
-          "label": "Medium"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "h2",
-          "label": "Large"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "h3",
-      "label": "Heading size"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "select",
@@ -364,20 +364,20 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "left",
-      "label": "Text alignment",
-      "info": "Text is automatically centered if the icon position is set to above title & text."
+      "label": "t:sections.icons-with-content.settings.display_id.label",
+      "info": "t:sections.icons-with-content.settings.display_id.info"
     },
     {
       "type": "select",
@@ -385,15 +385,15 @@
       "options": [
         {
           "value": "1-column",
-          "label": "1 column"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "2-columns",
-          "label": "2 columns"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "1-column",
-      "label": "Desktop layout"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "select",
@@ -401,19 +401,19 @@
       "options": [
         {
           "value": "1-column",
-          "label": "1 column"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "2-columns",
-          "label": "2 columns"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "1-column",
-      "label": "Mobile layout"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "t:sections.icons-with-content.settings.h58.content"
     },
     {
       "type": "select",
@@ -421,19 +421,19 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "left",
-      "label": "Desktop content alignment"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "select",
@@ -441,15 +441,15 @@
       "options": [
         {
           "value": "text_first",
-          "label": "Content first"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "image_first",
-          "label": "Content second"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "image_first",
-      "label": "Desktop content placement"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "select",
@@ -457,20 +457,20 @@
       "options": [
         {
           "value": "text_first",
-          "label": "Content first"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "value": "image_first",
-          "label": "Content second"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ],
       "default": "text_first",
-      "label": "Mobile content placement"
+      "label": "t:sections.icons-with-content.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "hide_content_on_mobile",
-      "label": "Hide content on mobile",
+      "label": "t:sections.icons-with-content.settings.display_id.label",
       "default": false
     },
     {
@@ -501,37 +501,37 @@
   "blocks": [
     {
       "type": "icon",
-      "name": "Icon with text",
+      "name": "t:sections.icons-with-content.name",
       "settings": [
         {
           "type": "text",
           "id": "icon",
           "default": "check_circle",
-          "label": "Icon",
+          "label": "t:sections.icons-with-content.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Custom icon"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "title",
           "default": "Icon with text",
-          "label": "Heading"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>",
-          "label": "Text"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ]
     },
@@ -667,56 +667,56 @@
     },
     {
       "type": "atc_button",
-      "name":"Add to Cart button",
+      "name": "t:sections.icons-with-content.name",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label",
+          "label": "t:sections.icons-with-content.settings.display_id.label",
           "default": "Add to Cart"
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "t:sections.icons-with-content.name",
       "limit": 1,
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         },
         {
           "type": "product",
           "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          "label": "t:sections.icons-with-content.settings.display_id.label",
+          "info": "t:sections.icons-with-content.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ]
     },
     {
       "type": "video",
-      "name": "Autoplay video",
+      "name": "t:sections.icons-with-content.name",
       "limit": 1,
       "settings": [
         {
           "type": "video",
           "id": "video",
-          "label": "Video"
+          "label": "t:sections.icons-with-content.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Icons with content",
+      "name": "t:sections.icons-with-content.name",
       "blocks": [
         {
           "type": "icon"
