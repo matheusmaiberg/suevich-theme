@@ -442,7 +442,9 @@
       },
       "blocks": {
         "announcement": {
-          "name": "Announcement",
+          "name": {
+            "label": "Announcement"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -462,6 +464,16 @@
             "link": {
               "label": "Link"
             }
+          }
+        },
+        "discount": {
+          "name": {
+            "label": "Announcement"
+          }
+        },
+        "socials": {
+          "name": {
+            "label": "Announcement"
           }
         }
       },
@@ -922,7 +934,9 @@
       },
       "blocks": {
         "text": {
-          "name": "Text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -948,10 +962,14 @@
           "name": "Price"
         },
         "quantity_selector": {
-          "name": "Quantity selector"
+          "name": {
+            "label": "Text with icon"
+          }
         },
         "variant_picker": {
-          "name": "Variant picker",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "picker_type": {
               "label": "Type",
@@ -1021,6 +1039,16 @@
             "paragraph": {
               "content": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
             }
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Text with icon"
           }
         }
       },
@@ -1132,6 +1160,26 @@
             "subtext": {
               "label": "Subtext"
             }
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "email_signup": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "featured_product": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "featured_collection": {
+          "name": {
+            "label": "Image"
           }
         }
       },
@@ -1540,6 +1588,11 @@
               "label": "Use outline button style"
             }
           }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Add to Cart button"
+          }
         }
       },
       "presets": {
@@ -1734,6 +1787,26 @@
             "button_link": {
               "label": "Button link"
             }
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Rating stars"
           }
         }
       },
@@ -2046,6 +2119,11 @@
         },
         "buttons": {
           "name": "Checkout button"
+        },
+        "discount_field": {
+          "name": {
+            "label": "Discount field"
+          }
         }
       },
       "settings": {
@@ -3505,6 +3583,16 @@
               "label": "Use outline button style"
             }
           }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Rating stars"
+          }
         }
       },
       "presets": {
@@ -4032,6 +4120,13 @@
       },
       "name": {
         "label": "Bundle deals"
+      },
+      "blocks": {
+        "product": {
+          "name": {
+            "label": "Bundle deals"
+          }
+        }
       }
     },
     "cart-drawer": {
@@ -4077,6 +4172,78 @@
       },
       "name": {
         "label": "Cart drawer"
+      },
+      "blocks": {
+        "cart_items": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "subtotals": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "checkout_btn": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "progress_bar": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "checkpoints_bar": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "countdown_timer": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "product_upsells": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "gift": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "discount_field": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "cart_note": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        }
       }
     },
     "collapsible-content": {
@@ -4221,6 +4388,13 @@
       },
       "name": {
         "label": "Comparison table"
+      },
+      "blocks": {
+        "row": {
+          "name": {
+            "label": "Comparison table"
+          }
+        }
       }
     },
     "content-tabs": {
@@ -4281,6 +4455,13 @@
       },
       "name": {
         "label": "Content tabs"
+      },
+      "blocks": {
+        "tab": {
+          "name": {
+            "label": "Content tabs"
+          }
+        }
       }
     },
     "custom-columns": {
@@ -4321,6 +4502,68 @@
       },
       "name": {
         "label": "Custom columns"
+      },
+      "blocks": {
+        "heading": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "richtext": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "buttons": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "accordion": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "email_signup": {
+          "name": {
+            "label": "Custom columns"
+          }
+        }
       }
     },
     "global-music-player": {
@@ -4400,6 +4643,18 @@
       },
       "name": {
         "label": "Horizontal Ticker"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "Horizontal Ticker"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Horizontal Ticker"
+          }
+        }
       }
     },
     "icon-bar": {
@@ -4455,6 +4710,13 @@
       },
       "name": {
         "label": "Icon Bar"
+      },
+      "blocks": {
+        "column": {
+          "name": {
+            "label": "Icon Bar"
+          }
+        }
       }
     },
     "icons-with-content": {
@@ -4490,6 +4752,28 @@
       },
       "name": {
         "label": "Icons with content"
+      },
+      "blocks": {
+        "icon": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Icons with content"
+          }
+        }
       }
     },
     "image-slider": {
@@ -4540,6 +4824,18 @@
       },
       "name": {
         "label": "Image/Video Slider"
+      },
+      "blocks": {
+        "image_slide": {
+          "name": {
+            "label": "Image/Video Slider"
+          }
+        },
+        "video_slide": {
+          "name": {
+            "label": "Image/Video Slider"
+          }
+        }
       }
     },
     "insta-stories": {
@@ -4585,6 +4881,13 @@
       },
       "name": {
         "label": "Instagram stories"
+      },
+      "blocks": {
+        "user": {
+          "name": {
+            "label": "Instagram stories"
+          }
+        }
       }
     },
     "logo-list": {
@@ -4622,6 +4925,13 @@
       },
       "name": {
         "label": "Featured on"
+      },
+      "blocks": {
+        "logo": {
+          "name": {
+            "label": "Featured on"
+          }
+        }
       }
     },
     "music-player": {
@@ -4694,6 +5004,18 @@
       },
       "name": {
         "label": "3D Parallax hero"
+      },
+      "blocks": {
+        "content": {
+          "name": {
+            "label": "3D Parallax hero"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "3D Parallax hero"
+          }
+        }
       }
     },
     "pricing-table": {
@@ -4739,6 +5061,13 @@
       },
       "name": {
         "label": "Pricing table"
+      },
+      "blocks": {
+        "plan": {
+          "name": {
+            "label": "Pricing table"
+          }
+        }
       }
     },
     "product-features": {
@@ -4794,6 +5123,18 @@
       },
       "name": {
         "label": "Product features"
+      },
+      "blocks": {
+        "hotspot": {
+          "name": {
+            "label": "Product features"
+          }
+        },
+        "bullet_point": {
+          "name": {
+            "label": "Product features"
+          }
+        }
       }
     },
     "promo-popup": {
@@ -4881,6 +5222,13 @@
       },
       "name": {
         "label": "Results"
+      },
+      "blocks": {
+        "row": {
+          "name": {
+            "label": "Results"
+          }
+        }
       }
     },
     "scroll-to-top-btn": {
@@ -5002,6 +5350,13 @@
       },
       "name": {
         "label": "Shoppable image"
+      },
+      "blocks": {
+        "hotspot": {
+          "name": {
+            "label": "Shoppable image"
+          }
+        }
       }
     },
     "slideshow-hero": {
@@ -5044,6 +5399,13 @@
       },
       "name": {
         "label": "Slideshow hero"
+      },
+      "blocks": {
+        "slide": {
+          "name": {
+            "label": "Slideshow hero"
+          }
+        }
       }
     },
     "ss-countdown-bar": {
@@ -5084,6 +5446,23 @@
       },
       "name": {
         "label": "SS - Countdown Timer Bar"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        },
+        "timer": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        },
+        "button": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        }
       }
     },
     "ss-testimonial-14": {
@@ -5206,6 +5585,13 @@
       },
       "name": {
         "label": "Testimonials"
+      },
+      "blocks": {
+        "column": {
+          "name": {
+            "label": "Testimonials"
+          }
+        }
       }
     },
     "track-order": {
@@ -5263,6 +5649,13 @@
       },
       "name": {
         "label": "Vertical Ticker"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "Vertical Ticker"
+          }
+        }
       }
     }
   },
