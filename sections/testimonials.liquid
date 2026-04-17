@@ -15,7 +15,7 @@
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.testimonials.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -217,7 +217,7 @@
 
 {% schema %}
 {
-  "name": "Testimonials",
+  "name": "t:sections.testimonials.name",
   "class": "section",
   "tag": "section",
   "disabled_on": {
@@ -227,8 +227,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.testimonials.settings.s0.label",
+      "info": "t:sections.testimonials.settings.s69.info",
       "default": false
     },
     {
@@ -237,29 +237,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.testimonials.settings.h76.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Testimonials",
-      "label": "Heading"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -284,7 +284,7 @@
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -316,7 +316,7 @@
     },
     {
       "type": "header",
-      "content": "Style"
+      "content": "t:sections.testimonials.settings.h77.content"
     },
     {
       "type": "select",
@@ -324,19 +324,19 @@
       "options": [
         {
           "value": "cards",
-          "label": "Cards"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "quotations",
-          "label": "Quotations"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "cards",
-      "label": "Style"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Cards style"
+      "content": "t:sections.testimonials.settings.h78.content"
     },
     {
       "type": "select",
@@ -344,19 +344,19 @@
       "options": [
         {
           "value": "third",
-          "label": "One-third width of column"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "half",
-          "label": "Half width of column"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "full",
-          "label": "Full width of column"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "full",
-      "label": "Media width"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -364,23 +364,23 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to media"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "portrait",
-          "label": "Portrait"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "square",
-          "label": "Square"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "circle",
-          "label": "Circle"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "square",
-      "label": "Media ratio"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -396,25 +396,25 @@
         }
       ],
       "default": "center",
-      "label": "Text alignment"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "show_stars",
       "default": true,
-      "label": "Show stars"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "color",
       "id": "stars_color",
-      "label": "Stars color",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": "#ffd700"
     },
     {
       "type": "checkbox",
       "id": "show_quotes",
       "default": true,
-      "label": "Show quote marks"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -442,7 +442,7 @@
         }
       ],
       "default": "accent-2",
-      "label": "Quotes color scheme"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -450,39 +450,39 @@
       "options": [
         {
           "value": "bg-overlay",
-          "label": "Light overlay"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "accent-1",
-          "label": "Accent 1"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "accent-2",
-          "label": "Accent 2"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "bg-overlay",
-      "label": "Cards color scheme"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Slider"
+      "content": "t:sections.testimonials.settings.h79.content"
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "t:sections.testimonials.settings.h80.content"
     },
     {
       "type": "select",
@@ -490,20 +490,20 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "slide",
-      "label": "Type"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false
     },
     {
@@ -514,7 +514,7 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -542,12 +542,12 @@
         }
       ],
       "default": "inverse",
-      "label": "Arrows color scheme"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "transparent_arrows",
-      "label": "Transparent arrows",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": true
     },
     {
@@ -576,16 +576,16 @@
         }
       ],
       "default": "inverse",
-      "label": "Dots color scheme"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.testimonials.settings.h81.content"
     },
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false
     },
     {
@@ -595,14 +595,14 @@
       "max": 10,
       "step": 1,
       "default": 3,
-      "label": "Slides per page"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "t:sections.testimonials.settings.display_id.info"
     },
     {
       "type": "range",
@@ -611,7 +611,7 @@
       "max": 10,
       "step": 1,
       "default": 1,
-      "label": "Slides to scroll on one move"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "range",
@@ -620,7 +620,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Spacing",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": 40
     },
     {
@@ -630,22 +630,22 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Preview of prev & next slide",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": 0
     },
     {
       "type": "checkbox",
       "id": "desktop_padding_calc",
-      "label": "Disable empty preview on first & last slide",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": true,
-      "info": "Moves the first slide to the left edge adn last one to the right if Preview value is enabled. Visible if type is set to Slider."
+      "info": "t:sections.testimonials.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "desktop_adaptive_height",
-      "label": "Adaptive height",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false,
-      "info": "Only available if Slides per page is set to 1."
+      "info": "t:sections.testimonials.settings.display_id.info"
     },
     {
       "type": "select",
@@ -653,15 +653,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -669,41 +669,41 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "sides",
-      "label": "Arrows position"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "t:sections.testimonials.settings.h82.content"
     },
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": true,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "t:sections.testimonials.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "enable_mobile_preview",
-      "label": "Preview of prev & next slides",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "mobile_adaptive_height",
-      "label": "Adaptive height",
+      "label": "t:sections.testimonials.settings.display_id.label",
       "default": false
     },
     {
@@ -712,15 +712,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "select",
@@ -728,19 +728,19 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Arrows position"
+      "label": "t:sections.testimonials.settings.display_id.label"
     },
     {
       "type": "header",
@@ -770,17 +770,17 @@
   "blocks": [
     {
       "type": "column",
-      "name": "Testimonial",
+      "name": "t:sections.testimonials.name",
       "settings": [
         {
           "type": "header",
-          "content": "Media",
-          "info": "NOTE: Media is only available if Style is set to Cards"
+          "content": "t:sections.testimonials.settings.h83.content",
+          "info": "t:sections.testimonials.settings.display_id.info"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "type": "header",
@@ -789,17 +789,17 @@
         {
           "type": "video",
           "id": "video",
-          "label": "Video"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "video_thumbnail",
-          "label": "Video thumbnail",
-          "info": "If empty, the first frame of the video will be displayed."
+          "label": "t:sections.testimonials.settings.display_id.label",
+          "info": "t:sections.testimonials.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "t:sections.testimonials.settings.image.content"
         },
         {
           "type": "text",
@@ -816,20 +816,20 @@
         {
           "type": "image_picker",
           "id": "author_avatar",
-          "label": "Author avatar"
+          "label": "t:sections.testimonials.settings.display_id.label"
         },
         {
           "type": "inline_richtext",
           "id": "author",
-          "default": "<em><strong>Author</strong></em>",
-          "label": "Author"
+          "default": "<em><strong>{{ 'sections.testimonials.text_1' | t }}</strong></em>",
+          "label": "t:sections.testimonials.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Testimonials",
+      "name": "t:sections.testimonials.name",
       "blocks": [
         {
           "type": "column"
