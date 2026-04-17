@@ -2334,7 +2334,9 @@
       },
       "blocks": {
         "text": {
-          "name": "Text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -2384,7 +2386,9 @@
           }
         },
         "quantity_selector": {
-          "name": "Quantity selector"
+          "name": {
+            "label": "Text with icon"
+          }
         },
         "variant_picker": {
           "name": "Variant picker",
@@ -2773,7 +2777,9 @@
           }
         },
         "icon_with_text": {
-          "name": "Icon with text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "layout": {
               "label": "Layout",
@@ -2818,6 +2824,86 @@
             "heading_3": {
               "label": "Third heading"
             }
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "clickable_discount": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "sticky_atc": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "reviews": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "sizing_chart": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "product_upsell": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "urgency": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "emoji_benefits": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "bundle_offer": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "quantity_gifts": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "estimated_shipping": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "shipping_checkpoints": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "custom_product_field": {
+          "name": {
+            "label": "Text with icon"
           }
         }
       },
@@ -5515,6 +5601,13 @@
       },
       "name": {
         "label": "SS - Testimonials #14"
+      },
+      "blocks": {
+        "slide": {
+          "name": {
+            "label": "SS - Testimonials #14"
+          }
+        }
       }
     },
     "testimonials": {
