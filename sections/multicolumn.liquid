@@ -15,7 +15,7 @@
 <div class="multicolumn animate-section animate--hidden color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %} content-for-grouping {{ section.settings.visibility }}" data-mobile-columns="{{ section.settings.columns_mobile }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.multicolumn.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -274,8 +274,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.multicolumn.settings.s0.label",
+      "info": "t:sections.multicolumn.settings.s61.info",
       "default": false
     },
     {
@@ -284,23 +284,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.multicolumn.settings.h72.content"
     },
     {
       "type": "text",
@@ -332,7 +332,7 @@
       "type": "text",
       "id": "button_label",
       "label": "t:sections.multicolumn.settings.button_label.label",
-      "info": "Visible next to title when slider controls are under the slider."
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "url",
@@ -342,19 +342,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Visible next to title when slider controls are under the slider."
+      "label": "t:sections.multicolumn.settings.display_id.label",
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "t:sections.multicolumn.settings.display_id.label",
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -386,7 +386,7 @@
     },
     {
       "type": "header",
-      "content": "Columns"
+      "content": "t:sections.multicolumn.settings.h73.content"
     },
     {
       "type": "select",
@@ -394,19 +394,19 @@
       "options": [
         {
           "value": "third",
-          "label": "One-third width of column"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "half",
-          "label": "Half width of column"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "full",
-          "label": "Full width of column"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "full",
-      "label": "Media width"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -414,23 +414,23 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to media"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "portrait",
-          "label": "Portrait"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "square",
-          "label": "Square"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "circle",
-          "label": "Circle"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "square",
-      "label": "Media ratio"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -454,39 +454,39 @@
       "options": [
         {
           "value": "bg-overlay",
-          "label": "Light overlay"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "accent-1",
-          "label": "Accent 1"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "accent-2",
-          "label": "Accent 2"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "bg-overlay",
-      "label": "Cards color scheme"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Slider"
+      "content": "t:sections.multicolumn.settings.h74.content"
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "t:sections.multicolumn.settings.h75.content"
     },
     {
       "type": "select",
@@ -494,20 +494,20 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "slide",
-      "label": "Type"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false
     },
     {
@@ -518,7 +518,7 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -546,12 +546,12 @@
         }
       ],
       "default": "inverse",
-      "label": "Arrows color scheme"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "transparent_arrows",
-      "label": "Transparent arrows",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": true
     },
     {
@@ -580,16 +580,16 @@
         }
       ],
       "default": "inverse",
-      "label": "Dots color scheme"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.multicolumn.settings.h76.content"
     },
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false
     },
     {
@@ -599,14 +599,14 @@
       "max": 10,
       "step": 1,
       "default": 3,
-      "label": "Columns desktop"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "range",
@@ -615,7 +615,7 @@
       "max": 10,
       "step": 1,
       "default": 1,
-      "label": "Slides to scroll on one move"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "range",
@@ -624,7 +624,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Spacing",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": 40
     },
     {
@@ -634,22 +634,22 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Preview of prev & next slide",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": 0
     },
     {
       "type": "checkbox",
       "id": "desktop_padding_calc",
-      "label": "Disable empty preview on first & last slide",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": true,
-      "info": "Moves the first slide to the left edge adn last one to the right if Preview value is enabled. Visible if type is set to Slider."
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "desktop_adaptive_height",
-      "label": "Adaptive height",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false,
-      "info": "Only available if Slides per page is set to 1."
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "select",
@@ -657,15 +657,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -673,23 +673,23 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "sides",
-      "label": "Arrows position"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "t:sections.multicolumn.settings.h77.content"
     },
     {
       "type": "select",
@@ -710,20 +710,20 @@
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": true,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "t:sections.multicolumn.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "enable_mobile_preview",
-      "label": "Preview of prev & next slides",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "mobile_adaptive_height",
-      "label": "Adaptive height",
+      "label": "t:sections.multicolumn.settings.display_id.label",
       "default": false
     },
     {
@@ -732,15 +732,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "select",
@@ -748,19 +748,19 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         }
       ],
       "default": "under",
-      "label": "Arrows position"
+      "label": "t:sections.multicolumn.settings.display_id.label"
     },
     {
       "type": "header",
@@ -794,13 +794,13 @@
       "settings": [
         {
           "type": "header",
-          "content": "Media",
-          "info": "NOTE: Media is only available if Style is set to Cards"
+          "content": "t:sections.multicolumn.settings.h78.content",
+          "info": "t:sections.multicolumn.settings.display_id.info"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "type": "header",
@@ -809,24 +809,24 @@
         {
           "type": "video",
           "id": "video",
-          "label": "Video"
+          "label": "t:sections.multicolumn.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "video_thumbnail",
-          "label": "Video thumbnail",
-          "info": "If empty, the first frame of the video will be displayed."
+          "label": "t:sections.multicolumn.settings.display_id.label",
+          "info": "t:sections.multicolumn.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "muted_autoplay",
-          "label": "Muted autoplay",
+          "label": "t:sections.multicolumn.settings.display_id.label",
           "default": true,
-          "info": "Use this instead of GIFs & animated WEBPs."
+          "info": "t:sections.multicolumn.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "t:sections.multicolumn.settings.image.content"
         },
         {
           "type": "text",
