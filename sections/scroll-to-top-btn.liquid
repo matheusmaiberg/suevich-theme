@@ -62,7 +62,7 @@
 
 {% schema %}
 {
-  "name": "Scroll to Top Button",
+  "name": "t:sections.scroll-to-top-btn.name",
   "limit": 1,
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -72,7 +72,7 @@
       "type": "checkbox",
       "id": "enable_scroll_btn",
       "default": false,
-      "label": "Enable scroll to top button"
+      "label": "t:sections.scroll-to-top-btn.settings.s0.label"
     },
     {
       "type": "range",
@@ -81,7 +81,7 @@
       "max": 1000,
       "step": 50,
       "unit": "px",
-      "label": "Display after scrolling:",
+      "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label",
       "default": 400
     },
     {
@@ -118,19 +118,19 @@
       "options": [
         {
           "value": "bottom-left",
-          "label": "Bottom left"
+          "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label"
         },
         {
           "value": "bottom-center",
-          "label": "Bottom center"
+          "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label"
         },
         {
           "value": "bottom-right",
-          "label": "Bottom right"
+          "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label"
         }
       ],
       "default": "bottom-right",
-      "label": "Position"
+      "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label"
     },
     {
       "type": "range",
@@ -139,9 +139,9 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Offset X",
+      "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label",
       "default": 20,
-      "info": "Not applied when the button is centered"
+      "info": "t:sections.scroll-to-top-btn.settings.s8.info"
     },
     {
       "type": "range",
@@ -150,7 +150,7 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Offset Y",
+      "label": "t:sections.scroll-to-top-btn.settings.enable_scroll_btn.label",
       "default": 20
     }
   ]
