@@ -241,7 +241,7 @@
 
 {% schema %}
 {
-  "name": "Promo Pop-Up",
+  "name": "t:sections.promo-popup.name",
   "limit": 1,
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -253,38 +253,38 @@
     },
     {
       "type": "header",
-      "content": "Popup"
+      "content": "t:sections.promo-popup.settings.h44.content"
     },
     {
       "type": "select",
       "id": "mode",
-      "label": "Display mode",
+      "label": "t:sections.promo-popup.settings.s0.label",
       "default": "disabled",
       "options": [
         {
           "value": "disabled",
-          "label": "Disabled"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "testing",
-          "label": "Test mode"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "success_testing",
-          "label": "Success test mode"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "enabled",
-          "label": "Enabled"
+          "label": "t:sections.promo-popup.settings.mode.label"
         }
       ],
-      "info": "Test mode displays your popup without delay each time even after dismissing it. Switch to Enabled once you are happy with how your popup looks."
+      "info": "t:sections.promo-popup.settings.s39.info"
     },
     {
       "type": "range",
       "id": "popup_seconds",
-      "label": "Delay",
-      "info": "Time interval, in seconds, after which the modal will appear.",
+      "label": "t:sections.promo-popup.settings.mode.label",
+      "info": "t:sections.promo-popup.settings.s40.info",
       "default": 5,
       "min": 2,
       "max": 60,
@@ -294,9 +294,9 @@
     {
       "type": "range",
       "id": "popup_days",
-      "label": "Frequency",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": 30,
-      "info": "Number of days before a dismissed popup reappears",
+      "info": "t:sections.promo-popup.settings.popup_seconds.info",
       "min": 2,
       "max": 30,
       "step": 1,
@@ -305,9 +305,9 @@
     {
       "type": "checkbox",
       "id": "display_timer",
-      "label": "Display countdown timer",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": true,
-      "info": "IMPORTANT: Due to liquid limitations, ONLY IN TEST MODE, you need to refresh the page after certain changes to display the correct timer. This does NOT happen when the Pop Up is published."
+      "info": "t:sections.promo-popup.settings.popup_seconds.info"
     },
     {
       "type": "range",
@@ -317,25 +317,25 @@
       "default": 3,
       "step": 0.5,
       "unit": "min",
-      "label": "Timer duration"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Desktop image position",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "options": [
         {
           "value": "image_first",
-          "label": "Image first"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "image_second",
-          "label": "Image second"
+          "label": "t:sections.promo-popup.settings.mode.label"
         }
       ],
       "default": "image_first"
@@ -362,18 +362,18 @@
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "t:sections.promo-popup.settings.h45.content"
     },
     {
       "type": "text",
       "id": "heading_prefix",
-      "label": "Heading prefix",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Sign up and"
     },
     {
       "type": "text",
       "id": "heading",
-      "label": "Heading",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "GET 10% OFF"
     },
     {
@@ -382,68 +382,68 @@
       "options": [
         {
           "value": "h3",
-          "label": "Extra Small"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h2",
-          "label": "Small"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "t:sections.promo-popup.settings.mode.label"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "text",
       "id": "heading_suffix",
-      "label": "Heading suffix"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "<p>Sign up for our email newsletter for special discounts and exclusive offers.</p>"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Sign up button label",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Sign up",
-      "info": "NOTE: Make sure you put in your own discount code in the settings under \"SUCCESS\" category down bellow."
+      "info": "t:sections.promo-popup.settings.popup_seconds.info"
     },
     {
       "type": "text",
       "id": "dismiss_btn_label",
-      "label": "Dismiss button label",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "No thanks"
     },
     {
       "type": "header",
-      "content": "Success"
+      "content": "t:sections.promo-popup.settings.h46.content"
     },
     {
       "type": "text",
       "id": "discount_code",
-      "label": "Discount code",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "EXAMPLE10"
     },
     {
       "type": "text",
       "id": "success_heading_prefix",
-      "label": "Heading prefix",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Enjoy your"
     },
     {
       "type": "text",
       "id": "success_heading",
-      "label": "Heading",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "DISCOUNT!"
     },
     {
@@ -452,63 +452,63 @@
       "options": [
         {
           "value": "h3",
-          "label": "Extra Small"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h2",
-          "label": "Small"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "t:sections.promo-popup.settings.mode.label"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "t:sections.promo-popup.settings.mode.label"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "text",
       "id": "success_heading_suffix",
-      "label": "Heading suffix"
+      "label": "t:sections.promo-popup.settings.mode.label"
     },
     {
       "type": "richtext",
       "id": "success_text",
-      "label": "Text",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "<p>Use the code bellow to get 10% off your whole order!</p>"
     },
     {
       "type": "text",
       "id": "discount_code_label",
-      "label": "Discount code field label",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Discount code:"
     },
     {
       "type": "text",
       "id": "copy_button_label",
-      "label": "Copy button label",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Copy"
     },
     {
       "type": "text",
       "id": "copy_message",
-      "label": "Copied successful message",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Code copied successfully!"
     },
     {
       "type": "text",
       "id": "success_dismiss_btn_label",
-      "label": "Dismiss button label",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": "Close"
     },
     {
       "type": "checkbox",
       "id": "success_display_image",
-      "label": "Display image in success mode",
+      "label": "t:sections.promo-popup.settings.mode.label",
       "default": true
     }
   ]
