@@ -19,7 +19,7 @@
 
 {% schema %}
 {
-  "name": "Store colors changer",
+  "name": "t:sections.colors-changer.name",
   "limit": 1,
   "disabled_on": {
       "groups": ["header", "footer"]
@@ -27,15 +27,15 @@
   "settings": [
     {
       "type": "paragraph",
-      "content": "This section is used to change your global store colors on THIS PAGE ONLY."
+      "content": "t:sections.colors-changer.settings.h0.content"
     },
     {
       "type": "header",
-      "content": "IMPORTANT"
+      "content": "t:sections.colors-changer.settings.h1.content"
     },
     {
       "type": "paragraph",
-      "content": "Place this section on top of the list of your added sections to avoid any delays in loading of the changed colors."
+      "content": "t:sections.colors-changer.settings.h2.content"
     },
     {
       "type": "header",
@@ -114,7 +114,7 @@
   ],
   "presets": [
     {
-      "name": "Store colors changer"
+      "name": "t:sections.colors-changer.name"
     }
   ]
 }
