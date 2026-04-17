@@ -20,7 +20,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.bundle-deals.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -257,13 +257,13 @@
 
 {% schema %}
 {
-  "name": "Bundle deals",
+  "name": "t:sections.bundle-deals.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.bundle-deals.settings.s0.label",
+      "info": "t:sections.bundle-deals.settings.s21.info",
       "default": false
     },
     {
@@ -272,29 +272,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.bundle-deals.settings.h28.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Bundle deals",
-      "label": "Heading"
+      "label": "t:sections.bundle-deals.settings.display_id.label"
     },
     {
       "type": "select",
@@ -319,7 +319,7 @@
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "t:sections.bundle-deals.settings.display_id.label"
     },
     {
       "type": "select",
@@ -351,7 +351,7 @@
     },
     {
       "type": "header",
-      "content": "Bundles"
+      "content": "t:sections.bundle-deals.settings.h29.content"
     },
     {
       "type": "select",
@@ -359,69 +359,69 @@
       "options": [
         {
           "value": "",
-          "label": "Vertical"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         },
         {
           "value": "horizontal-images-left",
-          "label": "Horizontal - Images left"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         },
         {
           "value": "horizontal-images-right",
-          "label": "Horizontal - Images right"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         }
       ],
       "default": "horizontal-images-left",
-      "label": "Desktop layout"
+      "label": "t:sections.bundle-deals.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "enable_price_changes",
-      "label": "Enable dynamic price changes",
-      "info": "Enables live changes to item and total prices after variant/checkbox change. CAUTION: Due to the way Liquid works, after a change, new price will NOT work with currency converters.",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
+      "info": "t:sections.bundle-deals.settings.display_id.info",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "prices_under",
-      "label": "Dispaly price under the title for products without a variant picker",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "skip_cart",
-      "label": "Skip cart",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": false,
-      "info": "Your customers will be sent directly to checkout after click the Add to Cart button."
+      "info": "t:sections.bundle-deals.settings.display_id.info"
     },
     {
       "type": "text",
       "id": "total_price_label",
-      "label": "Total price label",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": "Total Price:"
     },
     {
       "type": "text",
       "id": "btn_label",
-      "label": "Add to cart button label",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": "Add selected to cart"
     },
     {
       "type": "header",
-      "content": "Discounts"
+      "content": "t:sections.bundle-deals.settings.h30.content"
     },
     {
       "type": "text",
       "id": "percentage_discount",
-      "label": "Percentage discount",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": "0",
-      "info": "Percentae to be discounted from the total price, WITHOUT the % symbol."
+      "info": "t:sections.bundle-deals.settings.display_id.info"
     },
     {
       "type": "text",
       "id": "fixed_amount_discount",
-      "label": "Fixed amount discount",
+      "label": "t:sections.bundle-deals.settings.display_id.label",
       "default": "0",
-      "info": "Fixed amount of money to be discounted from the total price, WITHOUT the currency symbol."
+      "info": "t:sections.bundle-deals.settings.display_id.info"
     },
     {
       "type": "header",
@@ -451,34 +451,34 @@
   "blocks": [
     {
       "type": "product",
-      "name": "Product",
+      "name": "t:sections.bundle-deals.name",
       "limit": 5,
       "settings": [
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "t:sections.bundle-deals.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "percentage_discount",
-          "label": "Percentage discount",
+          "label": "t:sections.bundle-deals.settings.display_id.label",
           "default": "0",
-          "info": "Percentae to be discounted from the total price, WITHOUT the % symbol."
+          "info": "t:sections.bundle-deals.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "fixed_amount_discount",
-          "label": "Fixed amount discount",
+          "label": "t:sections.bundle-deals.settings.display_id.label",
           "default": "0",
-          "info": "Fixed amount of money to be discounted from the total price, WITHOUT the currency symbol."
+          "info": "t:sections.bundle-deals.settings.display_id.info"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Bundle deals",
+      "name": "t:sections.bundle-deals.name",
       "blocks": [
         {
           "type": "product"
