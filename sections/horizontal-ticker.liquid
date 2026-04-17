@@ -114,7 +114,7 @@
 
 {% schema %}
 {
-  "name": "Horizontal Ticker",
+  "name": "t:sections.horizontal-ticker.name",
   "settings": [
     {
       "type": "select",
@@ -122,28 +122,28 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.horizontal-ticker.settings.s0.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.horizontal-ticker.settings.visibility.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.horizontal-ticker.settings.visibility.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Ticker"
+      "content": "t:sections.horizontal-ticker.settings.h21.content"
     },
     {
       "type": "range",
       "id": "speed",
-      "label": "Ticker speed",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "min": 1,
       "max": 5,
       "default": 3,
@@ -152,13 +152,13 @@
     {
       "type": "number",
       "id": "mobile_spacing",
-      "label": "Mobile spacing (px)",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": 60
     },
     {
       "type": "number",
       "id": "desktop_spacing",
-      "label": "Desktop spacing (px)",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": 100
     },
     {
@@ -191,7 +191,7 @@
     },
     {
       "type": "header",
-      "content": "Text"
+      "content": "t:sections.horizontal-ticker.settings.h22.content"
     },
     {
       "type": "range",
@@ -201,7 +201,7 @@
       "step": 1,
       "unit": "px",
       "default": 16,
-      "label": "Mobile text size"
+      "label": "t:sections.horizontal-ticker.settings.visibility.label"
     },
     {
       "type": "range",
@@ -211,29 +211,29 @@
       "step": 1,
       "unit": "px",
       "default": 18,
-      "label": "Desktop text size"
+      "label": "t:sections.horizontal-ticker.settings.visibility.label"
     },
     {
       "type": "checkbox",
       "id": "italic_text",
-      "label": "Italic text",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "uppercase_text",
-      "label": "Uppercase text",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "bold_text",
-      "label": "Bold text",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": false
     },
     {
       "type": "header",
-      "content": "Images"
+      "content": "t:sections.horizontal-ticker.settings.h23.content"
     },
     {
       "type": "range",
@@ -243,7 +243,7 @@
       "step": 2,
       "unit": "px",
       "default": 26,
-      "label": "Mobile image height"
+      "label": "t:sections.horizontal-ticker.settings.visibility.label"
     },
     {
       "type": "range",
@@ -253,37 +253,37 @@
       "step": 4,
       "unit": "px",
       "default": 40,
-      "label": "Desktop image height"
+      "label": "t:sections.horizontal-ticker.settings.visibility.label"
     },
     {
       "type": "header",
-      "content": "Visibility"
+      "content": "t:sections.horizontal-ticker.settings.bold_text.content"
     },
     {
       "type": "paragraph",
-      "content": "Use these options if you want to display different tickers in the Header group across different product pages."
+      "content": "t:sections.horizontal-ticker.settings.bold_text.content"
     },
     {
       "type": "text",
       "id": "hidden_products",
-      "label": "Product pages to hide the block on",
-      "info": "Handles of products to hide the block on, split with a comma."
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
+      "info": "t:sections.horizontal-ticker.settings.s19.info"
     },
     {
       "type": "checkbox",
       "id": "enable_specific_display",
-      "label": "Display the block on specific product pages only",
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
       "default": false
     },
     {
       "type": "text",
       "id": "displayed_products",
-      "label": "Specific product pages to display the block on",
-      "info": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+      "label": "t:sections.horizontal-ticker.settings.visibility.label",
+      "info": "t:sections.horizontal-ticker.settings.hidden_products.info"
     },
     {
       "type": "header",
-      "content": "Mobile padding"
+      "content": "t:sections.horizontal-ticker.settings.bold_text.content"
     },
     {
       "type": "range",
@@ -307,7 +307,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop padding"
+      "content": "t:sections.horizontal-ticker.settings.bold_text.content"
     },
     {
       "type": "range",
@@ -333,31 +333,31 @@
   "blocks": [
     {
       "type": "text",
-      "name": "Text",
+      "name": "t:sections.horizontal-ticker.name",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "default": "Ck-Ecomm Theme",
-          "label": "Text"
+          "label": "t:sections.horizontal-ticker.settings.visibility.label"
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "t:sections.horizontal-ticker.name",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.horizontal-ticker.settings.visibility.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Horizontal Ticker",
+      "name": "t:sections.horizontal-ticker.name",
       "blocks": [
         {
           "type": "text"
