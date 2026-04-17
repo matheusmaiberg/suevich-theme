@@ -64,7 +64,7 @@
 <div class="{% if section.settings.display_content != 'never' %}vertical-ticker-and-content section-group__container__child-grid{% endif %}{% if section.settings.display_content == 'desktop_only' %} vertical-ticker-and-content--content-desktop-only{% endif %}{% if section.settings.layout == 'ticker_first' %} vertical-ticker-and-content--ticker-first{% endif %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.vertical-ticker.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -189,7 +189,7 @@
 
 {% schema %}
 {
-  "name": "Vertical Ticker",
+  "name": "t:sections.vertical-ticker.name",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
@@ -197,8 +197,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.vertical-ticker.settings.s0.label",
+      "info": "t:sections.vertical-ticker.settings.s38.info",
       "default": false
     },
     {
@@ -207,23 +207,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Ticker"
+      "content": "t:sections.vertical-ticker.settings.h42.content"
     },
     {
       "type": "range",
@@ -232,12 +232,12 @@
       "max": 16,
       "default": 8,
       "step": 1,
-      "label": "Number of rows displayed"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "range",
       "id": "speed",
-      "label": "Ticker speed",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "min": 1,
       "max": 5,
       "default": 3,
@@ -246,27 +246,27 @@
     {
       "type": "select",
       "id": "text_size",
-      "label": "Text size",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "options": [
         {
           "value": "2",
-          "label": "Extra small"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "3",
-          "label": "Small"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "4",
-          "label": "Medium"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "5",
-          "label": "Large"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "6",
-          "label": "Extra large"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         }
       ],
       "default": "4"
@@ -274,19 +274,19 @@
     {
       "type": "checkbox",
       "id": "italic_text",
-      "label": "Italic text",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "uppercase_text",
-      "label": "Uppercase text",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "bold_text",
-      "label": "Bold text",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": false
     },
     {
@@ -315,20 +315,20 @@
         }
       ],
       "default": "accent-1",
-      "label": "Ticker color scheme"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Ticker placement",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "options": [
         {
           "value": "ticker_first",
-          "label": "Ticker first"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "ticker_second",
-          "label": "Ticker second"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         }
       ],
       "default": "ticker_second"
@@ -340,7 +340,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Ticker top padding",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": 40
     },
     {
@@ -350,29 +350,29 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Ticker bottom padding",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": 40
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "t:sections.vertical-ticker.settings.h43.content"
     },
     {
       "type": "select",
       "id": "display_content",
-      "label": "Display content",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "options": [
         {
           "value": "always",
-          "label": "Always"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "desktop_only",
-          "label": "Desktop only"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         },
         {
           "value": "never",
-          "label": "Never"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         }
       ],
       "default": "always"
@@ -380,7 +380,7 @@
     {
       "type": "text",
       "id": "content_heading",
-      "label": "Heading",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": "Vertical Ticker"
     },
     {
@@ -406,7 +406,7 @@
     {
       "type": "richtext",
       "id": "content_text",
-      "label": "Text",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": "<p>Talk about features, perks, or benefits of your brand or product </p>"
     },
     {
@@ -430,19 +430,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
+      "info": "t:sections.vertical-ticker.settings.display_id.info"
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
+      "info": "t:sections.vertical-ticker.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "select",
@@ -470,19 +470,19 @@
         }
       ],
       "default": "background-1",
-      "label": "Content color scheme"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "image_picker",
       "id": "content_bg_image",
-      "label": "Background image",
-      "info": "Note: GIFs are supported as well"
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
+      "info": "t:sections.vertical-ticker.settings.display_id.info"
     },
     {
       "type": "color",
       "id": "overlay_color",
       "default": "#000000",
-      "label": "Background overlay color"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "range",
@@ -492,7 +492,7 @@
       "step": 1,
       "default": 0,
       "unit": "%",
-      "label": "Background overlay opacity"
+      "label": "t:sections.vertical-ticker.settings.display_id.label"
     },
     {
       "type": "range",
@@ -501,7 +501,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Content top padding",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": 36
     },
     {
@@ -511,27 +511,27 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Content bottom padding",
+      "label": "t:sections.vertical-ticker.settings.display_id.label",
       "default": 24
     }
   ],
   "blocks": [
     {
       "type": "text",
-      "name": "Text",
+      "name": "t:sections.vertical-ticker.name",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "default": "Ck-Ecomm Theme",
-          "label": "Text"
+          "label": "t:sections.vertical-ticker.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-        "name": "Vertical Ticker",
+        "name": "t:sections.vertical-ticker.name",
         "blocks": [
           {
               "type": "text"
