@@ -49,7 +49,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.shoppable-image.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -242,7 +242,7 @@
 
 {% schema %}
 {
-  "name": "Shoppable image",
+  "name": "t:sections.shoppable-image.name",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -251,8 +251,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.shoppable-image.settings.s0.label",
+      "info": "t:sections.shoppable-image.settings.s65.info",
       "default": false
     },
     {
@@ -261,23 +261,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "t:sections.shoppable-image.settings.h74.content"
     },
     {
       "type": "text",
@@ -308,7 +308,7 @@
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "<p>Use this section to hightlight multiple products with one image that contains all of them</p>"
     },
     {
@@ -331,29 +331,29 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.shoppable-image.settings.display_id.label",
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "select",
       "id": "desktop_content_position",
-      "label": "Desktop content position",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "options": [
         {
           "value": "top",
-          "label": "Top"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
       "default": "top"
@@ -361,15 +361,15 @@
     {
       "type": "select",
       "id": "desktop_content_alignment",
-      "label": "Desktop content alignment",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "right",
@@ -381,21 +381,21 @@
     {
       "type": "checkbox",
       "id": "hide_content_on_mobile",
-      "label": "Hide content on mobile",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": false
     },
     {
       "type": "select",
       "id": "mobile_content_position",
-      "label": "Mobile content position",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "options": [
         {
           "value": "top",
-          "label": "Top"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
       "default": "top"
@@ -403,9 +403,9 @@
     {
       "type": "checkbox",
       "id": "content_corner_radius",
-      "label": "Enable content corner radius",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": true,
-      "info": "This option is automatically optimized for all layout & color scheme settings."
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "select",
@@ -433,7 +433,7 @@
         }
       ],
       "default": "background-1",
-      "label": "Content color scheme"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "select",
@@ -461,16 +461,16 @@
         }
       ],
       "default": "background-1",
-      "label": "Section color scheme"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Image"
+      "content": "t:sections.shoppable-image.settings.h75.content"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "select",
@@ -478,14 +478,14 @@
       "options": [
         {
           "value": "limited",
-          "label": "Limited"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "unlimited",
-          "label": "Maximum possible"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
-      "label": "Desktop image width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "limited"
     },
     {
@@ -495,31 +495,31 @@
       "max": 1000,
       "step": 50,
       "unit": "px",
-      "label": "Image max width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": 900
     },
     {
       "type": "checkbox",
       "id": "full_page_width",
-      "label": "Use full page width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "image_corner_radius",
-      "label": "Enable image corner radius",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": false,
-      "info": "This option is automatically optimized for all layout & color scheme settings."
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "image_picker",
       "id": "mobile_image",
-      "label": "Mobile image",
-      "info": "If this is empty, the image for desktop will be applied to mobile."
+      "label": "t:sections.shoppable-image.settings.display_id.label",
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "header",
-      "content": "Hotspot buttons & modals"
+      "content": "t:sections.shoppable-image.settings.h76.content"
     },
     {
       "type": "select",
@@ -527,14 +527,14 @@
       "options": [
         {
           "value": "click",
-          "label": "Click"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "hover",
-          "label": "Hover"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
-      "label": "Open modal on:",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "click"
     },
     {
@@ -563,12 +563,12 @@
         }
       ],
       "default": "inverse",
-      "label": "Hotspot buttons color scheme"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "display_hotspots_animation",
-      "label": "Display button ripple animation",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": true
     },
     {
@@ -597,7 +597,7 @@
         }
       ],
       "default": "background-1",
-      "label": "Hotspots modal color scheme"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "select",
@@ -605,22 +605,22 @@
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "full",
-          "label": "Full width"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
-      "label": "Modal image width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "small"
     },
     {
       "type": "checkbox",
       "id": "contain_hotspot_modal",
-      "label": "Contain modals inside the main image",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": false,
-      "info": "Prevents modals from getting displayed outside the image on desktop. This option is automatically turned on for mobile."
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "range",
@@ -629,7 +629,7 @@
       "max": 600,
       "step": 20,
       "unit": "px",
-      "label": "Hotspot modal desktop width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": 400
     },
     {
@@ -639,12 +639,12 @@
       "max": 300,
       "step": 10,
       "unit": "px",
-      "label": "Hotspot modal mobile width",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": 300
     },
     {
       "type": "header",
-      "content": "Product information"
+      "content": "t:sections.shoppable-image.settings.mobile_image.content"
     },
     {
       "type": "select",
@@ -672,40 +672,40 @@
       "options": [
         {
           "value": "inline",
-          "label": "Over/under the button"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "fixed",
-          "label": "Fixed to page"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
       "default": "inline",
-      "label": "Mobile modal position"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "display_image",
-      "label": "Display product featured image",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "display_price",
-      "label": "Display price",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "display_discount_badge",
-      "label": "Display price discount badge",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": true
     },
     {
       "type": "text",
       "id": "modal_button_label",
-      "label": "Button label",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": "Add to Cart",
-      "info": "Leave empty to hide the button"
+      "info": "t:sections.shoppable-image.settings.display_id.info"
     },
     {
       "type": "select",
@@ -713,27 +713,27 @@
       "options": [
         {
           "value": "link",
-          "label": "Link to product page"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "value": "atc",
-          "label": "Add to cart"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ],
       "default": "atc",
-      "label": "Button function"
+      "label": "t:sections.shoppable-image.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "display_price_in_btn",
-      "label": "Display price in the button",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "skip_cart",
-      "label": "Skip cart",
-      "info": "Applied if button fucntion is set to Add to cart",
+      "label": "t:sections.shoppable-image.settings.display_id.label",
+      "info": "t:sections.shoppable-image.settings.display_id.info",
       "default": false
     },
     {
@@ -764,11 +764,11 @@
   "blocks": [
     {
       "type": "hotspot",
-      "name": "Product hotspot",
+      "name": "t:sections.shoppable-image.name",
       "settings": [
         {
           "type": "header",
-          "content": "Hotspot position"
+          "content": "t:sections.shoppable-image.settings.mobile_image.content"
         },
         {
           "type": "range",
@@ -777,7 +777,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Horizontal offset",
+          "label": "t:sections.shoppable-image.settings.display_id.label",
           "default": 30
         },
         {
@@ -787,18 +787,18 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Vertical offset",
+          "label": "t:sections.shoppable-image.settings.display_id.label",
           "default": 30
         },
         {
           "type": "header",
-          "content": "Mobile hotspot position"
+          "content": "t:sections.shoppable-image.settings.mobile_image.content"
         },
         {
           "type": "checkbox",
           "id": "enable_mobile_position",
-          "label": "Enable custom mobile positioning",
-          "info": "Enable this option if you are using a separate image for mobile."
+          "label": "t:sections.shoppable-image.settings.display_id.label",
+          "info": "t:sections.shoppable-image.settings.display_id.info"
         },
         {
           "type": "range",
@@ -807,7 +807,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile horizontal offset",
+          "label": "t:sections.shoppable-image.settings.display_id.label",
           "default": 30
         },
         {
@@ -817,22 +817,22 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile vertical offset",
+          "label": "t:sections.shoppable-image.settings.display_id.label",
           "default": 30
         },
         {
           "type": "header",
-          "content": "Product"
+          "content": "t:sections.shoppable-image.settings.mobile_image.content"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "Description"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         },
         {
           "type": "select",
@@ -840,26 +840,26 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.shoppable-image.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.shoppable-image.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.shoppable-image.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Text alignment"
+          "label": "t:sections.shoppable-image.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Shoppable image",
+      "name": "t:sections.shoppable-image.name",
       "blocks": [
         {
           "type": "hotspot",
