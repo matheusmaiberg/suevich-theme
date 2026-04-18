@@ -20,7 +20,7 @@ const DEFAULT_HEADER = `/*
  * Strip a leading C-style comment block from JSON text.
  */
 function stripComments(str) {
-  return str.replace(/\/\*[\s\S]*?\*\//, '').trim();
+  return str.replace(/\/\*[\s\S]*?\*\//g, '').trim();
 }
 
 /**
