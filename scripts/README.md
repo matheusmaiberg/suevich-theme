@@ -1,19 +1,20 @@
 # Scripts Factory — Suevich Theme
 
-This directory contains reusable automation scripts for the Suevich Shopify theme. Every script is modular and shares common utilities via `core/`.
+This directory contains reusable automation scripts for the Suevich Shopify theme. Every script is modular and shares common utilities via `core/utils/`.
 
 ## Directory Structure
 
 ```
 scripts/
 ├── README.md
-├── core/                          # Shared utilities (use in any script)
-│   ├── file-utils.js              # File-system helpers
-│   ├── git-utils.js               # Git wrappers
-│   ├── json-utils.js              # Shopify locale JSON helpers
-│   ├── liquid-utils.js            # Extract/replace schema blocks
-│   ├── logger.js                  # Colored CLI logger
-│   └── string-utils.js            # isEnglishText, slugify, namespaces
+├── core/
+│   └── utils/                     # Shared utilities (use in any script)
+│       ├── file-utils.js          # File-system helpers
+│       ├── git.js                 # Git wrappers
+│       ├── json.js                # Shopify locale JSON helpers
+│       ├── liquid.js              # Extract/replace schema blocks
+│       ├── logger.js              # Colored CLI logger
+│       └── strings.js             # isEnglishText, slugify, namespaces
 ├── localization/                  # i18n factory
 │   ├── index.js                   # Main CLI: scans & localizes everything
 │   ├── config.js                  # Paths, skips, locales
@@ -55,12 +56,12 @@ node scripts/localization/fixes/fix-block-names.js
 Any future script can import shared helpers:
 
 ```js
-const { readFile, writeFile, listLiquidFiles } = require('./core/file-utils');
-const { loadJSON, saveJSON, setDeep, getDeep } = require('./core/json-utils');
-const { gitAdd, gitCommit, hasStagedChanges } = require('./core/git-utils');
-const { extractSchema, replaceSchema } = require('./core/liquid-utils');
-const { isEnglishText, slugify, pathToNamespace } = require('./core/string-utils');
-const { info, success, warn, error } = require('./core/logger');
+const { readFile, writeFile, listLiquidFiles } = require('./core/utils/file-utils');
+const { loadJSON, saveJSON, setDeep, getDeep } = require('./core/utils/json');
+const { gitAdd, gitCommit, hasStagedChanges } = require('./core/utils/git');
+const { extractSchema, replaceSchema } = require('./core/utils/liquid');
+const { isEnglishText, slugify, pathToNamespace } = require('./core/utils/strings');
+const { info, success, warn, error } = require('./core/utils/logger');
 ```
 
 ## Notes

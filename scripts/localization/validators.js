@@ -2,7 +2,7 @@
  * Validators: check integrity after localization.
  */
 
-const { extractSchema } = require('../core/liquid-utils');
+const { extractSchema } = require('../core/utils/liquid');
 
 /**
  * Validate that the schema block inside content is parseable JSON.

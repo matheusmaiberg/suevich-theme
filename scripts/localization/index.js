@@ -10,9 +10,9 @@
  */
 
 const path = require('path');
-const { listLiquidFiles, readFile, writeFile } = require('../core/file-utils');
-const { gitAdd, gitCommit, hasStagedChanges } = require('../core/git-utils');
-const { info, success, warn, error } = require('../core/logger');
+const { listLiquidFiles, readFile, writeFile } = require('../core/utils/file-utils');
+const { gitAdd, gitCommit, hasStagedChanges } = require('../core/utils/git');
+const { info, success, warn, error } = require('../core/utils/logger');
 const { validateSchemaJSON } = require('./validators');
 const { localizeSchema, localizeFrontend } = require('./replacer');
 const { LocaleWriter } = require('./locale-writer');
