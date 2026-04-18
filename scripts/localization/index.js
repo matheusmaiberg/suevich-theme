@@ -47,9 +47,6 @@ function run() {
       content = schemaResult.content;
       changed = true;
       fileChanges += schemaResult.changes;
-      for (const t of schemaResult.translations) {
-        writer.addSchemaTranslation(t.keyPath, t.enText);
-      }
     }
 
     // Frontend pass
@@ -58,22 +55,27 @@ function run() {
       content = frontendResult.content;
       changed = true;
       fileChanges += frontendResult.changes;
-      for (const t of frontendResult.translations) {
-        writer.addStoreTranslation(t.keyPath, t.enText);
-      }
     }
 
-    // Validation
+    // Validation (must pass before we persist anything)
     const validation = validateSchemaJSON(content, relPath);
     if (!validation.valid) {
       error(`Schema JSON invalid after replacement in ${relPath}: ${validation.error}`);
       continue;
     }
 
+    // Only after validation: write file, add translations, commit
     if (changed) {
       writeFile(filePath, content);
       filesModified++;
       totalChanges += fileChanges;
+
+      for (const t of schemaResult.translations) {
+        writer.addSchemaTranslation(t.keyPath, t.enText);
+      }
+      for (const t of frontendResult.translations) {
+        writer.addStoreTranslation(t.keyPath, t.enText);
+      }
 
       gitAdd(relPath, REPO_ROOT);
       if (hasStagedChanges(REPO_ROOT)) {
