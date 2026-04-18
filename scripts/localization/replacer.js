@@ -2,8 +2,8 @@
  * Replacer: modifies .liquid content by swapping hardcoded strings for t: keys.
  */
 
-const { isEnglishText } = require('../core/string-utils');
-const { splitParts, replaceSchema } = require('../core/liquid-utils');
+const { isEnglishText } = require('../core/utils/strings');
+const { splitParts, replaceSchema } = require('../core/utils/liquid');
 
 /**
  * Build a namespace base from a relative file path.

@@ -3,8 +3,8 @@
  * Returns structured findings split by schema vs frontend.
  */
 
-const { isEnglishText } = require('../core/string-utils');
-const { splitParts } = require('../core/liquid-utils');
+const { isEnglishText } = require('../core/utils/strings');
+const { splitParts } = require('../core/utils/liquid');
 
 /**
  * Scan a single file and return findings.

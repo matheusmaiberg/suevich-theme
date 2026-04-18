@@ -2,7 +2,7 @@
  * Locale Writer: persists translations into Shopify locale JSON files.
  */
 
-const { loadJSON, saveJSON, setDeep } = require('../core/json-utils');
+const { loadJSON, saveJSON, setDeep } = require('../core/utils/json');
 const { LOCALES } = require('./config');
 
 class LocaleWriter {
