@@ -27,7 +27,7 @@
 >
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.email-signup-banner.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -146,8 +146,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.email-signup-banner.settings.s0.label",
+      "info": "t:sections.email-signup-banner.settings.s5.info",
       "default": false
     },
     {
@@ -156,23 +156,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.email-signup-banner.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.email-signup-banner.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.email-signup-banner.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.email-signup-banner.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.email-signup-banner.settings.h6.content"
     },
     {
       "type": "paragraph",

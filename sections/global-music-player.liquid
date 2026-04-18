@@ -69,7 +69,7 @@
 
 {% schema %}
 {
-    "name": "Global Music Player",
+    "name": "t:sections.global-music-player.name",
     "limit": 1,
     "disabled_on": {
         "groups": ["header", "footer"]
@@ -77,19 +77,19 @@
     "settings": [
         {
           "type": "paragraph",
-          "content": "NOTE: This is a global music player that is displayed on your whole store. If you wish to only have it on certain pages/play different songs on each page disable this and click on Add section > Music Player."
+          "content": "t:sections.global-music-player.settings.h12.content"
         },
         {
           "type": "checkbox",
           "id": "enabled",
-          "label": "Enable global music player",
+          "label": "t:sections.global-music-player.settings.s0.label",
           "default": false
         },
         {
             "type": "text",
             "id": "audio_src",
-            "label": "Audio source",
-            "info": "Go to Shopify admin > Content > Files > Upload an mp3 file, copy the link and paste it in the field above"
+            "label": "t:sections.global-music-player.settings.enabled.label",
+            "info": "t:sections.global-music-player.settings.s10.info"
         },
         {
             "type": "range",
@@ -98,7 +98,7 @@
             "max": 100,
             "step": 1,
             "unit": "%",
-            "label": "Volume",
+            "label": "t:sections.global-music-player.settings.enabled.label",
             "default": 10
         },
         {
@@ -107,19 +107,19 @@
           "options": [
             {
               "value": "bottom-left",
-              "label": "Bottom left"
+              "label": "t:sections.global-music-player.settings.enabled.label"
             },
             {
               "value": "bottom-center",
-              "label": "Bottom center"
+              "label": "t:sections.global-music-player.settings.enabled.label"
             },
             {
               "value": "bottom-right",
-              "label": "Bottom right"
+              "label": "t:sections.global-music-player.settings.enabled.label"
             }
           ],
           "default": "bottom-left",
-          "label": "Position"
+          "label": "t:sections.global-music-player.settings.enabled.label"
         },
         {
           "type": "range",
@@ -128,9 +128,9 @@
           "max": 100,
           "step": 4,
           "unit": "px",
-          "label": "Offset X",
+          "label": "t:sections.global-music-player.settings.enabled.label",
           "default": 20,
-          "info": "Not applied when the button is centered"
+          "info": "t:sections.global-music-player.settings.audio_src.info"
         },
         {
           "type": "range",
@@ -139,13 +139,13 @@
           "max": 150,
           "step": 5,
           "unit": "px",
-          "label": "Offset Y",
+          "label": "t:sections.global-music-player.settings.enabled.label",
           "default": 20
         },
         {
           "type": "checkbox",
           "id": "btn_animation",
-          "label": "Display ripple animation",
+          "label": "t:sections.global-music-player.settings.enabled.label",
           "default": true
         },
         {

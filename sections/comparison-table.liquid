@@ -35,7 +35,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden isolate {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.comparison-table.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -187,13 +187,13 @@
 
 {% schema %}
 {
-  "name": "Comparison table",
+  "name": "t:sections.comparison-table.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.comparison-table.settings.s0.label",
+      "info": "t:sections.comparison-table.settings.s47.info",
       "default": false
     },
     {
@@ -202,29 +202,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.comparison-table.settings.h54.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Comparison table",
-      "label": "Heading"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -250,7 +250,7 @@
       "type": "richtext",
       "id": "text",
       "default": "<p>Talk about how and why is your brand better than the others.</p>",
-      "label": "Text"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "text",
@@ -272,19 +272,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.comparison-table.settings.display_id.label",
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "t:sections.comparison-table.settings.display_id.label",
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -316,7 +316,7 @@
     },
     {
       "type": "header",
-      "content": "Table"
+      "content": "t:sections.comparison-table.settings.h55.content"
     },
     {
       "type": "select",
@@ -324,15 +324,15 @@
       "options": [
         {
           "value": "table_first",
-          "label": "Table first"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "table_second",
-          "label": "Table second"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
       "default": "table_second",
-      "label": "Desktop table placement"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -340,24 +340,24 @@
       "options": [
         {
           "value": "classic",
-          "label": "Classic"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "centered",
-          "label": "Centered"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "minimal",
-          "label": "Minimalistic"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
       "default": "classic",
-      "label": "Table style"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "image_picker",
       "id": "logo",
-      "label": "Logo"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "range",
@@ -366,7 +366,7 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Desktop logo width",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 90
     },
     {
@@ -376,15 +376,15 @@
       "max": 100,
       "step": 5,
       "unit": "px",
-      "label": "Mobile logo width",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 60
     },
     {
       "type": "text",
       "id": "us_label",
-      "label": "Us label",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": "[shop_name]",
-      "info": "Displayed if logo image is not selected."
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "range",
@@ -393,13 +393,13 @@
       "max": 28,
       "step": 1,
       "unit": "px",
-      "label": "Us label font size",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 18
     },
     {
       "type": "text",
       "id": "others_label",
-      "label": "Competitors label",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": "Others"
     },
     {
@@ -409,12 +409,12 @@
       "max": 28,
       "step": 1,
       "unit": "px",
-      "label": "Competitors label font size",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 18
     },
     {
       "type": "header",
-      "content": "Icons"
+      "content": "t:sections.comparison-table.settings.h56.content"
     },
     {
       "type": "select",
@@ -422,28 +422,28 @@
       "options": [
         {
           "value": "regular",
-          "label": "Regular"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "solid",
-          "label": "Solid"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
       "default": "regular",
-      "label": "Checkmark style",
-      "info": "Solid is automatically selected if style is set to Minimalistic."
+      "label": "t:sections.comparison-table.settings.display_id.label",
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "color",
       "id": "checkmark_color",
       "default": "#53AF01",
-      "label": "Checkmark color"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "color",
       "id": "checkmark_bg_color",
       "default": "#53AF01",
-      "label": "Solid checkmark background"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -451,28 +451,28 @@
       "options": [
         {
           "value": "regular",
-          "label": "Regular"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "solid",
-          "label": "Solid"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
       "default": "regular",
-      "label": "X style",
-      "info": "Solid is automatically selected if style is set to Minimalistic."
+      "label": "t:sections.comparison-table.settings.display_id.label",
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "color",
       "id": "x_color",
       "default": "#121212",
-      "label": "X color"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "color",
       "id": "x_bg_color",
       "default": "#DBDBDB",
-      "label": "Solid X background"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -480,20 +480,20 @@
       "options": [
         {
           "value": "original",
-          "label": "Original"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ],
       "default": "original",
-      "label": "Opposite icons color",
-      "info": "Color of the checkmark when it's in \"others\" and X when it's in \"us\"."
+      "label": "t:sections.comparison-table.settings.display_id.label",
+      "info": "t:sections.comparison-table.settings.display_id.info"
     },
     {
       "type": "header",
-      "content": "Classic & Centered style"
+      "content": "t:sections.comparison-table.settings.h57.content"
     },
     {
       "type": "select",
@@ -521,7 +521,7 @@
         }
       ],
       "default": "accent-1",
-      "label": "Highlighted cells color scheme"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "range",
@@ -530,7 +530,7 @@
       "max": 40,
       "step": 2,
       "unit": "%",
-      "label": "Highlighted cells separator opacity",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 0
     },
     {
@@ -540,7 +540,7 @@
       "max": 20,
       "step": 1,
       "unit": "%",
-      "label": "Even rows highlighted cells overlay opacity",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 0
     },
     {
@@ -569,7 +569,7 @@
         }
       ],
       "default": "background-1",
-      "label": "Regular cells color scheme"
+      "label": "t:sections.comparison-table.settings.display_id.label"
     },
     {
       "type": "range",
@@ -578,7 +578,7 @@
       "max": 40,
       "step": 2,
       "unit": "%",
-      "label": "Regular cells separator opacity",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 10
     },
     {
@@ -588,12 +588,12 @@
       "max": 20,
       "step": 1,
       "unit": "%",
-      "label": "Even rows regular cells overlay opacity",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 0
     },
     {
       "type": "header",
-      "content": "Minimalistic style"
+      "content": "t:sections.comparison-table.settings.h58.content"
     },
     {
       "type": "range",
@@ -602,7 +602,7 @@
       "max": 40,
       "step": 2,
       "unit": "%",
-      "label": "Rows separator opacity",
+      "label": "t:sections.comparison-table.settings.display_id.label",
       "default": 16
     },
     {
@@ -633,32 +633,32 @@
   "blocks": [
     {
       "type": "row",
-      "name": "Table row",
+      "name": "t:sections.comparison-table.blocks.row.name",
       "settings": [
         {
           "type": "text",
           "id": "benefit",
           "default": "Benefit",
-          "label": "Benefit"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "us",
           "default": true,
-          "label": "Us"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "others",
           "default": false,
-          "label": "Others"
+          "label": "t:sections.comparison-table.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Comparison table",
+      "name": "t:sections.comparison-table.name",
       "blocks": [
         {
           "type": "row"

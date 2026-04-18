@@ -15,7 +15,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.insta-stories.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -315,13 +315,13 @@
 
 {% schema %}
 {
-  "name": "Instagram stories",
+  "name": "t:sections.insta-stories.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.insta-stories.settings.s0.label",
+      "info": "t:sections.insta-stories.settings.s33.info",
       "default": false
     },
     {
@@ -330,25 +330,25 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.insta-stories.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Instagram stories",
-      "label": "Heading"
+      "label": "t:sections.insta-stories.settings.display_id.label"
     },
     {
       "type": "select",
@@ -373,7 +373,7 @@
     {
       "type": "text",
       "id": "text",
-      "label": "Text",
+      "label": "t:sections.insta-stories.settings.display_id.label",
       "default": "Display images and testimonials in a format familiar to your customers."
     },
     {
@@ -406,11 +406,11 @@
     },
     {
       "type": "header",
-      "content": "Stories"
+      "content": "t:sections.insta-stories.settings.h40.content"
     },
     {
       "type": "paragraph",
-      "content": "NOTE: On touch devices, arrows on the slider for the story opener buttons are automatically changed to SWIPE/DRAG function for the best mobile experience. Swipe function to skip stories is also included."
+      "content": "t:sections.insta-stories.settings.h41.content"
     },
     {
       "type": "range",
@@ -419,7 +419,7 @@
       "max": 15,
       "step": 1,
       "unit": "sec",
-      "label": "Image autoplay speed",
+      "label": "t:sections.insta-stories.settings.display_id.label",
       "default": 10
     },
     {
@@ -450,44 +450,44 @@
   "blocks": [
     {
       "type": "user",
-      "name": "User post",
+      "name": "t:sections.insta-stories.blocks.user.name",
       "settings": [
         {
           "type": "text",
           "id": "username",
-          "label": "User name",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "shrinetheme"
         },
         {
           "type": "checkbox",
           "id": "verified",
-          "label": "Verified account",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": false
         },
         {
           "type": "image_picker",
           "id": "profile_picture",
-          "label": "Profile picture"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "close_friends",
-          "label": "Close friends story",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": false
         },
         {
           "type": "header",
-          "content": "Story #1"
+          "content": "t:sections.insta-stories.settings.h42.content"
         },
         {
           "type": "image_picker",
           "id": "story_1_image",
-          "label": "Story #1 Image"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "video",
           "id": "story_1_video",
-          "label": "Story #1 Video"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "select",
@@ -495,43 +495,43 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             }
           ],
           "default": "contain",
-          "label": "Story #1 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "t:sections.insta-stories.settings.display_id.label",
+          "info": "t:sections.insta-stories.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "story_1_time_posted",
-          "label": "Story #1 Time posted",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "10m"
         },
         {
           "type": "color",
           "id": "story_1_bg",
-          "label": "Story #1 Background",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "t:sections.insta-stories.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Story #2"
+          "content": "t:sections.insta-stories.settings.close_friends.content"
         },
         {
           "type": "image_picker",
           "id": "story_2_image",
-          "label": "Story #2 Image"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "video",
           "id": "story_2_video",
-          "label": "Story #2 Video"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "select",
@@ -539,43 +539,43 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             }
           ],
           "default": "contain",
-          "label": "Story #2 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "t:sections.insta-stories.settings.display_id.label",
+          "info": "t:sections.insta-stories.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "story_2_time_posted",
-          "label": "Story #2 Time posted",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "1h"
         },
         {
           "type": "color",
           "id": "story_2_bg",
-          "label": "Story #2 Background",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "t:sections.insta-stories.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Story #3"
+          "content": "t:sections.insta-stories.settings.close_friends.content"
         },
         {
           "type": "image_picker",
           "id": "story_3_image",
-          "label": "Story #3 Image"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "video",
           "id": "story_3_video",
-          "label": "Story #3 Video"
+          "label": "t:sections.insta-stories.settings.display_id.label"
         },
         {
           "type": "select",
@@ -583,36 +583,36 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "t:sections.insta-stories.settings.display_id.label"
             }
           ],
           "default": "contain",
-          "label": "Story #3 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "t:sections.insta-stories.settings.display_id.label",
+          "info": "t:sections.insta-stories.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "story_3_time_posted",
-          "label": "Story #3 Time posted",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "4h"
         },
         {
           "type": "color",
           "id": "story_3_bg",
-          "label": "Story #3 Background",
+          "label": "t:sections.insta-stories.settings.display_id.label",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "t:sections.insta-stories.settings.display_id.info"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Instagram stories",
+      "name": "t:sections.insta-stories.name",
       "blocks": [
         {
           "type": "user"

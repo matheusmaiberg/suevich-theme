@@ -22,7 +22,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.pricing-table.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -212,7 +212,7 @@
                       {%- endform -%}
                     </product-form>
                   {% else %}
-                    <h4 class='h5 center'>Assign a product in block settings</h4>
+                    <h4 class='h5 center'>{{ 'sections.pricing-table.text_1' | t }}</h4>
                   {% endif %}
                 {% endif %}
               </div>
@@ -226,13 +226,13 @@
 
 {% schema %}
 {
-  "name": "Pricing table",
+  "name": "t:sections.pricing-table.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.pricing-table.settings.s0.label",
+      "info": "t:sections.pricing-table.settings.s46.info",
       "default": false
     },
     {
@@ -241,29 +241,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.pricing-table.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.pricing-table.settings.h50.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Pricing table",
-      "label": "Heading"
+      "label": "t:sections.pricing-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -288,7 +288,7 @@
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "t:sections.pricing-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -296,19 +296,19 @@
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "medium",
-          "label": "Medium"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         }
       ],
       "default": "medium",
-      "label": "Icon Size"
+      "label": "t:sections.pricing-table.settings.display_id.label"
     },
     {
       "type": "select",
@@ -340,7 +340,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.pricing-table.settings.h51.content"
     },
     {
       "type": "range",
@@ -349,7 +349,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Desktop spacing",
+      "label": "t:sections.pricing-table.settings.display_id.label",
       "default": 40
     },
     {
@@ -358,19 +358,19 @@
       "options": [
         {
           "value": "flex-start",
-          "label": "Top"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Middle"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "value": "flex-end",
-          "label": "Bottom"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         }
       ],
       "default": "flex-start",
-      "label": "Vertical alignment"
+      "label": "t:sections.pricing-table.settings.display_id.label"
     },
     {
       "type": "header",
@@ -400,27 +400,27 @@
   "blocks": [
     {
       "type": "plan",
-      "name": "Pricing plan",
+      "name": "t:sections.pricing-table.blocks.plan.name",
       "settings": [
         {
           "type": "header",
-          "content": "Product & variant"
+          "content": "t:sections.pricing-table.settings.h52.content"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "number",
           "id": "variant_index",
-          "label": "Displayed variant index",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": 1,
-          "info": "Use if you wish to use the section to display different variants of the same products as different cards."
+          "info": "t:sections.pricing-table.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Card & content"
+          "content": "t:sections.pricing-table.settings.h53.content"
         },
         {
           "type": "select",
@@ -428,19 +428,19 @@
           "options": [
             {
               "value": "style-1",
-              "label": "Style 1"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "style-2",
-              "label": "Style 2"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "style-3",
-              "label": "Style 3"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             }
           ],
           "default": "style-1",
-          "label": "Card style"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "select",
@@ -496,12 +496,12 @@
             }
           ],
           "default": "accent-1",
-          "label": "Accent color"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "badge",
-          "label": "Badge text"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "select",
@@ -529,7 +529,7 @@
             }
           ],
           "default": "inverse",
-          "label": "Badge color scheme"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "select",
@@ -537,83 +537,83 @@
           "options": [
             {
               "value": "hidden",
-              "label": "Hidden"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "custom",
-              "label": "Custom"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "variant_image",
-              "label": "Variant image"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             }
           ],
           "default": "hidden",
-          "label": "Displayed image"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_image",
-          "label": "Custom image"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Title",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": "Plan"
         },
         {
           "type": "text",
           "id": "price",
-          "label": "Price text",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": "[price]",
-          "info": "Use [price] to display the price of the product (variant)"
+          "info": "t:sections.pricing-table.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "price_text",
-          "label": "Price caption",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": "a month"
         },
         {
           "type": "text",
           "id": "icon",
           "default": "sell",
-          "label": "Icon",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon",
-          "label": "Custom icon"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "description",
-          "label": "Description"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "select",
           "id": "desc_alignment",
-          "label": "Description alignment",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "options": [
             {
               "value": "",
-              "label": "Left"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             }
           ],
           "default": "center"
@@ -621,9 +621,9 @@
         {
           "type": "richtext",
           "id": "benefits",
-          "label": "Benefits",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": "<p>Plan benefit,Plan benefit,Plan benefit,Plan benefit</p>",
-          "info": "Separate benefits with comma to display them as list"
+          "info": "t:sections.pricing-table.settings.display_id.info"
         },
         {
           "type": "select",
@@ -631,15 +631,15 @@
           "options": [
             {
               "value": "link",
-              "label": "Link"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             },
             {
               "value": "atc",
-              "label": "Add to Cart"
+              "label": "t:sections.pricing-table.settings.display_id.label"
             }
           ],
           "default": "link",
-          "label": "Button function"
+          "label": "t:sections.pricing-table.settings.display_id.label"
         },
         {
           "type": "text",
@@ -662,7 +662,7 @@
         {
           "type": "checkbox",
           "id": "button_full_width",
-          "label": "Button full width",
+          "label": "t:sections.pricing-table.settings.display_id.label",
           "default": false
         }
       ]
@@ -670,7 +670,7 @@
   ],
   "presets": [
     {
-      "name": "Pricing table",
+      "name": "t:sections.pricing-table.name",
       "blocks": [
         {
           "type": "plan"

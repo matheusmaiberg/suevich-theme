@@ -34,7 +34,7 @@
     {% if block.settings.option_1_quantity != 0 %}
       <input
         id="quantity1"
-        aria-label="Quantity"
+        aria-label="{{ 'snippets.quantity-breaks.aria_label_0' | t }}"
         type="radio"
         name="quantity"
         value="{{ block.settings.option_1_quantity }}"
@@ -242,7 +242,7 @@
     {% if block.settings.option_2_quantity != 0 %}
       <input
         id="quantity2"
-        aria-label="Quantity"
+        aria-label="{{ 'snippets.quantity-breaks.aria_label_1' | t }}"
         type="radio"
         name="quantity"
         value="{{ block.settings.option_2_quantity }}"
@@ -450,7 +450,7 @@
     {% if block.settings.option_3_quantity != 0 %}
       <input
         id="quantity3"
-        aria-label="Quantity"
+        aria-label="{{ 'snippets.quantity-breaks.aria_label_2' | t }}"
         type="radio"
         name="quantity"
         value="{{ block.settings.option_3_quantity }}"
@@ -658,7 +658,7 @@
     {% if block.settings.option_4_quantity != 0 %}
       <input
         id="quantity4"
-        aria-label="Quantity"
+        aria-label="{{ 'snippets.quantity-breaks.aria_label_3' | t }}"
         type="radio"
         name="quantity"
         value="{{ block.settings.option_4_quantity }}"

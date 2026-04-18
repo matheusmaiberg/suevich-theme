@@ -33,7 +33,7 @@
 
 {% if section.settings.display_id %}
   <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-    <span class="copy-text">Click to copy section ID</span>
+    <span class="copy-text">{{ 'sections.image-banner.text_0' | t }}</span>
     <span class="copy-success">ID copied successfully!</span>
   </copy-button>
 {% endif %}
@@ -200,8 +200,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.image-banner.settings.s0.label",
+      "info": "t:sections.image-banner.settings.s18.info",
       "default": false
     },
     {
@@ -210,23 +210,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.image-banner.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.image-banner.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.image-banner.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.image-banner.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Images"
+      "content": "t:sections.image-banner.settings.h21.content"
     },
     {
       "type": "image_picker",
@@ -236,15 +236,15 @@
     {
       "type": "select",
       "id": "image_1_visibility",
-      "label": "Display first image on:",
+      "label": "t:sections.image-banner.settings.display_id.label",
       "options": [
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.image-banner.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.image-banner.settings.display_id.label"
         }
       ],
       "default": "always-display"
@@ -257,15 +257,15 @@
     {
       "type": "select",
       "id": "image_2_visibility",
-      "label": "Display second image on:",
+      "label": "t:sections.image-banner.settings.display_id.label",
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.image-banner.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.image-banner.settings.display_id.label"
         }
       ],
       "default": "always-display"
@@ -307,13 +307,13 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.image-banner.settings.h22.content"
     },
     {
       "type": "url",
       "id": "url",
-      "label": "Link",
-      "info": "If added, the whole banner will be a clickable link. ATTENTION: Buttons block can NOT be combined with this. Nested links inside this whole banner link will cause errors."
+      "label": "t:sections.image-banner.settings.display_id.label",
+      "info": "t:sections.image-banner.settings.display_id.info"
     },
     {
       "type": "select",
@@ -417,15 +417,15 @@
     {
       "type": "select",
       "id": "transparent_container_color",
-      "label": "Transparent container text color",
+      "label": "t:sections.image-banner.settings.display_id.label",
       "options": [
         {
           "value": "white",
-          "label": "White"
+          "label": "t:sections.image-banner.settings.display_id.label"
         },
         {
           "value": "black",
-          "label": "Black"
+          "label": "t:sections.image-banner.settings.display_id.label"
         }
       ],
       "default": "white"
@@ -579,25 +579,25 @@
     },
     {
       "type": "atc_button",
-      "name":"Add to Cart button",
+      "name": "t:sections.image-banner.blocks.atc_button.name",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label",
+          "label": "t:sections.image-banner.settings.display_id.label",
           "default": "Add to Cart"
         },
         {
           "type": "product",
           "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          "label": "t:sections.image-banner.settings.display_id.label",
+          "info": "t:sections.image-banner.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "t:sections.image-banner.settings.display_id.label"
         }
       ]
     }

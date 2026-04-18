@@ -44,7 +44,7 @@
 <div class="color-{{ section.settings.color_scheme }} isolate gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.featured-collection.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -155,8 +155,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.featured-collection.settings.s0.label",
+      "info": "t:sections.featured-collection.settings.s10.info",
       "default": false
     },
     {
@@ -165,18 +165,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.featured-collection.settings.display_id.label",
       "default": "always-display"
     },
     {
@@ -263,7 +263,7 @@
       "type": "checkbox",
       "id": "stretch_cards",
       "default": false,
-      "label": "Make all cards same height"
+      "label": "t:sections.featured-collection.settings.display_id.label"
     },
     {
       "type": "checkbox",
@@ -368,20 +368,20 @@
       "options": [
         {
           "value": "disabled",
-          "label": "Disabled"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         },
         {
           "value": "regular",
-          "label": "Regular sale"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "t:sections.featured-collection.settings.display_id.label"
         }
       ],
       "default": "regular",
-      "label": "Badges",
-      "info": "Adjust custom badges in Theme settings > Product cards."
+      "label": "t:sections.featured-collection.settings.display_id.label",
+      "info": "t:sections.featured-collection.settings.display_id.info"
     },
     {
       "type": "checkbox",

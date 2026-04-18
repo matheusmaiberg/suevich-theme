@@ -23,7 +23,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class="section-id-btn button" data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.custom-columns.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -383,13 +383,13 @@
 
 {% schema %}
 {
-  "name": "Custom columns",
+  "name": "t:sections.custom-columns.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.custom-columns.settings.s0.label",
+      "info": "t:sections.custom-columns.settings.s395.info",
       "default": false
     },
     {
@@ -398,23 +398,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.custom-columns.settings.h407.content"
     },
     {
       "type": "select",
@@ -450,12 +450,12 @@
       "min": 1,
       "max": 6,
       "step": 1,
-      "label": "Number of columns",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": 4
     },
     {
       "type": "header",
-      "content": "Desktop layout"
+      "content": "t:sections.custom-columns.settings.h408.content"
     },
     {
       "type": "range",
@@ -464,7 +464,7 @@
       "max": 120,
       "step": 4,
       "unit": "px",
-      "label": "Horizontal spacing",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": 40
     },
     {
@@ -474,7 +474,7 @@
       "max": 80,
       "step": 4,
       "unit": "px",
-      "label": "Vertical spacing",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": 40
     },
     {
@@ -483,23 +483,23 @@
       "options": [
         {
           "value": "flex-start",
-          "label": "Top"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "flex-end",
-          "label": "Bottom"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Vertical alignment",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "center"
     },
     {
       "type": "header",
-      "content": "Mobile layout"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -508,7 +508,7 @@
       "max": 50,
       "step": 2,
       "unit": "px",
-      "label": "Horizontal spacing",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": 20
     },
     {
@@ -518,7 +518,7 @@
       "max": 50,
       "step": 2,
       "unit": "px",
-      "label": "Vertical spacing",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": 30
     },
     {
@@ -527,23 +527,23 @@
       "options": [
         {
           "value": "flex-start",
-          "label": "Top"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "flex-end",
-          "label": "Bottom"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Vertical alignment",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "flex-start"
     },
     {
       "type": "header",
-      "content": "First column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -552,7 +552,7 @@
       "min": 1,
       "step": 1,
       "default": 12,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -561,7 +561,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -569,23 +569,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Second column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -594,7 +594,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -603,7 +603,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -611,23 +611,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Third column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -636,7 +636,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -645,7 +645,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -653,23 +653,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Fourth column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -678,7 +678,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -687,7 +687,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -695,23 +695,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Fifth column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -720,7 +720,7 @@
       "min": 1,
       "step": 1,
       "default": 3,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -729,7 +729,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -737,23 +737,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Sixth column"
+      "content": "t:sections.custom-columns.settings.columns_count.content"
     },
     {
       "type": "range",
@@ -762,7 +762,7 @@
       "min": 1,
       "step": 1,
       "default": 3,
-      "label": "Desktop width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "range",
@@ -771,7 +771,7 @@
       "min": 1,
       "step": 1,
       "default": 4,
-      "label": "Mobile width"
+      "label": "t:sections.custom-columns.settings.display_id.label"
     },
     {
       "type": "select",
@@ -779,18 +779,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.custom-columns.settings.display_id.label",
       "default": "always-display"
     },
     {
@@ -821,7 +821,7 @@
   "blocks": [
     {
       "type": "heading",
-      "name": "Heading",
+      "name": "t:sections.custom-columns.blocks.heading.name",
       "settings": [
         {
           "type": "select",
@@ -829,31 +829,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -861,25 +861,25 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "heading",
           "default": "Custom columns",
-          "label": "Heading"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -907,19 +907,19 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Desktop alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -927,23 +927,23 @@
           "options": [
             {
               "value": "mobile-left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "mobile-center",
-          "label": "Mobile alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -952,7 +952,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -962,14 +962,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "richtext",
-      "name": "Rich text",
+      "name": "t:sections.custom-columns.blocks.richtext.name",
       "settings": [
         {
           "type": "select",
@@ -977,31 +977,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1009,18 +1009,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
@@ -1051,19 +1051,19 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Desktop alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1071,23 +1071,23 @@
           "options": [
             {
               "value": "mobile-left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "mobile-center",
-          "label": "Mobile alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1096,7 +1096,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -1106,14 +1106,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "rating_stars",
-      "name": "Rating stars",
+      "name": "t:sections.custom-columns.blocks.rating_stars.name",
       "limit": 1,
       "settings": [
         {
@@ -1122,31 +1122,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1154,24 +1154,24 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "range",
           "id": "rating",
-          "label": "Rating",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "min": 1,
           "max": 5,
           "step": 0.1,
@@ -1181,7 +1181,7 @@
           "type": "color",
           "id": "star_color",
           "default": "#ffcc00",
-          "label": "Stars color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1189,26 +1189,26 @@
           "options": [
             {
               "value": "outlined",
-              "label": "Outlined"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "full",
-              "label": "Full"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Background stars style",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "full"
         },
         {
           "type": "color",
           "id": "bg_star_color",
           "default": "#ececec",
-          "label": "Background stars color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "inline_richtext",
           "id": "label",
-          "label": "Text",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "(xxxx Reviews)"
         },
         {
@@ -1219,24 +1219,24 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Text size"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "flex-start"
@@ -1244,11 +1244,11 @@
         {
           "type": "text",
           "id": "scroll_id",
-          "label": "ID of the section to scroll to"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1257,7 +1257,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -1267,14 +1267,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "buttons",
-      "name": "Buttons",
+      "name": "t:sections.custom-columns.blocks.buttons.name",
       "settings": [
         {
           "type": "select",
@@ -1282,31 +1282,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1314,18 +1314,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
@@ -1368,7 +1368,7 @@
           "type": "checkbox",
           "id": "full_width",
           "default": false,
-          "label": "Full buttons width"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1376,19 +1376,19 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "flex-start",
-          "label": "Desktop alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1396,23 +1396,23 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center",
-          "label": "Mobile alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1421,7 +1421,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -1431,14 +1431,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "atc_button",
-      "name":"Add to Cart button",
+      "name": "t:sections.custom-columns.blocks.atc_button.name",
       "settings": [
         {
           "type": "select",
@@ -1446,31 +1446,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1478,42 +1478,42 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "Add to Cart"
         },
         {
           "type": "product",
           "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "full_width",
           "default": false,
-          "label": "Full button width"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1521,19 +1521,19 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center",
-          "label": "Desktop alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1541,23 +1541,23 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "flex-start",
-          "label": "Mobile alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1566,7 +1566,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -1576,14 +1576,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "text_with_icon",
-      "name": "Text with icon",
+      "name": "t:sections.custom-columns.blocks.text_with_icon.name",
       "settings": [
         {
           "type": "select",
@@ -1591,31 +1591,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1623,23 +1623,23 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "header",
-          "content": "Text"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1649,7 +1649,7 @@
           "step": 1,
           "unit": "px",
           "default": 14,
-          "label": "Mobile text size"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "range",
@@ -1659,24 +1659,24 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Desktop text size"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Text alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "left"
@@ -1684,19 +1684,19 @@
         {
           "type": "select",
           "id": "mobile_alignment",
-          "label": "Mobile text alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "left"
@@ -1705,27 +1705,27 @@
           "type": "color",
           "id": "text_color",
           "default": "#121212",
-          "label": "Text color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_1",
           "default": "Text with icon",
-          "label": "Text #1"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_2",
-          "label": "Text #2"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_3",
-          "label": "Text #3"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Icons"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1735,72 +1735,72 @@
           "step": 5,
           "default": 120,
           "unit": "%",
-          "label": "Icon scale",
-          "info": "Relative to text size"
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "color",
           "id": "icon_color",
           "default": "#121212",
-          "label": "Icons color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "icon_1",
           "default": "check_circle",
-          "label": "Icon #1",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_1",
           "default": false,
-          "label": "Filled icon #1"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_1",
-          "label": "Custom icon #1"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "icon_2",
           "default": "check_circle",
-          "label": "Icon #2",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_2",
           "default": false,
-          "label": "Filled icon #2"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_2",
-          "label": "Custom icon #2"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "icon_3",
           "default": "check_circle",
-          "label": "Icon #3",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_3",
           "default": false,
-          "label": "Filled icon #3"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_3",
-          "label": "Custom icon #3"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Container"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "select",
@@ -1808,15 +1808,15 @@
           "options": [
             {
               "value": "fit-content",
-              "label": "Fit text"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "100%",
-              "label": "Full"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "100%",
-          "label": "Width"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1824,16 +1824,16 @@
           "options": [
             {
               "value": "horizontal",
-              "label": "Horizontal"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "vertical",
-              "label": "Vertical"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "horizontal",
-          "label": "Stacking direction",
-          "info": "Applied when multiple texts are added."
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "range",
@@ -1841,20 +1841,20 @@
           "min": 0,
           "max": 6,
           "step": 0.5,
-          "label": "Stacking spacing",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 3
         },
         {
           "type": "checkbox",
           "id": "enable_bg",
           "default": false,
-          "label": "Enable background",
-          "info": "The following settings are applied when this option is enabled."
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background color",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "#F3F3F3"
         },
         {
@@ -1866,7 +1866,7 @@
           "unit": "%",
           "label": "t:settings_schema.global.settings.corner_radius.label",
           "default": 40,
-          "info": "Relative to font size"
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "range",
@@ -1874,7 +1874,7 @@
           "min": 1,
           "max": 5,
           "step": 0.5,
-          "label": "Padding",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 3
         },
         {
@@ -1883,19 +1883,19 @@
           "min": 0,
           "max": 5,
           "step": 1,
-          "label": "Border thickness",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "unit": "px",
           "default": 0
         },
         {
           "type": "color",
           "id": "border_color",
-          "label": "Border color",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "#B7B7B7"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -1904,7 +1904,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -1914,14 +1914,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "icon_with_text",
-      "name": "Icon with content",
+      "name": "t:sections.custom-columns.blocks.icon_with_text.name",
       "settings": [
         {
           "type": "select",
@@ -1929,31 +1929,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -1961,66 +1961,66 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "icon",
           "default": "check_circle",
-          "label": "Icon",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Custom icon"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
           "id": "icon_size",
-          "label": "Icon size",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "xs",
-              "label": "Extra small"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "s",
-              "label": "Small"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "m",
-              "label": "Medium"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "l",
-              "label": "Large"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "xl",
-              "label": "Extra large"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "xxl",
-              "label": "Double extra large"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "m"
@@ -2031,18 +2031,18 @@
           "options": [
             {
               "value": "above",
-              "label": "Above title & text"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "next-to-title",
-              "label": "Next to title"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "next-to-text",
-              "label": "Next to text & title"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Icon position",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "next-to-title"
         },
         {
@@ -2067,11 +2067,11 @@
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "accent-1",
-          "label": "Icon color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2079,23 +2079,23 @@
           "options": [
             {
               "value": "h5",
-              "label": "Extra small"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "h4",
-              "label": "Small"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "h3",
-              "label": "Medium"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "h2",
-              "label": "Large"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "h3",
-          "label": "Heading size"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2103,36 +2103,36 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Text alignment",
-          "info": "Text is automatically centered if the icon position is set to above title & text."
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "text",
           "id": "title",
           "default": "Icon with text",
-          "label": "Heading"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post</p>",
-          "label": "Text"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2141,7 +2141,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2151,14 +2151,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "t:sections.custom-columns.blocks.image.name",
       "settings": [
         {
           "type": "select",
@@ -2166,31 +2166,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2198,24 +2198,24 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "range",
@@ -2224,25 +2224,25 @@
           "max": 100,
           "step": 10,
           "unit": "%",
-          "label": "Width",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 100
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center"
@@ -2250,19 +2250,19 @@
         {
           "type": "select",
           "id": "mobile_alignment",
-          "label": "Mobile alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center"
@@ -2274,12 +2274,12 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Corner radius",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 0
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2288,7 +2288,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2298,14 +2298,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "video",
-      "name": "Video",
+      "name": "t:sections.custom-columns.blocks.video.name",
       "settings": [
         {
           "type": "select",
@@ -2313,31 +2313,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2345,55 +2345,55 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "video",
           "id": "video",
-          "label": "Video"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "thumbnail",
-          "label": "Video Thumbnail",
-          "info": "If empty, the first frame of the video will be displayed"
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "loop",
-          "label": "Video looping",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": true
         },
         {
           "type": "checkbox",
           "id": "muted_autoplay",
-          "label": "Muted autoplay",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": true,
-          "info": "Use this instead of GIFs & animated WEBPs."
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "display_play_btn",
-          "label": "Enable play & pause on click",
-          "info": "Automatically enabled if autoplay is disabled.",
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "btn_animation",
-          "label": "Enable button ripple animation",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": false
         },
         {
@@ -2422,12 +2422,12 @@
             }
           ],
           "default": "accent-1",
-          "label": "Play button color scheme"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "display_sound_btn",
-          "label": "Display mute/unmute button",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": false
         },
         {
@@ -2456,12 +2456,12 @@
             }
           ],
           "default": "inverse",
-          "label": "Sound button color scheme"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "display_timeline",
-          "label": "Display timeline",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": false
         },
         {
@@ -2490,7 +2490,7 @@
             }
           ],
           "default": "accent-1",
-          "label": "Timeline color"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "range",
@@ -2499,25 +2499,25 @@
           "max": 100,
           "step": 10,
           "unit": "%",
-          "label": "Width",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 100
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center"
@@ -2525,19 +2525,19 @@
         {
           "type": "select",
           "id": "mobile_alignment",
-          "label": "Mobile alignment",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center"
@@ -2549,12 +2549,12 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Corner radius",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 0
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2563,7 +2563,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2573,14 +2573,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "accordion",
-      "name": "Collapsible row",
+      "name": "t:sections.custom-columns.blocks.accordion.name",
       "settings": [
         {
           "type": "select",
@@ -2588,31 +2588,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2620,18 +2620,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
@@ -2644,19 +2644,19 @@
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "small",
-              "label": "Small"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "medium",
-              "label": "Medium"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "medium"
@@ -2665,32 +2665,32 @@
           "type": "text",
           "id": "icon",
           "default": "check_box",
-          "label": "Icon",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon",
-          "label": "Custom icon"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
           "id": "collapse_icon",
-          "label": "Collapse icon",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "options": [
             {
               "value": "carret",
-              "label": "Carret"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "plus",
-              "label": "Plus"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "carret"
@@ -2698,9 +2698,9 @@
         {
           "type": "checkbox",
           "id": "display_top_border",
-          "label": "Display top border",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": true,
-          "info": "This option is automatically optimized for stacked rows."
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "richtext",
@@ -2714,7 +2714,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2723,7 +2723,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2733,14 +2733,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 0
         }
       ]
     },
     {
       "type": "payment_badges",
-      "name": "Payment Option Badges",
+      "name": "t:sections.custom-columns.blocks.payment_badges.name",
       "limit": 1,
       "settings": [
         {
@@ -2749,31 +2749,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2781,25 +2781,25 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "enabled_payment_types",
-          "label": "Custom payment icons to show",
-          "info": "List of payments you want to show, split with a comma. Options are: afterpay, american_express, apple_pay, bitcoin, dankort, diners_club, discover, dogecoin, dwolla, facebook_pay, forbrugsforeningen, google_pay, ideal, jcb, klarna, klarna-pay-later, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa"
+          "label": "t:sections.custom-columns.settings.display_id.label",
+          "info": "t:sections.custom-columns.settings.display_id.info"
         },
         {
           "type": "select",
@@ -2807,19 +2807,19 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "flex-start",
-          "label": "Desktop alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2827,23 +2827,23 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "center",
-          "label": "Mobile alignment"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2852,7 +2852,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2862,14 +2862,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
     },
     {
       "type": "email_signup",
-      "name": "Email signup",
+      "name": "t:sections.custom-columns.blocks.email_signup.name",
       "settings": [
         {
           "type": "select",
@@ -2877,31 +2877,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2909,18 +2909,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
@@ -2937,7 +2937,7 @@
           "type": "richtext",
           "id": "subtext",
           "default": "<p>A short sentence encouraging customers to subscribe to your newsletter.</p>",
-          "label": "Text"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -2945,20 +2945,20 @@
           "options": [
             {
               "value": "arrow",
-              "label": "Arrow button"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "solid",
-              "label": "Solid button"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "solid",
-          "label": "Submit button type"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Solid button label",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "Sign up"
         },
         {
@@ -2969,7 +2969,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.custom-columns.settings.columns_count.content"
         },
         {
           "type": "range",
@@ -2978,7 +2978,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -2988,7 +2988,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
@@ -3003,31 +3003,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "t:sections.custom-columns.settings.display_id.label"
         },
         {
           "type": "select",
@@ -3035,18 +3035,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "t:sections.custom-columns.settings.display_id.label"
             }
           ],
-          "label": "Display on",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": "always-display"
         },
         {
@@ -3062,7 +3062,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         },
         {
@@ -3072,7 +3072,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.custom-columns.settings.display_id.label",
           "default": 20
         }
       ]
@@ -3080,7 +3080,7 @@
   ],
   "presets": [
     {
-      "name": "Custom columns",
+      "name": "t:sections.custom-columns.name",
       "blocks": [
         {
           "type": "heading",

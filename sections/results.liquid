@@ -15,7 +15,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.results.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -148,13 +148,13 @@
 
 {% schema %}
 {
-  "name": "Results",
+  "name": "t:sections.results.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.results.settings.s0.label",
+      "info": "t:sections.results.settings.s26.info",
       "default": false
     },
     {
@@ -163,29 +163,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.results.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.results.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.results.settings.h30.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Results",
-      "label": "Heading"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "select",
@@ -211,22 +211,22 @@
       "type": "richtext",
       "id": "text",
       "default": "<p>Talk about results of your customers and how your product improved their life.</p>",
-      "label": "Text"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "paragraph",
-      "content": "Or"
+      "content": "t:sections.results.settings.h31.content"
     },
     {
       "type": "video",
       "id": "video",
-      "label": "Video",
-      "info": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+      "label": "t:sections.results.settings.display_id.label",
+      "info": "t:sections.results.settings.display_id.info"
     },
     {
       "type": "select",
@@ -258,7 +258,7 @@
     },
     {
       "type": "header",
-      "content": "Results"
+      "content": "t:sections.results.settings.image.content"
     },
     {
       "type": "select",
@@ -266,21 +266,21 @@
       "options": [
         {
           "value": "results_first",
-          "label": "Results first"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "results_second",
-          "label": "Results second"
+          "label": "t:sections.results.settings.display_id.label"
         }
       ],
       "default": "results_second",
-      "label": "Desktop results placement"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "text",
       "id": "results_headline",
       "default": "Results heading",
-      "label": "Results heading"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "select",
@@ -288,19 +288,19 @@
       "options": [
         {
           "value": "h3",
-          "label": "Small"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "h2",
-          "label": "Medium"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "h1",
-          "label": "Large"
+          "label": "t:sections.results.settings.display_id.label"
         }
       ],
       "default": "h2",
-      "label": "Results heading size"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "select",
@@ -308,21 +308,21 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.results.settings.display_id.label"
         }
       ],
       "default": "left",
-      "label": "Results heading alignment"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "richtext",
       "id": "caption",
       "default": "<p>Caption about the results and/or link for their proof.</p>",
-      "label": "Caption"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "text",
@@ -344,19 +344,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.results.settings.display_id.label",
+      "info": "t:sections.results.settings.display_id.info"
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "t:sections.results.settings.display_id.label",
+      "info": "t:sections.results.settings.display_id.info"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "t:sections.results.settings.display_id.label"
     },
     {
       "type": "header",
@@ -386,7 +386,7 @@
   "blocks": [
     {
       "type": "row",
-      "name": "Result row",
+      "name": "t:sections.results.blocks.row.name",
       "settings": [
         {
           "type": "range",
@@ -395,20 +395,20 @@
           "max": 100,
           "default": 90,
           "step": 1,
-          "label": "Percentage"
+          "label": "t:sections.results.settings.display_id.label"
         },
         {
           "type": "richtext",
           "id": "row_text",
           "default": "<p>Noticed that this product has significantly improved their life.</p>",
-          "label": "Result"
+          "label": "t:sections.results.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Results",
+      "name": "t:sections.results.name",
       "blocks": [
         {
           "type": "row"

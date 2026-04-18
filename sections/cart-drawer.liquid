@@ -2,7 +2,7 @@
 
 {% schema %}
 {
-  "name": "Cart drawer",
+  "name": "t:sections.cart-drawer.name",
   "limit": 1,
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -10,48 +10,48 @@
   "settings": [
     {
       "type": "header",
-      "content": "Test mode"
+      "content": "t:sections.cart-drawer.settings.h451.content"
     },
     {
       "type": "paragraph",
-      "content": "This option keeps the drawer opened by default for faster customization."
+      "content": "t:sections.cart-drawer.settings.h452.content"
     },
     {
       "type": "checkbox",
       "id": "test_mode",
-      "label": "Enable test mode",
+      "label": "t:sections.cart-drawer.settings.s0.label",
       "default": false
     },
     {
       "type": "header",
-      "content": "Heading"
+      "content": "t:sections.cart-drawer.settings.h453.content"
     },
     {
       "type": "text",
       "id": "heading_text",
-      "label": "Text",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": "Cart • [count] items",
-      "info": "Use [count] to display total amount of items in the cart."
+      "info": "t:sections.cart-drawer.settings.s399.info"
     },
     {
       "type": "select",
       "id": "heading_alignment",
-      "label": "Alignment",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "options": [
         {
           "value": "flex-start",
-          "label": "Left"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         }
       ],
       "default": "flex-start"
     },
     {
       "type": "header",
-      "content": "Width"
+      "content": "t:sections.cart-drawer.settings.test_mode.content"
     },
     {
       "type": "select",
@@ -59,15 +59,15 @@
       "options": [
         {
           "value": "normal",
-          "label": "Normal"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         }
       ],
       "default": "normal",
-      "label": "Desktop width"
+      "label": "t:sections.cart-drawer.settings.test_mode.label"
     },
     {
       "type": "select",
@@ -75,107 +75,107 @@
       "options": [
         {
           "value": "partial",
-          "label": "Partial screen width"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "value": "full",
-          "label": "Full screen width"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         }
       ],
       "default": "partial",
-      "label": "Mobile width"
+      "label": "t:sections.cart-drawer.settings.test_mode.label"
     },
     {
       "type": "header",
-      "content": "Cart header"
+      "content": "t:sections.cart-drawer.settings.test_mode.content"
     },
     {
       "type": "checkbox",
       "id": "enable_header_bg",
-      "label": "Enable custom background",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": false
     },
     {
       "type": "color",
       "id": "header_bg_color",
-      "label": "Custom background color",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": "#F3F3F3"
     },
     {
       "type": "header",
-      "content": "Cart body"
+      "content": "t:sections.cart-drawer.settings.test_mode.content"
     },
     {
       "type": "checkbox",
       "id": "enable_body_bg",
-      "label": "Enable custom background",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": false
     },
     {
       "type": "color",
       "id": "body_bg_color",
-      "label": "Custom background color",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": "#F3F3F3"
     },
     {
       "type": "header",
-      "content": "Cart footer"
+      "content": "t:sections.cart-drawer.settings.test_mode.content"
     },
     {
       "type": "checkbox",
       "id": "enable_footer_bg",
-      "label": "Enable custom background",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": false
     },
     {
       "type": "color",
       "id": "footer_bg_color",
-      "label": "Custom background color",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": "#F3F3F3"
     },
     {
       "type": "header",
-      "content": "Empty cart link"
+      "content": "t:sections.cart-drawer.settings.test_mode.content"
     },
     {
       "type": "checkbox",
       "id": "display_continue_shopping",
-      "label": "Display the Continue shopping button link when the cart is empty",
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
       "default": true
     },
     {
       "type": "url",
       "id": "continue_shopping_url",
-      "label": "Continue shopping button custom link",
-      "info": "If empty, a link to all products will be applied."
+      "label": "t:sections.cart-drawer.settings.test_mode.label",
+      "info": "t:sections.cart-drawer.settings.heading_text.info"
     }
   ],
   "blocks": [
     {
       "type": "cart_items",
-      "name": "Cart items",
+      "name": "t:sections.cart-drawer.blocks.cart_items.name",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Product images"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
           "id": "image_size",
-          "label": "Size",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "17",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "20",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "25",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "20"
@@ -183,29 +183,29 @@
         {
           "type": "checkbox",
           "id": "image_link",
-          "label": "Display images as product links",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "header",
-          "content": "Product titles"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
           "id": "title_size",
-          "label": "Size",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "1.3",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.5",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.7",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.5"
@@ -213,46 +213,46 @@
         {
           "type": "checkbox",
           "id": "title_link",
-          "label": "Display titles as product links",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "header",
-          "content": "Product variants"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
           "id": "displayed_variants",
-          "label": "Displayed variants style",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "compact",
-              "label": "Compact"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "classic",
-              "label": "Classic"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "classic",
-          "info": "Example for Classic: Color: Green, Size: S. Example for compact: Green / S"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Prices"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
           "id": "prices_position",
-          "label": "Position",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "right"
@@ -260,44 +260,44 @@
         {
           "type": "select",
           "id": "displayed_compare_prices",
-          "label": "Display compare prices based on",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "discounts",
-              "label": "Cart discounts"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "product",
-              "label": "Real product compare price"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "automatic",
-              "label": "Automatic"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "product",
-          "info": "Determines how the displayed compare prices of the items are caluclated. If \"Cart discounts\" is selected, compare prices won't be displayed unless there is a Product discount for the item. \"Real product compare price\" displays the compare price as item quantity * real product compare price. \"Automatic\" is the combination of the first two options. If an automatic discount is active, that's going to be displayed. Otherwise, the real compare price of the product will be taken into calculation."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
           "id": "price_color",
-          "label": "Price color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
@@ -305,23 +305,23 @@
         {
           "type": "select",
           "id": "compare_price_color",
-          "label": "Compare price color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "text"
@@ -329,54 +329,54 @@
         {
           "type": "checkbox",
           "id": "display_single_item_prices",
-          "label": "Display discounted single item prices",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true,
-          "info": "Displays a price of a single item with a discount badge (under the title) if a Product discount is applied."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Savings"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "enable_savings",
-          "label": "Display savings under item price",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "inline_richtext",
           "id": "savings_text",
-          "label": "Text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>(You save [amount])</strong>",
-          "info": "Use [amount] to display the saved amount"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
           "id": "savings_color",
-          "label": "Color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "text"
         },
         {
           "type": "header",
-          "content": "Quantity selector"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -385,7 +385,7 @@
           "max": 20,
           "step": 1,
           "unit": "px",
-          "label": "Font & icons size",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 14
         },
         {
@@ -394,9 +394,9 @@
           "min": 0,
           "max": 1,
           "step": 0.1,
-          "label": "Container padding",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0,
-          "info": "Relative to font size"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -415,13 +415,13 @@
           "max": 5,
           "step": 1,
           "unit": "px",
-          "label": "Container border width",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 1
         },
         {
           "type": "color",
           "id": "quantity_border_color",
-          "label": "Container border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#414141"
         },
         {
@@ -450,7 +450,7 @@
             }
           ],
           "default": "background-2",
-          "label": "Container color scheme"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -458,9 +458,9 @@
           "min": 0,
           "max": 2,
           "step": 0.1,
-          "label": "Input side padding",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0.5,
-          "info": "Relative to font size"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -469,9 +469,9 @@
           "max": 100,
           "step": 5,
           "unit": "%",
-          "label": "Separators opacity",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 50,
-          "info": "Separator lines between the input and the buttons"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -479,9 +479,9 @@
           "min": 0,
           "max": 1,
           "step": 0.1,
-          "label": "Buttons padding",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0.4,
-          "info": "Relative to font size"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
@@ -509,18 +509,18 @@
             }
           ],
           "default": "background-2",
-          "label": "Buttons color scheme"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "quantity_round_btns",
-          "label": "Round inner side corners of buttons",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "quantity_outline_btns",
-          "label": "Outline style buttons",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
@@ -530,13 +530,13 @@
           "max": 100,
           "step": 5,
           "unit": "%",
-          "label": "Buttons icon size",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 70,
-          "info": "Relative to font size"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -545,7 +545,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -555,54 +555,54 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "subtotals",
-      "name": "Subtotals",
+      "name": "t:sections.cart-drawer.blocks.subtotals.name",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Total savings"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "display_total_savings",
-          "label": "Display total savings",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "paragraph",
-          "content": "Use [savings] to display total savings (works on both texts)."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "inline_richtext",
           "id": "savings_left_text",
-          "label": "Left text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>Savings: </strong>"
         },
         {
           "type": "inline_richtext",
           "id": "savings_right_text",
-          "label": "Right text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>-[savings]</strong>"
         },
         {
           "type": "select",
           "id": "savings_alignment",
-          "label": "Texts layout",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "spaced",
-              "label": "Spaced out"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "spaced"
@@ -610,23 +610,23 @@
         {
           "type": "select",
           "id": "savings_text_color",
-          "label": "Text color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
@@ -639,20 +639,20 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
           "id": "savings_position",
-          "label": "Position",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "above",
-              "label": "Above subtotal price"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "bellow",
-              "label": "Bellow subtotal price"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "above"
@@ -665,46 +665,46 @@
           "step": 1,
           "unit": "px",
           "default": 10,
-          "label": "Spacing between subtotal price"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Subtotal price"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "display_subtotal",
-          "label": "Display subtotal price",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "paragraph",
-          "content": "Use [subtotal] to display subtotal price (works on both texts)."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "inline_richtext",
           "id": "subtotal_left_text",
-          "label": "Left text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>Subtotal: </strong>"
         },
         {
           "type": "inline_richtext",
           "id": "subtotal_right_text",
-          "label": "Right text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>[subtotal]</strong>"
         },
         {
           "type": "select",
           "id": "subtotal_alignment",
-          "label": "Texts layout",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "spaced",
-              "label": "Spaced out"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "spaced"
@@ -712,23 +712,23 @@
         {
           "type": "select",
           "id": "subtotal_text_color",
-          "label": "Text color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "text"
@@ -741,22 +741,22 @@
           "step": 1,
           "unit": "px",
           "default": 20,
-          "label": "Text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Discount badges"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "display_discounts",
-          "label": "Display cart discount badges",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "inline_richtext",
           "id": "discounts_label",
-          "label": "Discounts label",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>Discounts:</strong>"
         },
         {
@@ -765,23 +765,23 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
-          "label": "Alignment",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "flex-start"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -790,7 +790,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -800,31 +800,31 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "checkout_btn",
-      "name": "Checkout button",
+      "name": "t:sections.cart-drawer.blocks.checkout_btn.name",
       "limit": 1,
       "settings": [
         {
           "type": "checkbox",
           "id": "display_price",
-          "label": "Display subtotal price in the checkout button",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_additional_checkout_buttons",
-          "label": "Display additional checkout buttons",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -833,7 +833,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -843,14 +843,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "progress_bar",
-      "name": "Progress bar",
+      "name": "t:sections.cart-drawer.blocks.progress_bar.name",
       "limit": 1,
       "settings": [
         {
@@ -860,63 +860,63 @@
         {
           "type": "number",
           "id": "goal",
-          "label": "Progress bar goal",
-          "info": "Required cart sub-total for the promotion.",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info",
           "default": 50
         },
         {
           "type": "text",
           "id": "progress_message",
-          "label": "Progress message",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Spend [amount] more to get FREE shipping!",
-          "info": "Use '[amount]' to display the amount needed to reach the goal."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "success_message",
-          "label": "Success message",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Congrats! You get FREE shipping!"
         },
         {
           "type": "text",
           "id": "icon",
           "default": "local_shipping",
-          "label": "Icon",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "icon_filled",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
           "id": "accent_color",
-          "label": "Accent color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -925,7 +925,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -935,14 +935,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "checkpoints_bar",
-      "name": "Checkpoints bar",
+      "name": "t:sections.cart-drawer.blocks.checkpoints_bar.name",
       "limit": 1,
       "settings": [
         {
@@ -952,16 +952,16 @@
         {
           "type": "text",
           "id": "progress_message",
-          "label": "Progress message",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "You're [amount] away from [next_goal_lowercase]!",
-          "info": "Use [amount] to display amount needed to reach the next goal and [next_goal] to display \"Progress message text\" of the next goal."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "success_message",
-          "label": "Success message",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Congrats! You've unlocked all prizes!🎉",
-          "info": "Displayed after all promotions are unlocked."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -971,8 +971,8 @@
           "step": 1,
           "unit": "px",
           "default": 10,
-          "label": "Mobile labels text size",
-          "info": "Mobile font size of goal names under icons"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -982,156 +982,156 @@
           "step": 1,
           "unit": "px",
           "default": 12,
-          "label": "Desktop labels text size",
-          "info": "Desktop font size of goal names under icons"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
           "id": "accent_color",
-          "label": "Accent color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
         },
         {
           "type": "header",
-          "content": "Goal #1"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "enable_goal_1",
           "default": true,
-          "label": "Enable goal #1"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "goal_1_label",
-          "label": "Goal #1 Label",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Free Shipping",
-          "info": "Displayed under the icon. Use <br> to go into a new line."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "goal_1_text",
-          "label": "Goal #1 Progress message text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "FREE shipping",
-          "info": "Replaces [next_goal] in the progress message."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "number",
           "id": "goal_1_amount",
-          "label": "Goal #1 Amount",
-          "info": "Required cart sub-total for the promotion.",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info",
           "default": 30
         },
         {
           "type": "text",
           "id": "goal_1_icon",
           "default": "local_shipping",
-          "label": "Goal #1 Icon",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "goal_1_icon_filled",
           "default": false,
-          "label": "Goal #1 Filled icon"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Goal #2"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "enable_goal_2",
           "default": true,
-          "label": "Enable goal #2"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "goal_2_label",
-          "label": "Goal #2 Label",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "20% OFF",
-          "info": "Displayed under the icon. Use <br> to go into a new line."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "goal_2_text",
-          "label": "Goal #2 Progress message text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "a 20% discount",
-          "info": "Replaces [next_goal] in the progress message."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "number",
           "id": "goal_2_amount",
-          "label": "Goal #2 Amount",
-          "info": "Required cart sub-total for the promotion.",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info",
           "default": 50
         },
         {
           "type": "text",
           "id": "goal_2_icon",
           "default": "sell",
-          "label": "Goal #2 Icon",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "goal_2_icon_filled",
           "default": false,
-          "label": "Goal #2 Filled icon"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Goal #3"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "enable_goal_3",
           "default": false,
-          "label": "Enable goal #3"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "goal_3_label",
-          "label": "Goal #3 Label",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Free Gift",
-          "info": "Displayed under the icon. Use <br> to go into a new line."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "goal_3_text",
-          "label": "Goal #3 Progress message text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "a FREE GIFT",
-          "info": "Replaces [next_goal] in the progress message."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "number",
           "id": "goal_3_amount",
-          "label": "Goal #3 Amount",
-          "info": "Required cart sub-total for the promotion.",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info",
           "default": 100
         },
         {
           "type": "text",
           "id": "goal_3_icon",
-          "label": "Goal #3 Icon",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "redeem",
           "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
@@ -1139,11 +1139,11 @@
           "type": "checkbox",
           "id": "goal_3_icon_filled",
           "default": false,
-          "label": "Goal #3 Filled icon"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -1152,7 +1152,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -1162,41 +1162,41 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "countdown_timer",
-      "name": "Countdown timer",
+      "name": "t:sections.cart-drawer.blocks.countdown_timer.name",
       "limit": 1,
       "settings": [
         {
           "type": "inline_richtext",
           "id": "timer_text",
-          "label": "Text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "<strong>Cart reserved for [timer] more minutes!</strong>",
-          "info": "Use [timer] to display the timer."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "number",
           "id": "timer_duration",
-          "label": "Timer duration (in seconds)",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 300
         },
         {
           "type": "select",
           "id": "font_size",
           "options": [
-            { "value": "1", "label": "Extra small" },
-            { "value": "1.2", "label": "Small" },
-            { "value": "1.4", "label": "Medium" },
-            { "value": "1.6", "label": "Large" },
-            { "value": "1.8", "label": "Extra large" }
+            { "value": "1", "label": "t:sections.cart-drawer.settings.test_mode.label" },
+            { "value": "1.2", "label": "t:sections.cart-drawer.settings.test_mode.label" },
+            { "value": "1.4", "label": "t:sections.cart-drawer.settings.test_mode.label" },
+            { "value": "1.6", "label": "t:sections.cart-drawer.settings.test_mode.label" },
+            { "value": "1.8", "label": "t:sections.cart-drawer.settings.test_mode.label" }
           ],
           "default": "1.4",
-          "label": "Text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1221,11 +1221,11 @@
             { "value": "inverse", "label": "t:sections.all.colors.inverse.label" }
           ],
           "default": "inverse",
-          "label": "Color scheme"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -1234,7 +1234,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0
         },
         {
@@ -1244,34 +1244,34 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "product_upsells",
-      "name": "Product upsells",
+      "name": "t:sections.cart-drawer.blocks.product_upsells.name",
       "settings": [
         {
           "type": "header",
-          "content": "IMPORTANT NOTES"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "paragraph",
-          "content": "For toggle upsells, add a \"cart-hidden\" tag to the product if you don't want to count it in the cart icon bubble (number of items in the cart)."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "paragraph",
-          "content": "All toggle upsell products MUST BE UNIQUE. Main product from the product page, products from gifts, bundles and other upsells WON'T WORK."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "paragraph",
-          "content": "Upsells with the Classic add button do NOT have this limitation."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "header",
-          "content": "General"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
@@ -1279,15 +1279,15 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1295,22 +1295,22 @@
           "options": [
             {
               "value": "globally",
-              "label": "Globally"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "specific_products",
-              "label": "Specific products"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "globally",
-          "label": "Display",
-          "info": "\"Globally\" displays the block scross all pages in the store, \"Specific products\" dispalys it only on specific product pages configured bellow."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "display_product_handles",
-          "label": "Products to display the block on",
-          "info": "Handles of specific products you want to display the block on, split by comma without spacing in between. Example: \"first-handle, second-handle\"."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
@@ -1318,27 +1318,27 @@
           "options": [
             {
               "value": "toggle_switch",
-              "label": "Toggle switch"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "checkbox_1",
-              "label": "Checkbox style 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "checkbox_2",
-              "label": "Checkbox style 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "plus_button",
-              "label": "Plus button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "add_button",
-              "label": "Classic add button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "toggle_switch",
-          "label": "Toggle button style"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1346,16 +1346,16 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "right",
-          "label": "Toggle button position",
-          "info": "Under product info is only applied for the Classic add button"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
@@ -1363,28 +1363,28 @@
           "options": [
             {
               "value": "button",
-              "label": "Toggle button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "container",
-              "label": "Whole container"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "button",
-          "label": "Toggle product selection by clicking on:"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "add_btn_label",
-          "label": "Classic add button label",
-          "default":  "<strong>Add</strong>"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "default":  "<strong>{{ 'sections.cart-drawer.text_0' | t }}</strong>"
         },
         {
           "type": "checkbox",
           "id": "hide_in_cart_items",
-          "label": "Hide the upsell if the product is already in cart",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true,
-          "info": "Applied if Toggle button style is set to Classic add button"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
@@ -1392,41 +1392,41 @@
           "options": [
             {
               "value": "row",
-              "label": "Under each other"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "column",
-              "label": "Next to each other"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "slider",
-              "label": "Slider"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "row",
-          "label": "Multiple products stacking",
-          "info": "If Next to each other is selected, featured images with transparent backgrounds are recommended."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
           "id": "accent_color",
-          "label": "Accent color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
@@ -1457,129 +1457,129 @@
             }
           ],
           "default": "background-1",
-          "label": "Color scheme"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Products"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "product_list",
           "id": "product_list",
-          "label": "Products",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "limit": 3,
-          "info": "Up to 3 products per block are supported."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Product #1"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "prdouct_1_preselected",
-          "label": "Product #1 Preselected",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "image_picker",
           "id": "product_1_image",
-          "label": "Product #1 Featured image"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "product_1_desc",
-          "label": "Product #1 Description"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "product_1_percentage_discount",
-          "label": "Product #1 Percentage discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Percentae to be discounted from the product price, WITHOUT the % symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "product_1_fixed_amount_discount",
-          "label": "Product #1 Fixed amount discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Fixed amount of money to be discounted from the product price, WITHOUT the currency symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Product #2"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "prdouct_2_preselected",
-          "label": "Product #2 Preselected",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "image_picker",
           "id": "product_2_image",
-          "label": "Product #2 Featured image"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "product_2_desc",
-          "label": "Product #2 Description"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "product_2_percentage_discount",
-          "label": "Product #2 Percentage discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Percentae to be discounted from the product price, WITHOUT the % symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "product_2_fixed_amount_discount",
-          "label": "Product #2 Fixed amount discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Fixed amount of money to be discounted from the product price, WITHOUT the currency symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Product #3"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "prdouct_3_preselected",
-          "label": "Product #3 Preselected",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "image_picker",
           "id": "product_3_image",
-          "label": "Product #3 Featured image"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "product_3_desc",
-          "label": "Product #3 Description"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "product_3_percentage_discount",
-          "label": "Product #3 Percentage discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Percentae to be discounted from the product price, WITHOUT the % symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "product_3_fixed_amount_discount",
-          "label": "Product #3 Fixed amount discount",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "0",
-          "info": "Fixed amount of money to be discounted from the product price, WITHOUT the currency symbol."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Layout"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "show_images",
-          "label": "Show product images",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
@@ -1588,27 +1588,27 @@
           "options": [
             {
               "value": "3.5",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "4.25",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "5",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "5.75",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "6.5",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "5",
-          "label": "Images size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -1617,7 +1617,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Images corner radius",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 2
         },
         {
@@ -1626,32 +1626,32 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.4",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.4",
-          "label": "Product title font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "title_link",
-          "label": "Make title a product page link",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
@@ -1660,27 +1660,27 @@
           "options": [
             {
               "value": "0.9",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.05",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.35",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.5",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.2",
-          "label": "Description font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1688,19 +1688,19 @@
           "options": [
             {
               "value": "next_to_title",
-              "label": "Next to title"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "separate",
-              "label": "Separate"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "hidden",
-              "label": "Hidden"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "next_to_title",
-          "label": "Price position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1708,43 +1708,43 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.4",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.4",
-          "label": "Price font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "hide_compare_price",
-          "label": "Hide compare price",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_variant_picker",
-          "label": "Show variant picker",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "header",
-          "content": "Container"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -1759,25 +1759,25 @@
         {
           "type": "checkbox",
           "id": "show_box_shadow",
-          "label": "Show drop shadow",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_border",
-          "label": "Show border",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "color",
           "id": "regular_border_color",
-          "label": "Border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#E6E6E6"
         },
         {
           "type": "color",
           "id": "selected_border_color",
-          "label": "Selected border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#DD1D1D"
         },
         {
@@ -1786,37 +1786,37 @@
           "options": [
             {
               "value": "0.1",
-              "label": "Thin"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "0.2",
-              "label": "Normal"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "0.2",
-          "label": "Border thickness"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "show_custom_bg",
-          "label": "Show custom background",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "color",
           "id": "regular_bg_color",
-          "label": "Background color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#F2F2F2"
         },
         {
           "type": "color",
           "id": "selected_bg_color",
-          "label": "Selected background color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#F2F2F2"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -1825,7 +1825,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -1835,30 +1835,30 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "gift",
-      "name": "Free/Conditional gift",
+      "name": "t:sections.cart-drawer.blocks.gift.name",
       "settings": [
         {
           "type": "header",
-          "content": "IMPORTANT NOTES"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "paragraph",
-          "content": "Add a \"cart-hidden\" tag to the product if you don't want to count it in the cart icon bubble (number of items in the cart)."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "paragraph",
-          "content": "All gift products MUST BE UNIQUE. Main product from the product page, products from upsells, bundles and other gifts WON'T WORK."
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "header",
-          "content": "General"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
@@ -1866,15 +1866,15 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -1882,43 +1882,43 @@
           "options": [
             {
               "value": "globally",
-              "label": "Globally"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "specific_products",
-              "label": "Specific products"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "globally",
-          "label": "Display",
-          "info": "\"Globally\" displays the block scross all pages in the store, \"Specific products\" dispalys it only on specific product pages configured bellow."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "display_product_handles",
-          "label": "Products to display the block on",
-          "info": "Handles of specific products you want to display the block on, split by comma without spacing in between. Example: \"first-handle, second-handle\"."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
           "id": "accent_color",
-          "label": "Accent color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "accent-1",
-              "label": "Accent 1"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "accent-2",
-              "label": "Accent 2"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "accent-1"
@@ -1949,53 +1949,53 @@
             }
           ],
           "default": "background-2",
-          "label": "Color scheme"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Product"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
           "id": "product_image",
-          "label": "Featured image",
-          "info": "If empty, default product image will be shown."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "inline_richtext",
           "id": "locked_product_desc",
-          "label": "Product description",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Write a short description about your product"
         },
         {
           "type": "header",
-          "content": "Unlocking"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "text",
           "id": "requirement",
-          "label": "Unlock requirement",
-          "info": "Required cart subtotal to unlock the gift. If set to 0, the gift is unlocked automatically.",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info",
           "default": "80"
         },
         {
           "type": "text",
           "id": "locked_progress_text",
-          "label": "Progress text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "You're [amount] away from a free gift!",
-          "info": "Use [amount] to display the remaining amount to unlock the gift."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "text",
           "id": "unlocked_progress_text",
-          "label": "Unlocked text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Congrats! You unlocked a free gift!🎉",
-          "info": "Displayed after the gift is unlocked."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -2005,7 +2005,7 @@
           "step": 1,
           "unit": "px",
           "default": 13,
-          "label": "Mobile progress text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2015,22 +2015,22 @@
           "step": 1,
           "unit": "px",
           "default": 15,
-          "label": "Desktop progress text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "show_image_locked_overlay",
-          "label": "Show image locked overlay",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "header",
-          "content": "Layout"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "checkbox",
           "id": "show_image",
-          "label": "Show product image",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
@@ -2039,27 +2039,27 @@
           "options": [
             {
               "value": "3.5",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "4.25",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "5",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "5.75",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "6.5",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "5",
-          "label": "Image size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2068,7 +2068,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Image corner radius",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 2
         },
         {
@@ -2077,27 +2077,27 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.4",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.4",
-          "label": "Product title font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -2105,27 +2105,27 @@
           "options": [
             {
               "value": "0.9",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.05",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.35",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.5",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.2",
-          "label": "Description font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -2133,19 +2133,19 @@
           "options": [
             {
               "value": "next_to_title",
-              "label": "Next to title"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "separate",
-              "label": "Separate"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "hidden",
-              "label": "Hidden"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "separate",
-          "label": "Price position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -2153,22 +2153,22 @@
           "options": [
             {
               "value": "text",
-              "label": "Text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "number",
-              "label": "Regular price"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "text",
-          "label": "Regular price content"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "displayed_price_text",
-          "label": "Regular price text",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "FREE",
-          "info": "Displayed instead of the regular price (eg. $0.00) if \"Regular price conten\" is set to  \"Text\"."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "select",
@@ -2176,43 +2176,43 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.4",
-              "label": "Medium"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "1.4",
-          "label": "Price font size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "hide_compare_price",
-          "label": "Hide compare price",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_variant_picker",
-          "label": "Show variant picker",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "header",
-          "content": "Container"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2227,25 +2227,25 @@
         {
           "type": "checkbox",
           "id": "show_box_shadow",
-          "label": "Show drop shadow",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_border",
-          "label": "Show border",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "color",
           "id": "regular_border_color",
-          "label": "Locked border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#d7d7d7"
         },
         {
           "type": "color",
           "id": "selected_border_color",
-          "label": "Unlocked border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#d7d7d7"
         },
         {
@@ -2254,37 +2254,37 @@
           "options": [
             {
               "value": "0.1",
-              "label": "Thin"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "0.2",
-              "label": "Normal"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "0.1",
-          "label": "Border thickness"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "checkbox",
           "id": "show_custom_bg",
-          "label": "Show custom background",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": false
         },
         {
           "type": "color",
           "id": "regular_bg_color",
-          "label": "Locked ackground color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#F2F2F2"
         },
         {
           "type": "color",
           "id": "selected_bg_color",
-          "label": "Unlocked background color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#F2F2F2"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2293,7 +2293,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -2303,14 +2303,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "text_with_icon",
-      "name": "Text with icon",
+      "name": "t:sections.cart-drawer.blocks.text_with_icon.name",
       "settings": [
         {
           "type": "select",
@@ -2318,19 +2318,19 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Text"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2340,7 +2340,7 @@
           "step": 1,
           "unit": "px",
           "default": 14,
-          "label": "Mobile text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2350,24 +2350,24 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Desktop text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Text alignment",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "left"
@@ -2376,27 +2376,27 @@
           "type": "color",
           "id": "text_color",
           "default": "#121212",
-          "label": "Text color"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_1",
           "default": "Text with icon",
-          "label": "Text #1"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_2",
-          "label": "Text #2"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "inline_richtext",
           "id": "text_3",
-          "label": "Text #3"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Icons"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2406,72 +2406,72 @@
           "step": 5,
           "default": 120,
           "unit": "%",
-          "label": "Icon scale",
-          "info": "Relative to text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "color",
           "id": "icon_color",
           "default": "#121212",
-          "label": "Icons color"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "icon_1",
           "default": "check_circle",
-          "label": "Icon #1",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_1",
           "default": false,
-          "label": "Filled icon #1"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_1",
-          "label": "Custom icon #1"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "icon_2",
           "default": "check_circle",
-          "label": "Icon #2",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_2",
           "default": false,
-          "label": "Filled icon #2"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_2",
-          "label": "Custom icon #2"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "text",
           "id": "icon_3",
           "default": "check_circle",
-          "label": "Icon #3",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_3",
           "default": false,
-          "label": "Filled icon #3"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
           "id": "custom_icon_3",
-          "label": "Custom icon #3"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Container"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "select",
@@ -2479,19 +2479,19 @@
           "options": [
             {
               "value": "fit-content",
-              "label": "Fit text"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "100%",
-              "label": "Full container width"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "full_negative",
-              "label": "Full cart width"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "100%",
-          "label": "Width"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "select",
@@ -2499,16 +2499,16 @@
           "options": [
             {
               "value": "horizontal",
-              "label": "Horizontal"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "vertical",
-              "label": "Vertical"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "horizontal",
-          "label": "Stacking direction",
-          "info": "Applied when multiple texts are added."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -2516,20 +2516,20 @@
           "min": 0,
           "max": 6,
           "step": 0.5,
-          "label": "Stacking spacing",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 3
         },
         {
           "type": "checkbox",
           "id": "enable_bg",
           "default": false,
-          "label": "Enable background",
-          "info": "The following settings are applied when this option is enabled."
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "color",
           "id": "bg_color",
-          "label": "Background color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#F3F3F3"
         },
         {
@@ -2541,7 +2541,7 @@
           "unit": "%",
           "label": "t:settings_schema.global.settings.corner_radius.label",
           "default": 40,
-          "info": "Relative to font size"
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "range",
@@ -2549,7 +2549,7 @@
           "min": 1,
           "max": 5,
           "step": 0.5,
-          "label": "Padding",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 3
         },
         {
@@ -2558,19 +2558,19 @@
           "min": 0,
           "max": 5,
           "step": 1,
-          "label": "Border thickness",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "unit": "px",
           "default": 0
         },
         {
           "type": "color",
           "id": "border_color",
-          "label": "Border color",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "#B7B7B7"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2579,7 +2579,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -2589,14 +2589,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "t:sections.cart-drawer.blocks.image.name",
       "settings": [
         {
           "type": "select",
@@ -2604,20 +2604,20 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2626,25 +2626,25 @@
           "max": 100,
           "step": 10,
           "unit": "%",
-          "label": "Image width",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 100
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Image alignment",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
             }
           ],
           "default": "center"
@@ -2656,12 +2656,12 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Corner radius",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2670,7 +2670,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -2680,14 +2680,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "icon_with_text",
-      "name": "Icons with text",
+      "name": "t:sections.cart-drawer.blocks.icon_with_text.name",
       "settings": [
         {
           "type": "select",
@@ -2727,11 +2727,11 @@
             }
           ],
           "default": "accent-1",
-          "label": "Icon color"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Desktop"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2741,7 +2741,7 @@
           "step": 4,
           "unit": "px",
           "default": 48,
-          "label": "Icon size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2751,7 +2751,7 @@
           "step": 2,
           "unit": "px",
           "default": 12,
-          "label": "Icon & text spacing"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2761,11 +2761,11 @@
           "step": 2,
           "unit": "px",
           "default": 18,
-          "label": "Text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
-          "content": "Mobile"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2775,7 +2775,7 @@
           "step": 4,
           "unit": "px",
           "default": 40,
-          "label": "Icon size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2785,7 +2785,7 @@
           "step": 2,
           "unit": "px",
           "default": 10,
-          "label": "Icon & text spacing"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "range",
@@ -2795,7 +2795,7 @@
           "step": 2,
           "unit": "px",
           "default": 14,
-          "label": "Text size"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "header",
@@ -2813,7 +2813,7 @@
           "type": "checkbox",
           "id": "icon_1_fill",
           "default": false,
-          "label": "First icon fill"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
@@ -2838,7 +2838,7 @@
           "type": "checkbox",
           "id": "icon_2_fill",
           "default": false,
-          "label": "Second icon fill"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
@@ -2863,7 +2863,7 @@
           "type": "checkbox",
           "id": "icon_3_fill",
           "default": false,
-          "label": "Third icon fill"
+          "label": "t:sections.cart-drawer.settings.test_mode.label"
         },
         {
           "type": "image_picker",
@@ -2879,7 +2879,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2888,7 +2888,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -2898,25 +2898,25 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "payment_badges",
-      "name": "Payment badges",
+      "name": "t:sections.cart-drawer.blocks.payment_badges.name",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "enabled_payment_types",
-          "label": "Custom payment icons to show",
-          "info": "List of payments you want to show, split with a comma. Options are: afterpay, american_express, apple_pay, bitcoin, dankort, diners_club, discover, dogecoin, dwolla, facebook_pay, forbrugsforeningen, google_pay, ideal, jcb, klarna, klarna-pay-later, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa"
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2925,7 +2925,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 12
         },
         {
@@ -2935,44 +2935,44 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 12
         }
       ]
     },
     {
       "type": "discount_field",
-      "name": "Discount field",
+      "name": "t:sections.cart-drawer.blocks.discount_field.name",
       "limit": 1,
       "settings": [
         {
           "type": "checkbox",
           "id": "bottom_separator",
-          "label": "Enable bottom line separator",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": true
         },
         {
           "type": "text",
           "id": "placeholder",
-          "label": "Input placeholder",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Enter discount code"
         },
         {
           "type": "text",
           "id": "btn_label",
-          "label": "Button label",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "ADD"
         },
         {
           "type": "text",
           "id": "error_msg",
-          "label": "Error message",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "Please enter a discount code!",
-          "info": "Displayed if add button is clicked while the input is empty."
+          "info": "t:sections.cart-drawer.settings.heading_text.info"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -2981,7 +2981,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         },
         {
@@ -2991,19 +2991,19 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]
     },
     {
       "type": "cart_note",
-      "name": "Cart note",
+      "name": "t:sections.cart-drawer.blocks.cart_note.name",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "t:sections.cart-drawer.settings.test_mode.content"
         },
         {
           "type": "range",
@@ -3012,7 +3012,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 0
         },
         {
@@ -3022,7 +3022,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": 15
         }
       ]

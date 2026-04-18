@@ -15,7 +15,7 @@
 <div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.newsletter.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -120,8 +120,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.newsletter.settings.s0.label",
+      "info": "t:sections.newsletter.settings.s9.info",
       "default": false
     },
     {
@@ -130,23 +130,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.newsletter.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.newsletter.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.newsletter.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.newsletter.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.newsletter.settings.h10.content"
     },
     {
       "type": "select",
@@ -154,20 +154,20 @@
       "options": [
         {
           "value": "arrow",
-          "label": "Arrow button"
+          "label": "t:sections.newsletter.settings.display_id.label"
         },
         {
           "value": "solid",
-          "label": "Solid button"
+          "label": "t:sections.newsletter.settings.display_id.label"
         }
       ],
       "default": "solid",
-      "label": "Submit button type"
+      "label": "t:sections.newsletter.settings.display_id.label"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Solid button label",
+      "label": "t:sections.newsletter.settings.display_id.label",
       "default": "Sign up"
     },
     {

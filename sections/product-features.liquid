@@ -36,7 +36,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.product-features.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -218,7 +218,7 @@
 
 {% schema %}
 {
-  "name": "Product features",
+  "name": "t:sections.product-features.name",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
@@ -227,8 +227,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.product-features.settings.s0.label",
+      "info": "t:sections.product-features.settings.s77.info",
       "default": false
     },
     {
@@ -237,23 +237,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "t:sections.product-features.settings.h87.content"
     },
     {
       "type": "text",
@@ -284,7 +284,7 @@
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": "<p>Use this section to hightlight key features and benefits of your product</p>"
     },
     {
@@ -307,29 +307,29 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "t:sections.product-features.settings.display_id.label",
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "select",
       "id": "desktop_content_position",
-      "label": "Desktop content position",
+      "label": "t:sections.product-features.settings.display_id.label",
       "options": [
         {
           "value": "top",
-          "label": "Top"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
       "default": "top"
@@ -337,15 +337,15 @@
     {
       "type": "select",
       "id": "desktop_content_alignment",
-      "label": "Desktop content alignment",
+      "label": "t:sections.product-features.settings.display_id.label",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "right",
@@ -357,21 +357,21 @@
     {
       "type": "checkbox",
       "id": "hide_content_on_mobile",
-      "label": "Hide content on mobile",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": false
     },
     {
       "type": "select",
       "id": "mobile_content_position",
-      "label": "Mobile content position",
+      "label": "t:sections.product-features.settings.display_id.label",
       "options": [
         {
           "value": "top",
-          "label": "Top"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "bottom",
-          "label": "Bottom"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
       "default": "top"
@@ -379,9 +379,9 @@
     {
       "type": "checkbox",
       "id": "content_corner_radius",
-      "label": "Enable content corner radius",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": true,
-      "info": "This option is automatically optimized for all layout & color scheme settings."
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "select",
@@ -409,7 +409,7 @@
         }
       ],
       "default": "background-1",
-      "label": "Content color scheme"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "select",
@@ -437,16 +437,16 @@
         }
       ],
       "default": "background-1",
-      "label": "Section color scheme"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Main image"
+      "content": "t:sections.product-features.settings.h88.content"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "select",
@@ -454,14 +454,14 @@
       "options": [
         {
           "value": "limited",
-          "label": "Limited"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "unlimited",
-          "label": "Maximum possible"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
-      "label": "Desktop image width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": "limited"
     },
     {
@@ -471,31 +471,31 @@
       "max": 1000,
       "step": 50,
       "unit": "px",
-      "label": "Image max width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": 900
     },
     {
       "type": "checkbox",
       "id": "full_page_width",
-      "label": "Use full page width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "image_corner_radius",
-      "label": "Enable image corner radius",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": false,
-      "info": "This option is automatically optimized for all layout & color scheme settings."
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "image_picker",
       "id": "mobile_image",
-      "label": "Mobile image",
-      "info": "If this is empty, the image for desktop will be applied to mobile."
+      "label": "t:sections.product-features.settings.display_id.label",
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "header",
-      "content": "Hotspot buttons & modals"
+      "content": "t:sections.product-features.settings.h89.content"
     },
     {
       "type": "select",
@@ -503,14 +503,14 @@
       "options": [
         {
           "value": "click",
-          "label": "Click"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "hover",
-          "label": "Hover"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
-      "label": "Open modal on:",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": "click"
     },
     {
@@ -539,12 +539,12 @@
         }
       ],
       "default": "inverse",
-      "label": "Hotspot buttons color scheme"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "display_hotspots_animation",
-      "label": "Display button ripple animation",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": true
     },
     {
@@ -573,7 +573,7 @@
         }
       ],
       "default": "background-1",
-      "label": "Hotspots modal color scheme"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "select",
@@ -581,22 +581,22 @@
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "value": "full",
-          "label": "Full width"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ],
-      "label": "Modal image width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": "full"
     },
     {
       "type": "checkbox",
       "id": "contain_hotspot_modal",
-      "label": "Contain modals inside the main image",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": false,
-      "info": "Prevents modals from getting displayed outside the image on desktop. This option is automatically turned on for mobile."
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "range",
@@ -605,7 +605,7 @@
       "max": 600,
       "step": 20,
       "unit": "px",
-      "label": "Hotspot modal desktop width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": 340
     },
     {
@@ -615,12 +615,12 @@
       "max": 300,
       "step": 10,
       "unit": "px",
-      "label": "Hotspot modal mobile width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": 200
     },
     {
       "type": "header",
-      "content": "Bullet Points"
+      "content": "t:sections.product-features.settings.mobile_image.content"
     },
     {
       "type": "select",
@@ -648,14 +648,14 @@
         }
       ],
       "default": "inverse",
-      "label": "Bullet points color scheme"
+      "label": "t:sections.product-features.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "contain_bullet_points",
-      "label": "Contain bullet points inside the image",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": false,
-      "info": "Prevents bullet points from getting displayed outside the image on desktop. This option is automatically turned on for mobile."
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "range",
@@ -664,7 +664,7 @@
       "max": 600,
       "step": 20,
       "unit": "px",
-      "label": "Bullet point desktop maximum width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": 400
     },
     {
@@ -674,9 +674,9 @@
       "max": 100,
       "step": 5,
       "unit": "%",
-      "label": "Bullet point mobile maximum width",
+      "label": "t:sections.product-features.settings.display_id.label",
       "default": 60,
-      "info": "Bullet points are automatically optimized to not overflow on mobile, no matter the selected size."
+      "info": "t:sections.product-features.settings.display_id.info"
     },
     {
       "type": "header",
@@ -706,11 +706,11 @@
   "blocks": [
     {
       "type": "hotspot",
-      "name": "Hotspot",
+      "name": "t:sections.product-features.blocks.hotspot.name",
       "settings": [
         {
           "type": "header",
-          "content": "Hotspot position"
+          "content": "t:sections.product-features.settings.mobile_image.content"
         },
         {
           "type": "range",
@@ -719,7 +719,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Horizontal offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
@@ -729,18 +729,18 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Vertical offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
           "type": "header",
-          "content": "Mobile hotspot position"
+          "content": "t:sections.product-features.settings.mobile_image.content"
         },
         {
           "type": "checkbox",
           "id": "enable_mobile_position",
-          "label": "Enable custom mobile positioning",
-          "info": "Enable this option if you are using a separate image for mobile."
+          "label": "t:sections.product-features.settings.display_id.label",
+          "info": "t:sections.product-features.settings.display_id.info"
         },
         {
           "type": "range",
@@ -749,7 +749,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile horizontal offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
@@ -759,17 +759,17 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile vertical offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "t:sections.product-features.settings.h93.content"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "type": "text",
@@ -780,7 +780,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "label": "Text",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": "<p>Highlight a specifit feature of your product.</p>"
         },
         {
@@ -789,29 +789,29 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.product-features.settings.display_id.label"
             }
           ],
           "default": "center",
-          "label": "Text alignment"
+          "label": "t:sections.product-features.settings.display_id.label"
         }
       ]
     },
     {
       "type": "bullet_point",
-      "name": "Bullet point",
+      "name": "t:sections.product-features.blocks.bullet_point.name",
       "settings": [
         {
           "type": "header",
-          "content": "Bullet position"
+          "content": "t:sections.product-features.settings.mobile_image.content"
         },
         {
           "type": "range",
@@ -820,7 +820,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Horizontal offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 80
         },
         {
@@ -830,7 +830,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Vertical offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 20
         },
         {
@@ -839,15 +839,15 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.product-features.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Direction"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "type": "select",
@@ -855,29 +855,29 @@
           "options": [
             {
               "value": "top",
-              "label": "Top"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "bottom",
-              "label": "Bottom"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "none",
-              "label": "None"
+              "label": "t:sections.product-features.settings.display_id.label"
             }
           ],
           "default": "bottom",
-          "label": "Line bend"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Mobile bullet position"
+          "content": "t:sections.product-features.settings.mobile_image.content"
         },
         {
           "type": "checkbox",
           "id": "enable_mobile_position",
-          "label": "Enable custom mobile positioning",
-          "info": "Enable this option if you are using a separate image for mobile."
+          "label": "t:sections.product-features.settings.display_id.label",
+          "info": "t:sections.product-features.settings.display_id.info"
         },
         {
           "type": "range",
@@ -886,7 +886,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile horizontal offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
@@ -896,7 +896,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Mobile vertical offset",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": 30
         },
         {
@@ -905,15 +905,15 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "t:sections.product-features.settings.display_id.label"
             }
           ],
           "default": "left",
-          "label": "Mobile direction"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "type": "select",
@@ -921,23 +921,23 @@
           "options": [
             {
               "value": "top",
-              "label": "Top"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "bottom",
-              "label": "Bottom"
+              "label": "t:sections.product-features.settings.display_id.label"
             },
             {
               "value": "none",
-              "label": "None"
+              "label": "t:sections.product-features.settings.display_id.label"
             }
           ],
           "default": "bottom",
-          "label": "Mobile line bend"
+          "label": "t:sections.product-features.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "t:sections.product-features.settings.h96.content"
         },
         {
           "type": "text",
@@ -948,7 +948,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "label": "Text",
+          "label": "t:sections.product-features.settings.display_id.label",
           "default": "<p>Highlight a specifit feature of your product.</p>"
         }
       ]
@@ -956,7 +956,7 @@
   ],
   "presets": [
     {
-      "name": "Product features",
+      "name": "t:sections.product-features.name",
       "blocks": [
         {
           "type": "hotspot",

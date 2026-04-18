@@ -36,7 +36,7 @@
 
 {% schema %}
 {
-  "name": "Sections group",
+  "name": "t:sections.section-group.name",
   "settings": [
     {
       "type": "select",
@@ -44,23 +44,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.section-group.settings.s0.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.section-group.settings.visibility.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.section-group.settings.visibility.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": "always-display"
     },
     {
       "type": "paragraph",
-      "content": "This section is used to combine 2 sections. Paste their IDs in to display them next to each other on desktop"
+      "content": "t:sections.section-group.settings.h11.content"
     },
     {
       "type": "select",
@@ -92,36 +92,36 @@
     },
     {
       "type": "header",
-      "content": "Section #1"
+      "content": "t:sections.section-group.settings.h12.content"
     },
     {
       "type": "text",
       "id": "section_1_id",
-      "label": "Section #1 ID"
+      "label": "t:sections.section-group.settings.visibility.label"
     },
     {
       "type": "checkbox",
       "id": "mobile_reverse_grid",
-      "label": "Display second on mobile",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": false
     },
     {
       "type": "header",
-      "content": "Section #2"
+      "content": "t:sections.section-group.settings.h13.content"
     },
     {
       "type": "text",
       "id": "section_2_id",
-      "label": "Section #2 ID"
+      "label": "t:sections.section-group.settings.visibility.label"
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.section-group.settings.mobile_reverse_grid.content"
     },
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": false
     },
     {
@@ -131,17 +131,17 @@
       "max": 150,
       "step": 10,
       "unit": "px",
-      "label": "Spacing",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": 80
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "t:sections.section-group.settings.mobile_reverse_grid.content"
     },
     {
       "type": "checkbox",
       "id": "mobile_full_page",
-      "label": "Full page width",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": false
     },
     {
@@ -151,7 +151,7 @@
       "max": 100,
       "step": 10,
       "unit": "px",
-      "label": "Spacing",
+      "label": "t:sections.section-group.settings.visibility.label",
       "default": 50
     },
     {
@@ -181,7 +181,7 @@
   ],
   "presets": [
     {
-      "name": "Sections group"
+      "name": "t:sections.section-group.name"
     }
   ],
   "disabled_on": {

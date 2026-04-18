@@ -15,7 +15,7 @@
 <div class="color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.contact-form.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -143,8 +143,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.contact-form.settings.s0.label",
+      "info": "t:sections.contact-form.settings.s7.info",
       "default": false
     },
     {
@@ -153,29 +153,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.contact-form.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.contact-form.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.contact-form.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.contact-form.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.contact-form.settings.h8.content"
     },
     {
       "type": "text",
       "id": "heading",
       "default": "Contact form",
-      "label": "Heading"
+      "label": "t:sections.contact-form.settings.display_id.label"
     },
     {
       "type": "select",
@@ -200,7 +200,7 @@
     {
       "type": "checkbox",
       "id": "button_full_width",
-      "label": "Use full width button style",
+      "label": "t:sections.contact-form.settings.display_id.label",
       "default": true
     },
     {

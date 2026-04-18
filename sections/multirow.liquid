@@ -44,7 +44,7 @@
 <div class="multirow section-{{ section.id }}-padding gradient color-{{ section.settings.section_color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.multirow.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -173,8 +173,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.multirow.settings.s0.label",
+      "info": "t:sections.multirow.settings.s13.info",
       "default": false
     },
     {
@@ -183,18 +183,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.multirow.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.multirow.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.multirow.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.multirow.settings.display_id.label",
       "default": "always-display"
     },
     {
@@ -423,7 +423,7 @@
     {
       "type": "checkbox",
       "id": "mobile_full_media_width",
-      "label": "Full media width",
+      "label": "t:sections.multirow.settings.display_id.label",
       "default": false
     },
     {
@@ -432,15 +432,15 @@
       "options": [
         {
           "value": "normal",
-          "label": "Media first"
+          "label": "t:sections.multirow.settings.display_id.label"
         },
         {
           "value": "reverse",
-          "label": "Media second"
+          "label": "t:sections.multirow.settings.display_id.label"
         }
       ],
       "default": "normal",
-      "label": "Mobile media position"
+      "label": "t:sections.multirow.settings.display_id.label"
     },
     {
       "type": "select",
@@ -499,13 +499,13 @@
         },
         {
           "type": "header",
-          "content": "Or"
+          "content": "t:sections.multirow.settings.h17.content"
         },
         {
           "type": "video",
           "id": "video",
-          "label": "Video",
-          "info": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+          "label": "t:sections.multirow.settings.display_id.label",
+          "info": "t:sections.multirow.settings.display_id.info"
         },
         {
           "type": "text",
@@ -539,19 +539,19 @@
         {
           "type": "text",
           "id": "atc_button_label",
-          "label": "Add to Cart button label",
-          "info": "Leave the label blank to hide the Add to Cart button."
+          "label": "t:sections.multirow.settings.display_id.label",
+          "info": "t:sections.multirow.settings.display_id.info"
         },
         {
           "type": "product",
           "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          "label": "t:sections.multirow.settings.display_id.label",
+          "info": "t:sections.multirow.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "t:sections.multirow.settings.display_id.label"
         }
       ]
     }

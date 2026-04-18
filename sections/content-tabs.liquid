@@ -33,7 +33,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.content-tabs.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -160,13 +160,13 @@
 
 {% schema %}
 {
-  "name": "Content tabs",
+  "name": "t:sections.content-tabs.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.content-tabs.settings.s0.label",
+      "info": "t:sections.content-tabs.settings.s61.info",
       "default": false
     },
     {
@@ -175,29 +175,29 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "t:sections.content-tabs.settings.h68.content"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Content tabs",
-      "label": "Heading"
+      "label": "t:sections.content-tabs.settings.display_id.label"
     },
     {
       "type": "select",
@@ -249,7 +249,7 @@
     },
     {
       "type": "header",
-      "content": "Tabs"
+      "content": "t:sections.content-tabs.settings.h69.content"
     },
     {
       "type": "select",
@@ -257,23 +257,23 @@
       "options": [
         {
           "value": "80",
-          "label": "Extra small"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "100",
-          "label": "Small"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "120",
-          "label": "Medium"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "normal",
-          "label": "Normal"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ],
       "default": "100",
-      "label": "Container width"
+      "label": "t:sections.content-tabs.settings.display_id.label"
     },
     {
       "type": "select",
@@ -301,7 +301,7 @@
         }
       ],
       "default": "accent-1",
-      "label": "Tab buttons color"
+      "label": "t:sections.content-tabs.settings.display_id.label"
     },
     {
       "type": "range",
@@ -310,7 +310,7 @@
       "max": 40,
       "step": 2,
       "unit": "px",
-      "label": "Buttons corner radius",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": 6
     },
     {
@@ -319,15 +319,15 @@
       "options": [
         {
           "value": "outlined",
-          "label": "Outlined"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "shadow",
-          "label": "Drop shadow"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ],
       "default": "outlined",
-      "label": "Buttons container style"
+      "label": "t:sections.content-tabs.settings.display_id.label"
     },
     {
       "type": "select",
@@ -335,20 +335,20 @@
       "options": [
         {
           "value": "opacity",
-          "label": "Opacity"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "moving",
-          "label": "Moving"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ],
       "default": "moving",
-      "label": "Active button animation type",
-      "info": "Choosing \"Moving\" is only recommended if all your buttons fit in one row."
+      "label": "t:sections.content-tabs.settings.display_id.label",
+      "info": "t:sections.content-tabs.settings.display_id.info"
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.content-tabs.settings.h70.content"
     },
     {
       "type": "select",
@@ -356,15 +356,15 @@
       "options": [
         {
           "value": "vertical",
-          "label": "Vertical"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "value": "horizontal",
-          "label": "Horizontal"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ],
       "default": "horizontal",
-      "label": "Desktop header layout"
+      "label": "t:sections.content-tabs.settings.display_id.label"
     },
     {
       "type": "range",
@@ -373,19 +373,19 @@
       "max": 30,
       "step": 1,
       "unit": "px",
-      "label": "Buttons font size",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": 15
     },
     {
       "type": "checkbox",
       "id": "desktop_full_size_buttons",
-      "label": "Expand buttons to full width",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": false,
-      "info": "Evently expands all buttons to fit whole container width. Recommended only if all your buttons fit in one row."
+      "info": "t:sections.content-tabs.settings.display_id.info"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "t:sections.content-tabs.settings.h71.content"
     },
     {
       "type": "range",
@@ -394,15 +394,15 @@
       "max": 25,
       "step": 1,
       "unit": "px",
-      "label": "Buttons font size",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": 13
     },
     {
       "type": "checkbox",
       "id": "mobile_full_size_buttons",
-      "label": "Expand buttons to full width",
+      "label": "t:sections.content-tabs.settings.display_id.label",
       "default": true,
-      "info": "Evently expands all buttons to fit whole container width. Recommended only if all your buttons fit in one row."
+      "info": "t:sections.content-tabs.settings.display_id.info"
     },
     {
       "type": "header",
@@ -432,59 +432,59 @@
   "blocks": [
     {
       "type": "tab",
-      "name": "Tab",
+      "name": "t:sections.content-tabs.blocks.tab.name",
       "settings": [
         {
           "type": "header",
-          "content": "Tab button"
+          "content": "t:sections.content-tabs.settings.h72.content"
         },
         {
           "type": "inline_richtext",
           "id": "btn_label",
-          "label": "Tab button label",
+          "label": "t:sections.content-tabs.settings.display_id.label",
           "default": "Tab button"
         },
         {
           "type": "text",
           "id": "btn_icon",
-          "label": "Icon",
+          "label": "t:sections.content-tabs.settings.display_id.label",
           "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_btn_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Media"
+          "content": "t:sections.content-tabs.settings.h73.content"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Or"
+          "content": "t:sections.content-tabs.settings.filled_btn_icon.content"
         },
         {
           "type": "video",
           "id": "video",
-          "label": "Video"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "loop",
-          "label": "Video looping",
+          "label": "t:sections.content-tabs.settings.display_id.label",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "muted_autoplay",
-          "label": "Muted autoplay",
-          "info": "Use this option instead of adding GIFs. The quality is better and the loading time is much quicker. Alternatively, if you disable this option, a play button will be displayed."
+          "label": "t:sections.content-tabs.settings.display_id.label",
+          "info": "t:sections.content-tabs.settings.display_id.info"
         },
         {
           "type": "select",
@@ -512,23 +512,23 @@
             }
           ],
           "default": "accent-1",
-          "label": "Play button color scheme"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "btn_animation",
-          "label": "Enable button ripple animation",
+          "label": "t:sections.content-tabs.settings.display_id.label",
           "default": false
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "t:sections.content-tabs.settings.filled_btn_icon.content"
         },
         {
           "type": "text",
           "id": "title",
           "default": "Tab heading",
-          "label": "Heading"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "select",
@@ -536,19 +536,19 @@
           "options": [
             {
               "value": "h3",
-              "label": "Extra small"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "h2",
-              "label": "Small"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "h1",
-              "label": "Medium"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "h0",
-              "label": "Large"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "h1",
@@ -557,7 +557,7 @@
         {
           "type": "richtext",
           "id": "text",
-          "label": "Text",
+          "label": "t:sections.content-tabs.settings.display_id.label",
           "default": "<p>Use this section to display different benefits or different products that are sorted by clickable tabs.</p>"
         },
         {
@@ -581,23 +581,23 @@
         {
           "type": "text",
           "id": "atc_button_label",
-          "label": "Add to Cart button label",
-          "info": "Leave the label blank to hide the Add to Cart button."
+          "label": "t:sections.content-tabs.settings.display_id.label",
+          "info": "t:sections.content-tabs.settings.display_id.info"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Add to Cart product",
-          "info": "If empty, the product from the product page will be added in the cart (with the selected variant and quantity)."
+          "label": "t:sections.content-tabs.settings.display_id.label",
+          "info": "t:sections.content-tabs.settings.display_id.info"
         },
         {
           "type": "header",
-          "content": "Desktop layout"
+          "content": "t:sections.content-tabs.settings.filled_btn_icon.content"
         },
         {
           "type": "select",
@@ -605,15 +605,15 @@
           "options": [
             {
               "value": "half",
-              "label": "Half of the tab"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "full",
-              "label": "Full width of the tab"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "half",
-          "label": "Desktop media (image/video) width"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "select",
@@ -621,15 +621,15 @@
           "options": [
             {
               "value": "media_first",
-              "label": "Media first"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "media_second",
-              "label": "Media second"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "media_first",
-          "label": "Desktop media placement"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "select",
@@ -637,23 +637,23 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "right",
-              "label": "Left"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "center",
-          "label": "Desktop text alignment"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "header",
-          "content": "Mobile layout"
+          "content": "t:sections.content-tabs.settings.filled_btn_icon.content"
         },
         {
           "type": "select",
@@ -661,15 +661,15 @@
           "options": [
             {
               "value": "media_first",
-              "label": "Media first"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "media_second",
-              "label": "Media second"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "media_first",
-          "label": "Mobile media placement"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         },
         {
           "type": "select",
@@ -677,26 +677,26 @@
           "options": [
             {
               "value": "mobile-left",
-              "label": "Left"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "mobile-center",
-              "label": "Center"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             },
             {
               "value": "mobile-right",
-              "label": "Left"
+              "label": "t:sections.content-tabs.settings.display_id.label"
             }
           ],
           "default": "mobile-center",
-          "label": "Mobile text alignment"
+          "label": "t:sections.content-tabs.settings.display_id.label"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Content tabs",
+      "name": "t:sections.content-tabs.name",
       "blocks": [
         {
           "type": "tab"

@@ -25,7 +25,7 @@
 <div class="color-{{ section.settings.color_scheme }} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
+      <span class="copy-text">{{ 'sections.logo-list.text_0' | t }}</span>
       <span class="copy-success">ID copied successfully!</span>
     </copy-button>
   {% endif %}
@@ -90,13 +90,13 @@
 
 {% schema %}
 {
-  "name": "Featured on",
+  "name": "t:sections.logo-list.name",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "t:sections.logo-list.settings.s0.label",
+      "info": "t:sections.logo-list.settings.s19.info",
       "default": false
     },
     {
@@ -105,25 +105,25 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "t:sections.logo-list.settings.display_id.label"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "t:sections.logo-list.settings.display_id.label"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "t:sections.logo-list.settings.display_id.label"
         }
       ],
-      "label": "Display on",
+      "label": "t:sections.logo-list.settings.display_id.label",
       "default": "always-display"
     },
     {
       "type": "text",
       "id": "title",
       "default": "Featured on",
-      "label": "Heading"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     {
       "type": "select",
@@ -148,7 +148,7 @@
     {
       "type": "checkbox",
       "id": "gray_logos",
-      "label": "Gray logos",
+      "label": "t:sections.logo-list.settings.display_id.label",
       "default": false
     },
     {
@@ -181,7 +181,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop"
+      "content": "t:sections.logo-list.settings.h20.content"
     },
     {
       "type": "select",
@@ -189,15 +189,15 @@
       "options": [
         {
           "value": "vertical",
-          "label": "Vertical"
+          "label": "t:sections.logo-list.settings.display_id.label"
         },
         {
           "value": "horizontal",
-          "label": "Horizontal"
+          "label": "t:sections.logo-list.settings.display_id.label"
         }
       ],
       "default": "horizontal",
-      "label": "Desktop layout"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     { 
       "type": "range",
@@ -206,11 +206,11 @@
       "max": 150,
       "step": 10,
       "default": 50,
-      "label": "Desktop logo height"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "t:sections.logo-list.settings.h21.content"
     },
     {
       "type": "range",
@@ -228,22 +228,22 @@
       "max": 150,
       "step": 10,
       "default": 50,
-      "label": "Mobile logo height"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "t:sections.logo-list.settings.desktop_logo_height.content"
     },
     {
       "type": "checkbox",
       "id": "mobile_slider",
       "default": true,
-      "label": "Enable mobile slider"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Autoplay",
+      "label": "t:sections.logo-list.settings.display_id.label",
       "default": true
     },
     {
@@ -254,12 +254,12 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "t:sections.logo-list.settings.display_id.label"
     },
     {
       "type": "checkbox",
       "id": "show_dots",
-      "label": "Show dots",
+      "label": "t:sections.logo-list.settings.display_id.label",
       "default": true
     },
     {
@@ -290,22 +290,22 @@
   "blocks": [
     {
       "type": "logo",
-      "name": "Logo",
+      "name": "t:sections.logo-list.blocks.logo.name",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Logo"
+          "label": "t:sections.logo-list.settings.display_id.label"
         },
         {
           "type": "url",
           "id": "link",
-          "label": "Link"
+          "label": "t:sections.logo-list.settings.display_id.label"
         },
         {
           "type": "checkbox",
           "id": "target_blank",
-          "label": "Open link in a new tab",
+          "label": "t:sections.logo-list.settings.display_id.label",
           "default": false
         }
       ]
@@ -313,7 +313,7 @@
   ],
   "presets": [
     {
-      "name": "Featured on",
+      "name": "t:sections.logo-list.name",
       "blocks": [
         {
           "type": "logo"
