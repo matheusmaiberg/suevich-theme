@@ -676,6 +676,9 @@
     },
     "reviews": {
       "aria_label_0": "Customer reviews"
+    },
+    "product-media": {
+      "title_0": "title"
     }
   },
   "blocks": {

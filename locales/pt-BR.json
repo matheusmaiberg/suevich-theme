@@ -328,7 +328,8 @@
       "use_fewer_filters_html": "Usar menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">remover tudo</a>"
     },
     "video": {
-      "load_video": "Carregar vídeo: {{ description }}"
+      "load_video": "Carregar vídeo: {{ description }}",
+      "text_0": "Click to copy section ID"
     },
     "slideshow": {
       "load_slide": "Carregar slide",
@@ -341,6 +342,131 @@
     },
     "page": {
       "title": "Título da página"
+    },
+    "bundle-deals": {
+      "text_0": "Click to copy section ID"
+    },
+    "cart-drawer": {
+      "text_0": "Add"
+    },
+    "collage": {
+      "text_0": "Click to copy section ID"
+    },
+    "collapsible-content": {
+      "text_0": "Click to copy section ID"
+    },
+    "collection-list": {
+      "text_0": "Click to copy section ID"
+    },
+    "comparison-slider": {
+      "text_0": "Click to copy section ID"
+    },
+    "comparison-table": {
+      "text_0": "Click to copy section ID"
+    },
+    "contact-form": {
+      "text_0": "Click to copy section ID"
+    },
+    "content-tabs": {
+      "text_0": "Click to copy section ID"
+    },
+    "custom-columns": {
+      "text_0": "Click to copy section ID"
+    },
+    "custom-liquid": {
+      "text_0": "Click to copy section ID"
+    },
+    "email-signup-banner": {
+      "text_0": "Click to copy section ID"
+    },
+    "featured-blog": {
+      "text_0": "Click to copy section ID"
+    },
+    "featured-collection": {
+      "text_0": "Click to copy section ID"
+    },
+    "featured-product": {
+      "text_0": "Click to copy section ID"
+    },
+    "icon-bar": {
+      "text_0": "Click to copy section ID"
+    },
+    "icons-with-content": {
+      "text_0": "Click to copy section ID"
+    },
+    "image-banner": {
+      "text_0": "Click to copy section ID"
+    },
+    "image-slider": {
+      "text_0": "Click to copy section ID"
+    },
+    "image-with-text": {
+      "text_0": "Click to copy section ID"
+    },
+    "insta-stories": {
+      "text_0": "Click to copy section ID"
+    },
+    "logo-list": {
+      "text_0": "Click to copy section ID"
+    },
+    "main-password-footer": {
+      "aria_label_0": "Shopify"
+    },
+    "main-product": {
+      "text_0": "Click to apply a discount",
+      "text_1": "Author",
+      "text_2": "Author",
+      "text_3": "Author",
+      "text_4": "FREE XXX INCLUDED",
+      "text_5": "Exclusive",
+      "text_6": "Exclusive",
+      "text_7": "Exclusive",
+      "text_8": "Exclusive"
+    },
+    "multicolumn": {
+      "text_0": "Click to copy section ID"
+    },
+    "multirow": {
+      "text_0": "Click to copy section ID"
+    },
+    "newsletter": {
+      "text_0": "Click to copy section ID"
+    },
+    "pricing-table": {
+      "text_0": "Click to copy section ID",
+      "text_1": "Assign a product in block settings"
+    },
+    "product-features": {
+      "text_0": "Click to copy section ID"
+    },
+    "related-products": {
+      "text_0": "Click to copy section ID"
+    },
+    "results": {
+      "text_0": "Click to copy section ID"
+    },
+    "rich-text": {
+      "text_0": "Click to copy section ID",
+      "text_1": "Talk about your brand"
+    },
+    "shoppable-image": {
+      "text_0": "Click to copy section ID"
+    },
+    "ss-testimonial-14": {
+      "text_0": "Trustpilot",
+      "text_1": "Text"
+    },
+    "testimonials": {
+      "text_0": "Click to copy section ID",
+      "text_1": "Author"
+    },
+    "track-order": {
+      "placeholder_0": "Tracking Number",
+      "text_1": "Click to copy section ID",
+      "text_2": "Tracking Number"
+    },
+    "vertical-ticker": {
+      "text_0": "Click to copy section ID"
     }
   },
   "localization": {
@@ -517,6 +643,57 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "contact_method_title": "Email or Phone"
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Send me live tracking and order updates"
+      },
+      "general": {
+        "continue_to_payment_method": "Confirm Shipping Selection",
+        "pay_now_button_label": "Complete Purchase"
+      },
+      "shipping": {
+        "shipping_method_title": "Shipping method"
+      },
+      "payment": {
+        "title": "Secure Checkout",
+        "card_security_notice": "All transactions are secure and encrypted. Your order includes free returns and 24/7 access to our award-winning customer service"
+      },
+      "delivery_options": {
+        "shipping_address": "Shipping Address"
+      }
+    }
+  },
+  "customer_accounts": {
+    "account_information": {
+      "title": "Profile",
+      "profile_card": {
+        "title": "Profile"
+      }
+    }
+  },
+  "snippets": {
+    "quantity-breaks": {
+      "aria_label_0": "Quantity",
+      "aria_label_1": "Quantity",
+      "aria_label_2": "Quantity",
+      "aria_label_3": "Quantity"
+    },
+    "reviews": {
+      "aria_label_0": "Customer reviews"
+    },
+    "product-media": {
+      "title_0": "title"
+    }
+  },
+  "blocks": {
+    "estimated-shipping": {
+      "text_0": "Get it between"
     }
   }
 }

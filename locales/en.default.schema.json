@@ -3019,7 +3019,8 @@
         "icon_1": {
           "info": {
             "label": "Applied when multiple texts are added."
-          }
+          },
+          "label": "#1 Icon"
         },
         "s583": {
           "info": {
@@ -3040,6 +3041,75 @@
           "content": {
             "content": "Container"
           }
+        },
+        "filled_icon_1": {
+          "label": "#1 Filled icon"
+        },
+        "top_text_1": {
+          "label": "#1 Top Text"
+        },
+        "bottom_text_1": {
+          "label": "#1 Bottom Text"
+        },
+        "min_days_1": {
+          "label": "#1 Minimum required days"
+        },
+        "max_days_1": {
+          "label": "#1 Maximum required days"
+        },
+        "icon_2": {
+          "label": "#2 Icon"
+        },
+        "filled_icon_2": {
+          "label": "#2 Filled icon"
+        },
+        "top_text_2": {
+          "label": "#2 Top Text"
+        },
+        "bottom_text_2": {
+          "label": "#2 Bottom Text"
+        },
+        "min_days_2": {
+          "label": "#2 Minimum required days"
+        },
+        "max_days_2": {
+          "label": "#2 Maximum required days"
+        },
+        "icon_3": {
+          "label": "#3 Icon"
+        },
+        "filled_icon_3": {
+          "label": "#3 Filled icon"
+        },
+        "top_text_3": {
+          "label": "#3 Top Text"
+        },
+        "bottom_text_3": {
+          "label": "#3 Bottom Text"
+        },
+        "min_days_3": {
+          "label": "#3 Minimum required days"
+        },
+        "max_days_3": {
+          "label": "#3 Maximum required days"
+        },
+        "icon_4": {
+          "label": "#4 Icon"
+        },
+        "filled_icon_4": {
+          "label": "#4 Filled icon"
+        },
+        "top_text_4": {
+          "label": "#4 Top Text"
+        },
+        "bottom_text_4": {
+          "label": "#4 Bottom Text"
+        },
+        "min_days_4": {
+          "label": "#4 Minimum required days"
+        },
+        "max_days_4": {
+          "label": "#4 Maximum required days"
         }
       }
     },
@@ -3236,6 +3306,9 @@
           "content": {
             "content": "Content"
           }
+        },
+        "unknown_2": {
+          "content": "or"
         }
       },
       "blocks": {
@@ -5205,6 +5278,13 @@
           "content": {
             "content": "Content"
           }
+        },
+        "desktop_content_alignment": {
+          "options": {
+            "right": {
+              "label": "right"
+            }
+          }
         }
       },
       "name": {
@@ -5432,6 +5512,13 @@
           "content": {
             "content": "Product information"
           }
+        },
+        "desktop_content_alignment": {
+          "options": {
+            "right": {
+              "label": "right"
+            }
+          }
         }
       },
       "name": {
@@ -5528,6 +5615,12 @@
           "content": {
             "content": "Background color"
           }
+        },
+        "month": {
+          "label": "month"
+        },
+        "day": {
+          "label": "day"
         }
       },
       "name": {
@@ -5674,6 +5767,9 @@
           "content": {
             "content": "Content"
           }
+        },
+        "unknown_2": {
+          "content": "or"
         }
       },
       "name": {
