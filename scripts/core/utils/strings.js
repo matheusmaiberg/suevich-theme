@@ -1,15 +1,14 @@
 /**
  * String utilities shared across all scripts.
- * Detects English text, sanitizes keys, generates namespaces.
+ * Detects human-readable text, sanitizes keys, generates namespaces.
  */
-
-const MIN_ENGLISH_WORD_LENGTH = 2;
 
 /**
- * Checks if a string looks like human-readable English text
- * (as opposed to CSS classes, handles, URLs, variable names).
+ * Checks if a string looks like human-readable text
+ * (any natural language: EN, PT-BR, DE, etc.).
+ * Rejects CSS classes, handles, URLs, variable names, numeric values.
  */
-function isEnglishText(str) {
+function isHumanText(str) {
   if (!str || typeof str !== 'string') return false;
   const trimmed = str.trim();
   if (trimmed.length < 2) return false;
@@ -19,22 +18,36 @@ function isEnglishText(str) {
     return false;
   }
 
-  // Skip single-word handles / CSS classes / IDs
-  if (/^[a-z0-9_-]+$/i.test(trimmed) && trimmed.length < 15) return false;
+  // Skip snake_case / kebab-case handles (technical identifiers)
+  if (/^[a-z0-9]+[-_][a-z0-9_-]+$/i.test(trimmed)) return false;
 
-  // Skip URLs / emails
-  if (/https?:|www\.|@/i.test(trimmed)) return false;
+  // Skip camelCase / PascalCase identifiers (no spaces, mixed case)
+  if (/^[a-z]+[A-Z]/.test(trimmed) && !trimmed.includes(' ')) return false;
+
+  // Skip pure URLs / emails (but allow text that contains markdown links)
+  if (/^https?:\/\//i.test(trimmed) || /^www\./i.test(trimmed) || /^[^\s]+@[^\s]+\.[^\s]+$/i.test(trimmed)) {
+    return false;
+  }
 
   // Skip Liquid expressions
   if (/\{\{|\{%/.test(trimmed)) return false;
 
   // Skip already-localized
   if (trimmed.startsWith('t:')) return false;
+  if (trimmed.includes('{{') && trimmed.includes('| t }}')) return false;
 
-  // Must contain at least a couple of letters
-  if (!/[a-zA-Z]{2,}/.test(trimmed)) return false;
+  // Must contain at least a couple of letters (supports accented chars)
+  if (!/[a-zA-ZÀ-ÿ]{2,}/.test(trimmed)) return false;
 
   return true;
+}
+
+/**
+ * Legacy alias — kept for backward compatibility.
+ * Use isHumanText() for new code; it supports any natural language.
+ */
+function isEnglishText(str) {
+  return isHumanText(str);
 }
 
 /**
@@ -67,6 +80,7 @@ function pathToNamespace(relPath) {
 }
 
 module.exports = {
+  isHumanText,
   isEnglishText,
   slugify,
   sanitizeKey,

@@ -1,33 +1,46 @@
 /**
  * Locale Writer: persists translations into Shopify locale JSON files.
+ *
+ * Strategy for pt-BR-localization:
+ * - en.default*  → primary source of truth (English fallback)
+ * - pt-BR*       → native language; new keys get copied from source text
+ *                  as fallback so Jana can translate via Admin later.
+ * Existing pt-BR translations are NEVER overwritten.
  */
 
-const { loadJSON, saveJSON, setDeep } = require('../core/utils/json');
+const { loadJSON, saveJSON, setDeep, getDeep } = require('../core/utils/json');
 const { LOCALES } = require('./config');
 
 class LocaleWriter {
   constructor() {
     this.enSchema = loadJSON(LOCALES.enSchema);
-    this.deSchema = loadJSON(LOCALES.deSchema);
     this.enStore = loadJSON(LOCALES.enStore);
-    this.deStore = loadJSON(LOCALES.deStore);
+    this.ptSchema = loadJSON(LOCALES.ptSchema);
+    this.ptStore = loadJSON(LOCALES.ptStore);
   }
 
   /**
-   * Add a schema translation (label, info, content, name, etc.).
-   * Shopify schema translations are flat strings at their keyPath.
+   * Add a schema translation.
+   * EN always gets the source text.
+   * PT-BR gets the source text only if the key does not yet exist.
    */
-  addSchemaTranslation(keyPath, enText) {
-    setDeep(this.enSchema, keyPath, enText);
-    setDeep(this.deSchema, keyPath, enText);
+  addSchemaTranslation(keyPath, sourceText) {
+    setDeep(this.enSchema, keyPath, sourceText);
+    if (getDeep(this.ptSchema, keyPath) === undefined) {
+      setDeep(this.ptSchema, keyPath, sourceText);
+    }
   }
 
   /**
    * Add a storefront translation.
+   * EN always gets the source text.
+   * PT-BR gets the source text only if the key does not yet exist.
    */
-  addStoreTranslation(keyPath, enText) {
-    setDeep(this.enStore, keyPath, enText);
-    setDeep(this.deStore, keyPath, enText);
+  addStoreTranslation(keyPath, sourceText) {
+    setDeep(this.enStore, keyPath, sourceText);
+    if (getDeep(this.ptStore, keyPath) === undefined) {
+      setDeep(this.ptStore, keyPath, sourceText);
+    }
   }
 
   /**
@@ -35,9 +48,9 @@ class LocaleWriter {
    */
   save() {
     saveJSON(LOCALES.enSchema, this.enSchema);
-    saveJSON(LOCALES.deSchema, this.deSchema);
     saveJSON(LOCALES.enStore, this.enStore);
-    saveJSON(LOCALES.deStore, this.deStore);
+    saveJSON(LOCALES.ptSchema, this.ptSchema);
+    saveJSON(LOCALES.ptStore, this.ptStore);
   }
 }
 

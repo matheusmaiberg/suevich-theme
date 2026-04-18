@@ -26,9 +26,9 @@ const SKIP_FILES = [
  */
 const LOCALES = {
   enSchema: path.join(REPO_ROOT, 'locales', 'en.default.schema.json'),
-  deSchema: path.join(REPO_ROOT, 'locales', 'de.schema.json'),
   enStore: path.join(REPO_ROOT, 'locales', 'en.default.json'),
-  deStore: path.join(REPO_ROOT, 'locales', 'de.json'),
+  ptSchema: path.join(REPO_ROOT, 'locales', 'pt-BR.schema.json'),
+  ptStore: path.join(REPO_ROOT, 'locales', 'pt-BR.json'),
 };
 
 module.exports = {
