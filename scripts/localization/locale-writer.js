@@ -14,12 +14,12 @@ class LocaleWriter {
   }
 
   /**
-   * Add a schema translation (label or content).
+   * Add a schema translation (label, info, content, name, etc.).
+   * Shopify schema translations are flat strings at their keyPath.
    */
   addSchemaTranslation(keyPath, enText) {
-    const last = keyPath[keyPath.length - 1];
-    setDeep(this.enSchema, keyPath, last === 'content' ? { content: enText } : { label: enText });
-    setDeep(this.deSchema, keyPath, last === 'content' ? { content: enText } : { label: enText });
+    setDeep(this.enSchema, keyPath, enText);
+    setDeep(this.deSchema, keyPath, enText);
   }
 
   /**

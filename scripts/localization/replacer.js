@@ -18,71 +18,123 @@ function buildNamespace(relPath) {
 }
 
 /**
+ * Recursively walk a schema object and replace localizable string values.
+ * Returns { changes, translations }.
+ *
+ * Context tracks where we are in the tree so we generate correct namespaces:
+ * - root "name"        → sections.{section}.name
+ * - block "name"       → sections.{section}.blocks.{type}.name
+ * - setting "label"    → sections.{section}.settings.{id}.label
+ * - setting "info"     → sections.{section}.settings.{id}.info
+ * - setting "content"  → sections.{section}.settings.{id}.content
+ */
+function walkSchema(obj, nsBase, translations, context = {}) {
+  let changes = 0;
+
+  if (Array.isArray(obj)) {
+    for (const item of obj) {
+      const res = walkSchema(item, nsBase, translations, context);
+      changes += res.changes;
+    }
+    return { changes };
+  }
+
+  if (!obj || typeof obj !== 'object') {
+    return { changes: 0 };
+  }
+
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'string' && isEnglishText(value)) {
+      const keyPathParts = nsBase.split('.');
+
+      if (key === 'name') {
+        if (context.isBlock && context.blockType) {
+          const kp = [...keyPathParts, 'blocks', context.blockType, 'name'];
+          translations.push({ keyPath: kp, enText: value });
+          obj[key] = `t:${kp.join('.')}`;
+          changes++;
+        } else if (context.isSetting && context.settingId) {
+          // name inside a setting object (rare but possible)
+          const kp = [...keyPathParts, 'settings', context.settingId, 'name'];
+          translations.push({ keyPath: kp, enText: value });
+          obj[key] = `t:${kp.join('.')}`;
+          changes++;
+        } else {
+          // root-level name (section or standalone block)
+          const kp = [...keyPathParts, 'name'];
+          translations.push({ keyPath: kp, enText: value });
+          obj[key] = `t:${kp.join('.')}`;
+          changes++;
+        }
+      } else if ((key === 'label' || key === 'info' || key === 'content') && context.isSetting && context.settingId) {
+        const kp = [...keyPathParts, 'settings', context.settingId, key];
+        translations.push({ keyPath: kp, enText: value });
+        obj[key] = `t:${kp.join('.')}`;
+        changes++;
+      }
+      // Other string keys (e.g. "default") are intentionally skipped
+    } else if (key === 'presets' && Array.isArray(value)) {
+      // Preset names intentionally skipped — they are not runtime UI strings
+      continue;
+    } else if (key === 'blocks' && Array.isArray(value)) {
+      for (const block of value) {
+        const blockCtx = { ...context, isBlock: true, blockType: block.type };
+        const res = walkSchema(block, nsBase, translations, blockCtx);
+        changes += res.changes;
+      }
+    } else if (key === 'settings' && Array.isArray(value)) {
+      let settingIdx = 0;
+      for (const setting of value) {
+        const sid = setting.id || `unknown_${settingIdx}`;
+        const settingCtx = { ...context, isSetting: true, settingId: sid };
+        const res = walkSchema(setting, nsBase, translations, settingCtx);
+        changes += res.changes;
+        settingIdx++;
+      }
+    } else if (key === 'options' && Array.isArray(value) && context.isSetting && context.settingId) {
+      // Select/radio options: localize labels using the option value as key
+      const keyPathParts = nsBase.split('.');
+      for (const opt of value) {
+        if (typeof opt.label === 'string' && isEnglishText(opt.label) && opt.value) {
+          const kp = [...keyPathParts, 'settings', context.settingId, 'options', opt.value, 'label'];
+          translations.push({ keyPath: kp, enText: opt.label });
+          opt.label = `t:${kp.join('.')}`;
+          changes++;
+        }
+      }
+    } else if (typeof value === 'object') {
+      const res = walkSchema(value, nsBase, translations, context);
+      changes += res.changes;
+    }
+  }
+
+  return { changes };
+}
+
+/**
  * Localize schema strings inside a liquid file.
  * Returns { content, changes, translations } where translations is array of {keyPath, enText}.
  */
-function localizeSchema(content, relPath, counterStart = 0) {
+function localizeSchema(content, relPath) {
   const parts = splitParts(content);
   if (!parts.schema) return { content, changes: 0, translations: [] };
 
-  let schemaStr = parts.schema;
-  let changes = 0;
-  let counter = counterStart;
-  const nsBase = buildNamespace(relPath);
-  const translations = [];
-
-  function getSettingId(beforeText) {
-    const idMatch = beforeText.match(/"id"\s*:\s*"([^"]+)"[\s\S]{0,200}?$/);
-    return idMatch ? idMatch[1] : `s${counter}`;
+  let schemaObj;
+  try {
+    schemaObj = JSON.parse(parts.schema);
+  } catch {
+    return { content, changes: 0, translations: [] };
   }
 
-  // label
-  schemaStr = schemaStr.replace(/"label"\s*:\s*"((?:[^"\\]|\\.)*)"/g, (match, text) => {
-    if (!isEnglishText(text)) return match;
-    const before = schemaStr.slice(0, schemaStr.indexOf(match));
-    const sid = getSettingId(before);
-    const keyPath = [...nsBase.split('.'), 'settings', sid, 'label'];
-    translations.push({ keyPath, enText: text });
-    changes++;
-    counter++;
-    return `"label": "t:${keyPath.join('.')}"`;
-  });
+  const nsBase = buildNamespace(relPath);
+  const translations = [];
+  const { changes } = walkSchema(schemaObj, nsBase, translations);
 
-  // info
-  schemaStr = schemaStr.replace(/"info"\s*:\s*"((?:[^"\\]|\\.)*)"/g, (match, text) => {
-    if (!isEnglishText(text)) return match;
-    const before = schemaStr.slice(0, schemaStr.indexOf(match));
-    const sid = getSettingId(before);
-    const keyPath = [...nsBase.split('.'), 'settings', sid, 'info'];
-    translations.push({ keyPath, enText: text });
-    changes++;
-    counter++;
-    return `"info": "t:${keyPath.join('.')}"`;
-  });
+  if (changes === 0) {
+    return { content, changes: 0, translations: [] };
+  }
 
-  // content
-  schemaStr = schemaStr.replace(/"content"\s*:\s*"((?:[^"\\]|\\.)*)"/g, (match, text) => {
-    if (!isEnglishText(text)) return match;
-    const before = schemaStr.slice(0, schemaStr.indexOf(match));
-    const sid = getSettingId(before);
-    const keyPath = [...nsBase.split('.'), 'settings', sid, 'content'];
-    translations.push({ keyPath, enText: text });
-    changes++;
-    counter++;
-    return `"content": "t:${keyPath.join('.')}"`;
-  });
-
-  // name (section/block root)
-  schemaStr = schemaStr.replace(/"name"\s*:\s*"((?:[^"\\]|\\.)*)"/g, (match, text) => {
-    if (!isEnglishText(text)) return match;
-    const keyPath = [...nsBase.split('.'), 'name'];
-    translations.push({ keyPath, enText: text });
-    changes++;
-    counter++;
-    return `"name": "t:${keyPath.join('.')}"`;
-  });
-
-  const newContent = replaceSchema(content, schemaStr);
+  const newContent = replaceSchema(content, JSON.stringify(schemaObj, null, 2));
   return { content: newContent, changes, translations };
 }
 
