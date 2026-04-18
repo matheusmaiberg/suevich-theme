@@ -5,7 +5,10 @@
   "name": "t:sections.cart-drawer.name",
   "limit": 1,
   "disabled_on": {
-    "groups": ["header", "footer"]
+    "groups": [
+      "header",
+      "footer"
+    ]
   },
   "settings": [
     {
@@ -855,7 +858,7 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "Use the progress bar for shipping or other cart promotions. The progress bar will show a success message once the cart subtotal reaches the set goal. Make sure to set up an [automatic discount](https://help.shopify.com/en/manual/discounts/automatic-discounts)."
+          "content": "t:sections.cart-drawer.settings.unknown_0.content"
         },
         {
           "type": "number",
@@ -882,7 +885,7 @@
           "id": "icon",
           "default": "local_shipping",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon.info"
         },
         {
           "type": "checkbox",
@@ -947,7 +950,7 @@
       "settings": [
         {
           "type": "paragraph",
-          "content": "Similar to the Progress bar block, but used to display multiple promotions. Make sure to set up [automatic discounts](https://help.shopify.com/en/manual/discounts/automatic-discounts) and/or gift blocks."
+          "content": "t:sections.cart-drawer.settings.unknown_0.content"
         },
         {
           "type": "text",
@@ -1045,7 +1048,7 @@
           "id": "goal_1_icon",
           "default": "local_shipping",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.goal_1_icon.info"
         },
         {
           "type": "checkbox",
@@ -1089,7 +1092,7 @@
           "id": "goal_2_icon",
           "default": "sell",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.goal_2_icon.info"
         },
         {
           "type": "checkbox",
@@ -1133,7 +1136,7 @@
           "id": "goal_3_icon",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
           "default": "redeem",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.goal_3_icon.info"
         },
         {
           "type": "checkbox",
@@ -1189,11 +1192,26 @@
           "type": "select",
           "id": "font_size",
           "options": [
-            { "value": "1", "label": "t:sections.cart-drawer.settings.test_mode.label" },
-            { "value": "1.2", "label": "t:sections.cart-drawer.settings.test_mode.label" },
-            { "value": "1.4", "label": "t:sections.cart-drawer.settings.test_mode.label" },
-            { "value": "1.6", "label": "t:sections.cart-drawer.settings.test_mode.label" },
-            { "value": "1.8", "label": "t:sections.cart-drawer.settings.test_mode.label" }
+            {
+              "value": "1",
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
+            },
+            {
+              "value": "1.2",
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
+            },
+            {
+              "value": "1.4",
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
+            },
+            {
+              "value": "1.6",
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
+            },
+            {
+              "value": "1.8",
+              "label": "t:sections.cart-drawer.settings.test_mode.label"
+            }
           ],
           "default": "1.4",
           "label": "t:sections.cart-drawer.settings.test_mode.label"
@@ -1218,7 +1236,10 @@
               "value": "background-2",
               "label": "t:sections.all.colors.background_2.label"
             },
-            { "value": "inverse", "label": "t:sections.all.colors.inverse.label" }
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
           ],
           "default": "inverse",
           "label": "t:sections.cart-drawer.settings.test_mode.label"
@@ -1377,7 +1398,7 @@
           "type": "inline_richtext",
           "id": "add_btn_label",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "default":  "<strong>{{ 'sections.cart-drawer.text_0' | t }}</strong>"
+          "default": "<strong>{{ 'sections.cart-drawer.text_0' | t }}</strong>"
         },
         {
           "type": "checkbox",
@@ -2420,7 +2441,7 @@
           "id": "icon_1",
           "default": "check_circle",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_1.info"
         },
         {
           "type": "checkbox",
@@ -2438,7 +2459,7 @@
           "id": "icon_2",
           "default": "check_circle",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_2.info"
         },
         {
           "type": "checkbox",
@@ -2456,7 +2477,7 @@
           "id": "icon_3",
           "default": "check_circle",
           "label": "t:sections.cart-drawer.settings.test_mode.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_3.info"
         },
         {
           "type": "checkbox",
@@ -2807,7 +2828,7 @@
           "id": "icon_1",
           "default": "favorite",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_1.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_1.info"
         },
         {
           "type": "checkbox",
@@ -2832,7 +2853,7 @@
           "id": "icon_2",
           "default": "undo",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_2.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_2.info"
         },
         {
           "type": "checkbox",
@@ -2857,7 +2878,7 @@
           "id": "icon_3",
           "default": "local_shipping",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_3.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "t:sections.cart-drawer.settings.icon_3.info"
         },
         {
           "type": "checkbox",
