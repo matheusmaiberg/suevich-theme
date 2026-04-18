@@ -11,11 +11,11 @@
 
 const fs = require('fs');
 const path = require('path');
-const { readFile, writeFile } = require('../../core/file-utils');
-const { loadJSON, saveJSON, setDeep, getDeep } = require('../../core/json-utils');
-const { extractSchema, replaceSchema } = require('../../core/liquid-utils');
-const { gitAdd, gitCommit, hasStagedChanges } = require('../../core/git-utils');
-const { info, success, warn } = require('../../core/logger');
+const { readFile, writeFile } = require('../../core/utils/file-utils');
+const { loadJSON, saveJSON, setDeep, getDeep } = require('../../core/utils/json');
+const { extractSchema, replaceSchema } = require('../../core/utils/liquid');
+const { gitAdd, gitCommit, hasStagedChanges } = require('../../core/utils/git');
+const { info, success, warn } = require('../../core/utils/logger');
 const { findWrongBlockNames } = require('../validators');
 const { REPO_ROOT, LOCALES } = require('../config');
 

@@ -38,7 +38,7 @@ scripts/         → Factory de automação interna (não enviado à Shopify)
 
 #### `scripts/`
 Factory ultra-modular de automação. A Shopify **ignora** esta pasta; é segura para tooling interno.
-- `core/` — Utilitários reutilizáveis (`file-utils`, `git-utils`, `json-utils`, `liquid-utils`, `logger`, `string-utils`).
+- `core/utils/` — Utilitários reutilizáveis (`file-utils`, `git`, `json`, `liquid`, `logger`, `strings`).
 - `localization/` — Suite i18n:
   - `index.js` — Scans & localiza todo o tema (schema + frontend), commita 1 arquivo por vez.
   - `fixes/fix-block-names.js` — Corrige namespaces de block names após localização.
