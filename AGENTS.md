@@ -1,6 +1,6 @@
 # AGENTS.md — Ck-Ecomm Theme (Suevich)
 
-> Arquivo de contexto para agentes de código. Atualizado em: 2026-04-14
+> Arquivo de contexto para agentes de código. Atualizado em: 2026-04-17
 
 ---
 
@@ -31,9 +31,19 @@ locales/         → Traduções (pt-BR, en.default, de, etc.)
 sections/        → ~85 sections (OS 2.0)
 snippets/        → ~85 snippets reutilizáveis
 templates/       → Templates de página (JSON + Liquid)
+scripts/         → Factory de automação interna (não enviado à Shopify)
 ```
 
 ### Destaques por pasta
+
+#### `scripts/`
+Factory ultra-modular de automação. A Shopify **ignora** esta pasta; é segura para tooling interno.
+- `core/` — Utilitários reutilizáveis (`file-utils`, `git-utils`, `json-utils`, `liquid-utils`, `logger`, `string-utils`).
+- `localization/` — Suite i18n:
+  - `index.js` — Scans & localiza todo o tema (schema + frontend), commita 1 arquivo por vez.
+  - `fixes/fix-block-names.js` — Corrige namespaces de block names após localização.
+  - `scanner.js`, `replacer.js`, `locale-writer.js`, `validators.js` — Módulos especializados.
+- Veja `scripts/README.md` para uso detalhado.
 
 #### `assets/`
 - `base.css` — CSS base global.
@@ -119,7 +129,8 @@ O tema possui **features agressivas de proteção** ativadas via `settings_schem
 
 1. **Não há pipeline de build** — alterações em `assets/` refletem imediatamente após upload.
 2. **Cuidado com `settings_data.json`** — ele é auto-gerado pelo editor de tema. Alterações manuais podem ser sobrescritas se alguém editar no admin.
-3. **Templates de produto específicos** existem:
+3. **`scripts/` é tooling interno** — a Shopify não reconhece este diretório, portanto não afeta deploys ou runtime da loja.
+4. **Templates de produto específicos** existem:
    - `product.corretor.json`
    - `product.ea-gdaqm2.json`
    - `product.kit-2-white.json`
