@@ -517,9 +517,6 @@
           "content": {
             "content": "Slider"
           }
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       }
     },
@@ -1098,7 +1095,9 @@
           }
         },
         "icon_1": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": {
+            "label": "Applied when multiple texts are added."
+          }
         },
         "h258": {
           "content": {
@@ -1114,21 +1113,6 @@
           "content": {
             "content": "Container"
           }
-        },
-        "icon_2": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_3": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "unknown_1": {
-          "content": "Make sure to set up an [automatic discount](https://help.shopify.com/en/manual/discounts/automatic-discounts) to allow items to be discounted at certain quantity levels."
-        },
-        "unknown_3": {
-          "content": "[Tutorial on how to set up](https://help.shrinetheme.com/product-page/quantity-breaks)"
-        },
-        "swatches_custom_colors": {
-          "info": "Disabled displays the variant images in swatches. Variant images alt text displays CSS values from each image's alt text. Custom colors list takes the list of the custom CSS values from the setting bellow. Watch the tutorial for CSS values [here](https://youtu.be/Xo_ZFzRCk3o)"
         }
       },
       "presets": {
@@ -1736,15 +1720,6 @@
           "content": {
             "content": "Or"
           }
-        },
-        "icon_1": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_2": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_3": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "blocks": {
@@ -3042,8 +3017,9 @@
           }
         },
         "icon_1": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web).",
-          "label": "#1 Icon"
+          "info": {
+            "label": "Applied when multiple texts are added."
+          }
         },
         "s583": {
           "info": {
@@ -3064,93 +3040,6 @@
           "content": {
             "content": "Container"
           }
-        },
-        "filled_icon_1": {
-          "label": "#1 Filled icon"
-        },
-        "top_text_1": {
-          "label": "#1 Top Text"
-        },
-        "bottom_text_1": {
-          "label": "#1 Bottom Text"
-        },
-        "min_days_1": {
-          "label": "#1 Minimum required days"
-        },
-        "max_days_1": {
-          "label": "#1 Maximum required days"
-        },
-        "icon_2": {
-          "label": "#2 Icon",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "filled_icon_2": {
-          "label": "#2 Filled icon"
-        },
-        "top_text_2": {
-          "label": "#2 Top Text"
-        },
-        "bottom_text_2": {
-          "label": "#2 Bottom Text"
-        },
-        "min_days_2": {
-          "label": "#2 Minimum required days"
-        },
-        "max_days_2": {
-          "label": "#2 Maximum required days"
-        },
-        "icon_3": {
-          "label": "#3 Icon",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "filled_icon_3": {
-          "label": "#3 Filled icon"
-        },
-        "top_text_3": {
-          "label": "#3 Top Text"
-        },
-        "bottom_text_3": {
-          "label": "#3 Bottom Text"
-        },
-        "min_days_3": {
-          "label": "#3 Minimum required days"
-        },
-        "max_days_3": {
-          "label": "#3 Maximum required days"
-        },
-        "icon_4": {
-          "label": "#4 Icon",
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "filled_icon_4": {
-          "label": "#4 Filled icon"
-        },
-        "top_text_4": {
-          "label": "#4 Top Text"
-        },
-        "bottom_text_4": {
-          "label": "#4 Bottom Text"
-        },
-        "min_days_4": {
-          "label": "#4 Minimum required days"
-        },
-        "max_days_4": {
-          "label": "#4 Maximum required days"
-        },
-        "unknown_1": {
-          "content": "Make sure to set up an [automatic discount](https://help.shopify.com/en/manual/discounts/automatic-discounts) to allow items to be discounted at certain quantity levels."
-        },
-        "unknown_3": {
-          "content": "[Tutorial on how to set up](https://help.shrinetheme.com/product-page/quantity-breaks)"
-        },
-        "swatches_custom_colors": {
-          "info": "Disabled displays the variant images in swatches. Varaint images alt text displays CSS values from each image's alt text. Custom colors list takes the list of the custom CSS values from the setting bellow. Watch the tutorial for CSS values [here](https://youtu.be/Xo_ZFzRCk3o)"
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "button_icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       }
     },
@@ -3347,9 +3236,6 @@
           "content": {
             "content": "Content"
           }
-        },
-        "unknown_2": {
-          "content": "or"
         }
       },
       "blocks": {
@@ -4368,30 +4254,6 @@
           "content": {
             "content": "Heading"
           }
-        },
-        "unknown_0": {
-          "content": "Similar to the Progress bar block, but used to display multiple promotions. Make sure to set up [automatic discounts](https://help.shopify.com/en/manual/discounts/automatic-discounts) and/or gift blocks."
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "goal_1_icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "goal_2_icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "goal_3_icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_1": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_2": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_3": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -4504,9 +4366,6 @@
           "content": {
             "content": "Or"
           }
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       }
     },
@@ -4678,9 +4537,6 @@
           "content": {
             "content": "Or"
           }
-        },
-        "btn_icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -4728,18 +4584,6 @@
           "content": {
             "content": "Mobile layout"
           }
-        },
-        "icon_1": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_2": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon_3": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -4948,9 +4792,6 @@
           "content": {
             "content": "Mobile"
           }
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -4993,9 +4834,6 @@
           "content": {
             "content": "Content"
           }
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -5305,9 +5143,6 @@
           "content": {
             "content": "Card & content"
           }
-        },
-        "icon": {
-          "info": "[View all available icons](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
         }
       },
       "name": {
@@ -5370,13 +5205,6 @@
           "content": {
             "content": "Content"
           }
-        },
-        "desktop_content_alignment": {
-          "options": {
-            "right": {
-              "label": "right"
-            }
-          }
         }
       },
       "name": {
@@ -5436,9 +5264,6 @@
           "content": {
             "content": "Success"
           }
-        },
-        "unknown_0": {
-          "content": "[Tutorial on how to set up](https://www.youtube.com/watch?v=2c1CCF3gsvI)"
         }
       },
       "name": {
@@ -5607,13 +5432,6 @@
           "content": {
             "content": "Product information"
           }
-        },
-        "desktop_content_alignment": {
-          "options": {
-            "right": {
-              "label": "right"
-            }
-          }
         }
       },
       "name": {
@@ -5710,12 +5528,6 @@
           "content": {
             "content": "Background color"
           }
-        },
-        "month": {
-          "label": "month"
-        },
-        "day": {
-          "label": "day"
         }
       },
       "name": {
@@ -5862,9 +5674,6 @@
           "content": {
             "content": "Content"
           }
-        },
-        "unknown_2": {
-          "content": "or"
         }
       },
       "name": {

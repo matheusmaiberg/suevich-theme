@@ -437,10 +437,14 @@
       }
     },
     "announcement-bar": {
-      "name": "Ankündigungsleiste",
+      "name": {
+        "label": "Announcement"
+      },
       "blocks": {
         "announcement": {
-          "name": "Ankündigung",
+          "name": {
+            "label": "Announcement"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -460,6 +464,58 @@
                 "label": "Rechts"
               }
             }
+          }
+        },
+        "discount": {
+          "name": {
+            "label": "Announcement"
+          }
+        },
+        "socials": {
+          "name": {
+            "label": "Announcement"
+          }
+        }
+      },
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Columns desktop"
+          }
+        },
+        "columns_desktop": {
+          "label": {
+            "label": "Columns mobile"
+          }
+        },
+        "s51": {
+          "info": {
+            "label": "Use this if you want to display/hide this section on certain product page(s)."
+          }
+        },
+        "s52": {
+          "info": {
+            "label": "Handles of products to hide the section on, split with a comma."
+          }
+        },
+        "hidden_products": {
+          "info": {
+            "label": "Applied if the checkbox above is checked. Handles of products to only display the section on, split with a comma."
+          }
+        },
+        "h64": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h65": {
+          "content": {
+            "content": "NOTE: Set number of columns to 0 to autofit all blocks in the center."
+          }
+        },
+        "columns_mobile": {
+          "content": {
+            "content": "Slider"
           }
         }
       }
@@ -496,6 +552,21 @@
           },
           "options__2": {
             "label": "Alle als Produktkarten gestalten"
+          }
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
           }
         }
       },
@@ -591,6 +662,21 @@
           "options__2": {
             "label": "2 Spalten"
           }
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "blocks": {
@@ -611,6 +697,28 @@
       "name": "Kontaktformular",
       "presets": {
         "name": "Kontaktformular"
+      },
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s7": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h8": {
+          "content": {
+            "content": "General"
+          }
+        }
       }
     },
     "custom-liquid": {
@@ -619,6 +727,21 @@
         "custom_liquid": {
           "label": "Benutzerdefiniertes Liquid",
           "info": "Füge App-Snippets oder anderen Liquid-Code hinzu, um fortgeschrittene Anpassungen vorzunehmen."
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "presets": {
@@ -652,6 +775,21 @@
         },
         "columns_desktop": {
           "label": "Anzahl der Spalten auf dem Desktop"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "presets": {
@@ -755,6 +893,24 @@
         },
         "swipe_on_mobile": {
           "label": "Wischen auf Mobilgeräten aktivieren"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Adjust custom badges in Theme settings > Product cards."
+          }
+        },
+        "s10": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "presets": {
@@ -762,7 +918,9 @@
       }
     },
     "footer": {
-      "name": "Fußzeile",
+      "name": {
+        "label": "Image"
+      },
       "blocks": {
         "link_list": {
           "name": "Menü",
@@ -800,6 +958,26 @@
               "label": "Social-Media-Symbole anzeigen",
               "info": "Um deine Social-Media-Konten anzuzeigen, verlinke sie in deinen [Theme-Einstellungen](/editor?context=theme&category=social%20media)."
             }
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "email_signup": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "featured_product": {
+          "name": {
+            "label": "Image"
+          }
+        },
+        "featured_collection": {
+          "name": {
+            "label": "Image"
           }
         }
       },
@@ -861,6 +1039,56 @@
         },
         "enable_follow_on_shop": {
           "label": "\"In Shop folgen\" aktivieren"
+        },
+        "heading": {
+          "label": {
+            "label": "Column desktop width"
+          }
+        },
+        "menu": {
+          "info": {
+            "label": "List of payments you want to show, split with a comma (without spacing). Options are: afterpay, american_express, apple_pay, bitcoin, dankort, diners_club, discover, dogecoin, dwolla, facebook_pay, forbrugsforeningen, google_pay, ideal, jcb, klarna, klarna-pay-later, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa"
+          }
+        },
+        "h35": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h36": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h37": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h38": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h39": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h40": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "h41": {
+          "content": {
+            "content": "Layout"
+          }
+        },
+        "url": {
+          "content": {
+            "content": "Branding"
+          }
         }
       }
     },
@@ -920,7 +1148,9 @@
           "content": "Bearbeite dein Logo in den [theme settings](/editor?context=theme&category=logo)."
         },
         "sticky_header_type": {
-          "label": "Fixierter Header",
+          "label": {
+            "label": "Highlight active link on desktop"
+          },
           "options__1": {
             "label": "Keine"
           },
@@ -933,11 +1163,48 @@
           "options__4": {
             "label": "Immer, Größe des Logos reduzieren"
           }
+        },
+        "s9": {
+          "info": {
+            "label": "Labels of links separated by comma."
+          }
+        },
+        "products_mega_menu_links": {
+          "info": {
+            "label": "If checked, every product from the sub-link collection will be displayed. Otherwise, add each individual product/collection as a nested link."
+          }
+        },
+        "h11": {
+          "content": {
+            "content": "Header"
+          }
+        },
+        "h12": {
+          "content": {
+            "content": "Menu"
+          }
+        },
+        "h13": {
+          "content": {
+            "content": "Products & Collections Mega Menu"
+          }
+        },
+        "h14": {
+          "content": {
+            "content": "Mobile menu"
+          }
+        },
+        "products_mega_menu_display_collection_images_on_mobile": {
+          "content": {
+            "content": "Search"
+          }
         }
       }
     },
     "image-banner": {
-      "name": "Bild-Banner",
+      "name": {
+        "label": "Add to Cart button"
+      },
       "settings": {
         "image": {
           "label": "Erstes Bild"
@@ -1036,6 +1303,34 @@
             "label": "Rechts"
           },
           "label": "Mobile Inhaltsausrichtung"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "If added, the whole banner will be a clickable link. ATTENTION: Buttons block can NOT be combined with this. Nested links inside this whole banner link will cause errors."
+          }
+        },
+        "s18": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h21": {
+          "content": {
+            "content": "Images"
+          }
+        },
+        "h22": {
+          "content": {
+            "content": "General"
+          }
         }
       },
       "blocks": {
@@ -1091,6 +1386,11 @@
               "label": "Umriss-Stil für Schaltfläche verwenden"
             }
           }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Add to Cart button"
+          }
         }
       },
       "presets": {
@@ -1098,10 +1398,15 @@
       }
     },
     "image-with-text": {
-      "name": "Bild mit Text",
+      "name": {
+        "label": "Rating stars"
+      },
       "settings": {
         "image": {
-          "label": "Bild"
+          "label": "Bild",
+          "content": {
+            "content": "Container"
+          }
         },
         "height": {
           "options__1": {
@@ -1185,6 +1490,34 @@
             "label": "Rechts"
           },
           "label": "Mobile Inhaltsausrichtung"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+          }
+        },
+        "s77": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h84": {
+          "content": {
+            "content": "Media"
+          }
+        },
+        "h85": {
+          "content": {
+            "content": "Or"
+          }
         }
       },
       "blocks": {
@@ -1252,6 +1585,26 @@
                 "label": "Groß"
               }
             }
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Rating stars"
           }
         }
       },
@@ -1356,17 +1709,51 @@
             "label": "Groß"
           },
           "info": "Verwende für Bilder ein Seitenverhältnis von 3:2 für optimale Ergebnisse. [Mehr Informationen](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
+        "s0": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "visibility": {
+          "label": {
+            "label": "Desktop only"
+          }
         }
       }
     },
     "main-cart-footer": {
-      "name": "Zwischensumme",
+      "name": {
+        "label": "Discount field"
+      },
       "blocks": {
         "subtotal": {
           "name": "Zwischensumme"
         },
         "buttons": {
           "name": "Checkout-Schaltfläche"
+        },
+        "discount_field": {
+          "name": {
+            "label": "Discount field"
+          }
+        }
+      },
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Input placeholder"
+          }
+        },
+        "placeholder": {
+          "label": {
+            "label": "Button label"
+          }
+        },
+        "s3": {
+          "info": {
+            "label": "Displayed if add button is clicked while the input is empty."
+          }
         }
       }
     },
@@ -1392,7 +1779,9 @@
       "name": "Produktraster",
       "settings": {
         "products_per_page": {
-          "label": "Produkte pro Seite"
+          "label": {
+            "label": "Make all cards same height"
+          }
         },
         "enable_filtering": {
           "label": "Filtern aktivieren",
@@ -1464,6 +1853,11 @@
             "label": "Einschub"
           },
           "info": "Das Standardlayout für Mobilgeräte ist \"Einschub\"."
+        },
+        "s5": {
+          "info": {
+            "label": "Adjust custom badges in Theme settings > Product cards."
+          }
         }
       }
     },
@@ -1544,7 +1938,9 @@
     "main-product": {
       "blocks": {
         "text": {
-          "name": "Text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -1570,7 +1966,9 @@
           "name": "Preis"
         },
         "quantity_selector": {
-          "name": "Mengenauswahl"
+          "name": {
+            "label": "Text with icon"
+          }
         },
         "variant_picker": {
           "name": "Variantenauswahl",
@@ -1583,6 +1981,110 @@
               "options__2": {
                 "label": "Kapseln"
               }
+            },
+            "header__sizing_chart": {
+              "content": "Größentabelle"
+            },
+            "enable_sizing_chart": {
+              "label": "Größentabelle aktivieren"
+            },
+            "sizing_chart_position": {
+              "label": "Über Option anzeigen",
+              "info": "Der Größentabelle-Button erscheint über der ausgewählten Varianten-Option.",
+              "options__1": {
+                "label": "Option 1"
+              },
+              "options__2": {
+                "label": "Option 2"
+              },
+              "options__3": {
+                "label": "Option 3"
+              }
+            },
+            "sizing_chart_button_label": {
+              "label": "Button-Label"
+            },
+            "sizing_chart_button_icon": {
+              "label": "Button-Symbol",
+              "info": "[Alle verfügbaren Symbole anzeigen](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+            },
+            "sizing_chart_button_underline": {
+              "label": "Button-Unterstreichung"
+            },
+            "sizing_chart_headline": {
+              "label": "Popup-Überschrift"
+            },
+            "sizing_chart_color_scheme": {
+              "label": "Popup-Farbschema"
+            },
+            "sizing_chart_table_header": {
+              "label": "Tabellenkopf",
+              "info": "Trennen Sie die Wörter mit einem Komma, um Spalten zu erstellen. Wenn Sie eine Zelle leer lassen möchten, verwenden Sie [empty]. Vermeiden Sie Formatierungen des Kommas (fett, kursiv usw.), um unerwartete Stilprobleme zu vermeiden."
+            },
+            "sizing_chart_table_header_color_scheme": {
+              "label": "Kopfzeilen-Farbschema"
+            },
+            "sizing_chart_table_content": {
+              "label": "Tabelleninhalt",
+              "info": "Gehen Sie in eine neue Zeile, um Zeilen zu erstellen. Trennen Sie die Wörter mit einem Komma, um Spalten zu erstellen. Wenn Sie eine Zelle leer lassen möchten, verwenden Sie [empty]. Vermeiden Sie Formatierungen des Kommas (fett, kursiv usw.), um unerwartete Stilprobleme zu vermeiden."
+            },
+            "sizing_chart_caption": {
+              "label": "Beschriftung"
+            },
+            "sizing_chart_caption_size": {
+              "label": "Beschriftungsgröße",
+              "options__1": {
+                "label": "Klein"
+              },
+              "options__2": {
+                "label": "Mittel"
+              },
+              "options__3": {
+                "label": "Groß"
+              }
+            },
+            "sizing_chart_caption_color": {
+              "label": "Beschriftungsfarbe"
+            },
+            "sizing_chart_caption_alignment": {
+              "label": "Beschriftungsausrichtung",
+              "options__1": {
+                "label": "Links"
+              },
+              "options__2": {
+                "label": "Zentriert"
+              },
+              "options__3": {
+                "label": "Rechts"
+              }
+            },
+            "sizing_chart_top_image": {
+              "label": "Oberes Bild",
+              "info": "Wird über der Tabelle angezeigt."
+            },
+            "sizing_chart_bottom_image": {
+              "label": "Unteres Bild",
+              "info": "Wird unter der Tabelle und der Beschriftung angezeigt."
+            },
+            "header__block_margin": {
+              "content": "Block-Abstand"
+            },
+            "margin_top": {
+              "label": "Oberer Abstand"
+            },
+            "margin_bottom": {
+              "label": "Unterer Abstand"
+            },
+            "header__general": {
+              "content": "Allgemein"
+            },
+            "picker_types": {
+              "label": "Typ für jede Option",
+              "info": "Wählen Sie den Auswahltyp für jede Option einzeln durch Komma-Trennung. Verfügbare Optionen sind \"pills\", \"dropdown\", \"swatches\" und \"quantity breaks\". Beispiel: \"swatches, dropdown, quantity breaks\"."
+            },
+            "custom_labels": {
+              "label": "Benutzerdefinierte Labels",
+              "info": "Wenn leer, wird der Optionsname angezeigt. Verfügbare dynamische Werte: [count] - Optionsindex, [name] - Optionsname, [name_lowercase] - Optionsname in Kleinbuchstaben, [name_uppercase] - Optionsname in Großbuchstaben, [selected] - ausgewählte Option. Wird nicht auf \"Quantity breaks\" Überschrift angewendet."
             }
           }
         },
@@ -1838,7 +2340,9 @@
           }
         },
         "icon_with_text": {
-          "name": "Symbol mit Text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "layout": {
               "label": "Layout",
@@ -1924,6 +2428,86 @@
             "show_inventory_quantity": {
               "label": "Inventar anzeigen"
             }
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "clickable_discount": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "sticky_atc": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "reviews": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "sizing_chart": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "product_upsell": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "urgency": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "emoji_benefits": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "bundle_offer": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "quantity_gifts": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "estimated_shipping": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "shipping_checkpoints": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "custom_product_field": {
+          "name": {
+            "label": "Text with icon"
           }
         }
       },
@@ -2015,9 +2599,56 @@
           "options__2": {
             "label": "Füllung"
           }
+        },
+        "s0": {
+          "label": {
+            "label": "Mobile text size"
+          }
+        },
+        "mobile_text_size": {
+          "label": {
+            "label": "Desktop text size"
+          }
+        },
+        "s69": {
+          "label": {
+            "label": "Mobile text size"
+          }
+        },
+        "s579": {
+          "info": {
+            "label": "Relative to text size"
+          }
+        },
+        "icon_1": {
+          "info": {
+            "label": "Applied when multiple texts are added."
+          }
+        },
+        "s583": {
+          "info": {
+            "label": "Relative to text size"
+          }
+        },
+        "h671": {
+          "content": {
+            "content": "Text"
+          }
+        },
+        "h672": {
+          "content": {
+            "content": "Icons"
+          }
+        },
+        "text_3": {
+          "content": {
+            "content": "Container"
+          }
         }
       },
-      "name": "Produktinformationen"
+      "name": {
+        "label": "Text with icon"
+      }
     },
     "main-search": {
       "name": "Suchergebnisse",
@@ -2148,6 +2779,64 @@
           "options__2": {
             "label": "2 Spalten"
           }
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Visible next to title when slider controls are under the slider."
+          }
+        },
+        "s61": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h72": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h73": {
+          "content": {
+            "content": "Columns"
+          }
+        },
+        "h74": {
+          "content": {
+            "content": "Slider"
+          }
+        },
+        "h75": {
+          "content": {
+            "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+          }
+        },
+        "h76": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h77": {
+          "content": {
+            "content": "Mobile"
+          }
+        },
+        "h78": {
+          "content": {
+            "content": "Media"
+          }
+        },
+        "image": {
+          "content": {
+            "content": "Content"
+          }
         }
       },
       "blocks": {
@@ -2184,6 +2873,26 @@
         },
         "paragraph": {
           "content": "Durch jedes E-Mail-Abonnement wird ein Kundenkonto erstellt. [Mehr Informationen](https://help.shopify.com/manual/customers)"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s9": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h10": {
+          "content": {
+            "content": "General"
+          }
         }
       },
       "blocks": {
@@ -2223,7 +2932,9 @@
       }
     },
     "rich-text": {
-      "name": "Rich Text",
+      "name": {
+        "label": "Rating stars"
+      },
       "settings": {
         "full_width": {
           "label": "Abschnitt über die gesamte Breite"
@@ -2252,6 +2963,24 @@
             "label": "Rechts"
           },
           "label": "Inhaltsausrichtung"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          }
+        },
+        "s17": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "blocks": {
@@ -2324,6 +3053,16 @@
               }
             }
           }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Rating stars"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Rating stars"
+          }
         }
       },
       "presets": {
@@ -2365,6 +3104,21 @@
         },
         "full_width": {
           "label": "Abschnitt über die gesamte Breite"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       },
       "presets": {
@@ -2372,10 +3126,14 @@
       }
     },
     "featured-product": {
-      "name": "Vorgestelltes Produkt",
+      "name": {
+        "label": "Text with icon"
+      },
       "blocks": {
         "text": {
-          "name": "Text",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "text": {
               "label": "Text"
@@ -2401,10 +3159,14 @@
           "name": "Preis"
         },
         "quantity_selector": {
-          "name": "Mengenauswahl"
+          "name": {
+            "label": "Text with icon"
+          }
         },
         "variant_picker": {
-          "name": "Variantenauswahl",
+          "name": {
+            "label": "Text with icon"
+          },
           "settings": {
             "picker_type": {
               "label": "Art",
@@ -2475,6 +3237,16 @@
               }
             }
           }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Text with icon"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Text with icon"
+          }
         }
       },
       "settings": {
@@ -2502,6 +3274,41 @@
           },
           "options__2": {
             "label": "Rechts"
+          }
+        },
+        "s0": {
+          "label": {
+            "label": "Mobile text size"
+          }
+        },
+        "mobile_text_size": {
+          "label": {
+            "label": "Desktop text size"
+          }
+        },
+        "s219": {
+          "info": {
+            "label": "Relative to text size"
+          }
+        },
+        "icon_1": {
+          "info": {
+            "label": "Applied when multiple texts are added."
+          }
+        },
+        "h258": {
+          "content": {
+            "content": "Text"
+          }
+        },
+        "h259": {
+          "content": {
+            "content": "Icons"
+          }
+        },
+        "text_3": {
+          "content": {
+            "content": "Container"
           }
         }
       },
@@ -2606,6 +3413,26 @@
             "label": "Rechts"
           },
           "label": "Mobile Inhaltsausrichtung"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s5": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h6": {
+          "content": {
+            "content": "General"
+          }
         }
       },
       "blocks": {
@@ -2697,6 +3524,36 @@
           "content": "Barrierefreiheit",
           "label": "Slideshow-Beschreibung",
           "info": "Beschreibe die Slideshow für Kunden, die Bildschirmlesegeräte benutzen."
+        },
+        "s0": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "visibility": {
+          "label": {
+            "label": "Desktop only"
+          }
+        },
+        "s18": {
+          "info": {
+            "label": "Over the section is only available if Show content below images on mobile is disabled."
+          }
+        },
+        "accessibility_info": {
+          "info": {
+            "label": "If empty, the main image will also be displayed on mobile."
+          }
+        },
+        "h22": {
+          "content": {
+            "content": "Images"
+          }
+        },
+        "h23": {
+          "content": {
+            "content": "General"
+          }
         }
       },
       "blocks": {
@@ -3090,6 +3947,16 @@
           "options__2": {
             "label": "2 Spalten"
           }
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "s1": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
         }
       }
     },
@@ -3215,6 +4082,29 @@
         },
         "header_mobile": {
           "content": "Mobiles Layout"
+        },
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+          }
+        },
+        "s13": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h17": {
+          "content": {
+            "content": "Or"
+          }
         }
       },
       "blocks": {
@@ -3244,6 +4134,1753 @@
       },
       "presets": {
         "name": "Mehrreihig"
+      }
+    },
+    "a2reviews-block": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Block Id"
+          }
+        },
+        "block_id": {
+          "label": {
+            "label": "Block Name"
+          }
+        },
+        "s2": {
+          "info": {
+            "label": "Text"
+          }
+        },
+        "s3": {
+          "info": {
+            "label": "Text"
+          }
+        }
+      },
+      "name": {
+        "label": "A2Reviews Block"
+      }
+    },
+    "a2reviews-main-widget": {
+      "name": {
+        "label": "A2Reviews Main Widget"
+      }
+    },
+    "bundle-deals": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Enables live changes to item and total prices after variant/checkbox change. CAUTION: Due to the way Liquid works, after a change, new price will NOT work with currency converters."
+          }
+        },
+        "s21": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h28": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h29": {
+          "content": {
+            "content": "Bundles"
+          }
+        },
+        "h30": {
+          "content": {
+            "content": "Discounts"
+          }
+        }
+      },
+      "name": {
+        "label": "Bundle deals"
+      },
+      "blocks": {
+        "product": {
+          "name": {
+            "label": "Bundle deals"
+          }
+        }
+      }
+    },
+    "cart-drawer": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Enable test mode"
+          }
+        },
+        "test_mode": {
+          "label": {
+            "label": "Text"
+          },
+          "content": {
+            "content": "Width"
+          }
+        },
+        "s399": {
+          "info": {
+            "label": "Use [count] to display total amount of items in the cart."
+          }
+        },
+        "heading_text": {
+          "info": {
+            "label": "If empty, a link to all products will be applied."
+          }
+        },
+        "h451": {
+          "content": {
+            "content": "Test mode"
+          }
+        },
+        "h452": {
+          "content": {
+            "content": "This option keeps the drawer opened by default for faster customization."
+          }
+        },
+        "h453": {
+          "content": {
+            "content": "Heading"
+          }
+        }
+      },
+      "name": {
+        "label": "Cart drawer"
+      },
+      "blocks": {
+        "cart_items": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "subtotals": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "checkout_btn": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "progress_bar": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "checkpoints_bar": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "countdown_timer": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "product_upsells": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "gift": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "discount_field": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        },
+        "cart_note": {
+          "name": {
+            "label": "Cart drawer"
+          }
+        }
+      }
+    },
+    "collapsible-content": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+          }
+        },
+        "s24": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h28": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h29": {
+          "content": {
+            "content": "Media"
+          }
+        },
+        "open_first_collapsible_row": {
+          "content": {
+            "content": "Or"
+          }
+        }
+      }
+    },
+    "colors-changer": {
+      "settings": {
+        "h0": {
+          "content": {
+            "content": "This section is used to change your global store colors on THIS PAGE ONLY."
+          }
+        },
+        "h1": {
+          "content": {
+            "content": "IMPORTANT"
+          }
+        },
+        "h2": {
+          "content": {
+            "content": "Place this section on top of the list of your added sections to avoid any delays in loading of the changed colors."
+          }
+        }
+      },
+      "name": {
+        "label": "Store colors changer"
+      }
+    },
+    "comparison-slider": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Leave the label blank to hide the Add to Cart button."
+          }
+        },
+        "s22": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h25": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h26": {
+          "content": {
+            "content": "Slider"
+          }
+        }
+      },
+      "name": {
+        "label": "Before & After slider"
+      }
+    },
+    "comparison-table": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Leave the label blank to hide the Add to Cart button."
+          }
+        },
+        "s47": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h54": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h55": {
+          "content": {
+            "content": "Table"
+          }
+        },
+        "h56": {
+          "content": {
+            "content": "Icons"
+          }
+        },
+        "h57": {
+          "content": {
+            "content": "Classic & Centered style"
+          }
+        },
+        "h58": {
+          "content": {
+            "content": "Minimalistic style"
+          }
+        }
+      },
+      "name": {
+        "label": "Comparison table"
+      },
+      "blocks": {
+        "row": {
+          "name": {
+            "label": "Comparison table"
+          }
+        }
+      }
+    },
+    "content-tabs": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Choosing \\\"Moving\\\" is only recommended if all your buttons fit in one row."
+          }
+        },
+        "s61": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h68": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h69": {
+          "content": {
+            "content": "Tabs"
+          }
+        },
+        "h70": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h71": {
+          "content": {
+            "content": "Mobile"
+          }
+        },
+        "h72": {
+          "content": {
+            "content": "Tab button"
+          }
+        },
+        "h73": {
+          "content": {
+            "content": "Media"
+          }
+        },
+        "filled_btn_icon": {
+          "content": {
+            "content": "Or"
+          }
+        }
+      },
+      "name": {
+        "label": "Content tabs"
+      },
+      "blocks": {
+        "tab": {
+          "name": {
+            "label": "Content tabs"
+          }
+        }
+      }
+    },
+    "custom-columns": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          }
+        },
+        "s395": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h407": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h408": {
+          "content": {
+            "content": "Desktop layout"
+          }
+        },
+        "columns_count": {
+          "content": {
+            "content": "Mobile layout"
+          }
+        }
+      },
+      "name": {
+        "label": "Custom columns"
+      },
+      "blocks": {
+        "heading": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "richtext": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "rating_stars": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "buttons": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "text_with_icon": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "icon_with_text": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "accordion": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "payment_badges": {
+          "name": {
+            "label": "Custom columns"
+          }
+        },
+        "email_signup": {
+          "name": {
+            "label": "Custom columns"
+          }
+        }
+      }
+    },
+    "global-music-player": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Enable global music player"
+          }
+        },
+        "enabled": {
+          "label": {
+            "label": "Audio source"
+          }
+        },
+        "s10": {
+          "info": {
+            "label": "Go to Shopify admin > Content > Files > Upload an mp3 file, copy the link and paste it in the field above"
+          }
+        },
+        "audio_src": {
+          "info": {
+            "label": "Not applied when the button is centered"
+          }
+        },
+        "h12": {
+          "content": {
+            "content": "NOTE: This is a global music player that is displayed on your whole store. If you wish to only have it on certain pages/play different songs on each page disable this and click on Add section > Music Player."
+          }
+        }
+      },
+      "name": {
+        "label": "Global Music Player"
+      }
+    },
+    "horizontal-ticker": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "visibility": {
+          "label": {
+            "label": "Desktop only"
+          }
+        },
+        "s19": {
+          "info": {
+            "label": "Handles of products to hide the block on, split with a comma."
+          }
+        },
+        "hidden_products": {
+          "info": {
+            "label": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+          }
+        },
+        "h21": {
+          "content": {
+            "content": "Ticker"
+          }
+        },
+        "h22": {
+          "content": {
+            "content": "Text"
+          }
+        },
+        "h23": {
+          "content": {
+            "content": "Images"
+          }
+        },
+        "bold_text": {
+          "content": {
+            "content": "Visibility"
+          }
+        }
+      },
+      "name": {
+        "label": "Horizontal Ticker"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "Horizontal Ticker"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Horizontal Ticker"
+          }
+        }
+      }
+    },
+    "icon-bar": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "The settings bellow are applied if this option is checked"
+          }
+        },
+        "s60": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h65": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h66": {
+          "content": {
+            "content": "Icons"
+          }
+        },
+        "h67": {
+          "content": {
+            "content": "Slider"
+          }
+        },
+        "h68": {
+          "content": {
+            "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+          }
+        },
+        "h69": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h70": {
+          "content": {
+            "content": "Mobile"
+          }
+        }
+      },
+      "name": {
+        "label": "Icon Bar"
+      },
+      "blocks": {
+        "column": {
+          "name": {
+            "label": "Icon Bar"
+          }
+        }
+      }
+    },
+    "icons-with-content": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Text is automatically centered if the icon position is set to above title & text."
+          }
+        },
+        "s54": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h57": {
+          "content": {
+            "content": "Icons section"
+          }
+        },
+        "h58": {
+          "content": {
+            "content": "Content"
+          }
+        }
+      },
+      "name": {
+        "label": "Icons with content"
+      },
+      "blocks": {
+        "icon": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "atc_button": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "Icons with content"
+          }
+        },
+        "video": {
+          "name": {
+            "label": "Icons with content"
+          }
+        }
+      }
+    },
+    "image-slider": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "If multiple slides are visible on the page, the middle on will be marked as active."
+          }
+        },
+        "s76": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h88": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h89": {
+          "content": {
+            "content": "Slider"
+          }
+        },
+        "h90": {
+          "content": {
+            "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+          }
+        },
+        "h91": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h92": {
+          "content": {
+            "content": "Mobile"
+          }
+        }
+      },
+      "name": {
+        "label": "Image/Video Slider"
+      },
+      "blocks": {
+        "image_slide": {
+          "name": {
+            "label": "Image/Video Slider"
+          }
+        },
+        "video_slide": {
+          "name": {
+            "label": "Image/Video Slider"
+          }
+        }
+      }
+    },
+    "insta-stories": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          }
+        },
+        "s33": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h40": {
+          "content": {
+            "content": "Stories"
+          }
+        },
+        "h41": {
+          "content": {
+            "content": "NOTE: On touch devices, arrows on the slider for the story opener buttons are automatically changed to SWIPE/DRAG function for the best mobile experience. Swipe function to skip stories is also included."
+          }
+        },
+        "h42": {
+          "content": {
+            "content": "Story #1"
+          }
+        },
+        "close_friends": {
+          "content": {
+            "content": "Story #2"
+          }
+        }
+      },
+      "name": {
+        "label": "Instagram stories"
+      },
+      "blocks": {
+        "user": {
+          "name": {
+            "label": "Instagram stories"
+          }
+        }
+      }
+    },
+    "logo-list": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s19": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h20": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h21": {
+          "content": {
+            "content": "Mobile"
+          }
+        },
+        "desktop_logo_height": {
+          "content": {
+            "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+          }
+        }
+      },
+      "name": {
+        "label": "Featured on"
+      },
+      "blocks": {
+        "logo": {
+          "name": {
+            "label": "Featured on"
+          }
+        }
+      }
+    },
+    "music-player": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Audio source"
+          }
+        },
+        "audio_src": {
+          "label": {
+            "label": "Volume"
+          },
+          "info": {
+            "label": "Not applied when the button is centered"
+          }
+        },
+        "s9": {
+          "info": {
+            "label": "Go to Shopify admin > Content > Files > Upload an mp3 file, copy the link and paste it in the field above"
+          }
+        },
+        "h11": {
+          "content": {
+            "content": "NOTE: This is a music player that is displayed separaly on each page. If you wish to have it enabled for the whole store with a same song click on Global Music Player."
+          }
+        }
+      },
+      "name": {
+        "label": "Music Player"
+      }
+    },
+    "parallax-hero": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Minimum desktop height"
+          }
+        },
+        "min_desktop_height_type": {
+          "label": {
+            "label": "None (it content)"
+          }
+        },
+        "s90": {
+          "info": {
+            "label": "Fits the hero under the header & makes it transparent. Scrolled sticky header is not affected. Top padding is automatically added (height of the header)."
+          }
+        },
+        "transparent_header": {
+          "info": {
+            "label": "Add a secondary logo in Theme settings > Logo."
+          }
+        },
+        "h105": {
+          "content": {
+            "content": "Height"
+          }
+        },
+        "h106": {
+          "content": {
+            "content": "Header"
+          }
+        },
+        "mobile_pixels_height": {
+          "content": {
+            "content": "Background"
+          }
+        }
+      },
+      "name": {
+        "label": "3D Parallax hero"
+      },
+      "blocks": {
+        "content": {
+          "name": {
+            "label": "3D Parallax hero"
+          }
+        },
+        "image": {
+          "name": {
+            "label": "3D Parallax hero"
+          }
+        }
+      }
+    },
+    "pricing-table": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Use if you wish to use the section to display different variants of the same products as different cards."
+          }
+        },
+        "s46": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h50": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h51": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h52": {
+          "content": {
+            "content": "Product & variant"
+          }
+        },
+        "h53": {
+          "content": {
+            "content": "Card & content"
+          }
+        }
+      },
+      "name": {
+        "label": "Pricing table"
+      },
+      "blocks": {
+        "plan": {
+          "name": {
+            "label": "Pricing table"
+          }
+        }
+      }
+    },
+    "product-features": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Leave the label blank to hide the Add to Cart button."
+          }
+        },
+        "s77": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h87": {
+          "content": {
+            "content": "Content"
+          }
+        },
+        "h88": {
+          "content": {
+            "content": "Main image"
+          }
+        },
+        "h89": {
+          "content": {
+            "content": "Hotspot buttons & modals"
+          }
+        },
+        "mobile_image": {
+          "content": {
+            "content": "Bullet Points"
+          }
+        },
+        "h93": {
+          "content": {
+            "content": "Content"
+          }
+        },
+        "h96": {
+          "content": {
+            "content": "Content"
+          }
+        }
+      },
+      "name": {
+        "label": "Product features"
+      },
+      "blocks": {
+        "hotspot": {
+          "name": {
+            "label": "Product features"
+          }
+        },
+        "bullet_point": {
+          "name": {
+            "label": "Product features"
+          }
+        }
+      }
+    },
+    "promo-popup": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display mode"
+          }
+        },
+        "mode": {
+          "label": {
+            "label": "Disabled"
+          }
+        },
+        "s39": {
+          "info": {
+            "label": "Test mode displays your popup without delay each time even after dismissing it. Switch to Enabled once you are happy with how your popup looks."
+          }
+        },
+        "s40": {
+          "info": {
+            "label": "Time interval, in seconds, after which the modal will appear."
+          }
+        },
+        "popup_seconds": {
+          "info": {
+            "label": "Number of days before a dismissed popup reappears"
+          }
+        },
+        "h44": {
+          "content": {
+            "content": "Popup"
+          }
+        },
+        "h45": {
+          "content": {
+            "content": "Content"
+          }
+        },
+        "h46": {
+          "content": {
+            "content": "Success"
+          }
+        }
+      },
+      "name": {
+        "label": "Promo Pop-Up"
+      }
+    },
+    "results": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+          }
+        },
+        "s26": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h30": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h31": {
+          "content": {
+            "content": "Or"
+          }
+        },
+        "image": {
+          "content": {
+            "content": "Results"
+          }
+        }
+      },
+      "name": {
+        "label": "Results"
+      },
+      "blocks": {
+        "row": {
+          "name": {
+            "label": "Results"
+          }
+        }
+      }
+    },
+    "scroll-to-top-btn": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Enable scroll to top button"
+          }
+        },
+        "enable_scroll_btn": {
+          "label": {
+            "label": "Display after scrolling:"
+          }
+        },
+        "s8": {
+          "info": {
+            "label": "Not applied when the button is centered"
+          }
+        }
+      },
+      "name": {
+        "label": "Scroll to Top Button"
+      }
+    },
+    "section-divider": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Diagonal 1"
+          }
+        },
+        "shape": {
+          "label": {
+            "label": "Diagonal 2"
+          }
+        }
+      },
+      "name": {
+        "label": "Section divider"
+      }
+    },
+    "section-group": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "visibility": {
+          "label": {
+            "label": "Desktop only"
+          }
+        },
+        "h11": {
+          "content": {
+            "content": "This section is used to combine 2 sections. Paste their IDs in to display them next to each other on desktop"
+          }
+        },
+        "h12": {
+          "content": {
+            "content": "Section #1"
+          }
+        },
+        "h13": {
+          "content": {
+            "content": "Section #2"
+          }
+        },
+        "mobile_reverse_grid": {
+          "content": {
+            "content": "Desktop"
+          }
+        }
+      },
+      "name": {
+        "label": "Sections group"
+      }
+    },
+    "shoppable-image": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Leave the label blank to hide the Add to Cart button."
+          }
+        },
+        "s65": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h74": {
+          "content": {
+            "content": "Content"
+          }
+        },
+        "h75": {
+          "content": {
+            "content": "Image"
+          }
+        },
+        "h76": {
+          "content": {
+            "content": "Hotspot buttons & modals"
+          }
+        },
+        "mobile_image": {
+          "content": {
+            "content": "Product information"
+          }
+        }
+      },
+      "name": {
+        "label": "Shoppable image"
+      },
+      "blocks": {
+        "hotspot": {
+          "name": {
+            "label": "Shoppable image"
+          }
+        }
+      }
+    },
+    "slideshow-hero": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "visibility": {
+          "label": {
+            "label": "Desktop only"
+          }
+        },
+        "s101": {
+          "info": {
+            "label": "Fits the hero under the header & makes it transparent. Scrolled sticky header is not affected. Top padding is automatically added (height of the header)."
+          }
+        },
+        "transparent_header": {
+          "info": {
+            "label": "Add a secondary logo in Theme settings > Logo."
+          }
+        },
+        "h105": {
+          "content": {
+            "content": "Height"
+          }
+        },
+        "h106": {
+          "content": {
+            "content": "Header"
+          }
+        },
+        "mobile_pixels_height": {
+          "content": {
+            "content": "Slider"
+          }
+        }
+      },
+      "name": {
+        "label": "Slideshow hero"
+      },
+      "blocks": {
+        "slide": {
+          "name": {
+            "label": "Slideshow hero"
+          }
+        }
+      }
+    },
+    "ss-countdown-bar": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "CSS selector for the target element"
+          }
+        },
+        "target_selector": {
+          "label": {
+            "label": "Use close/hide section button"
+          },
+          "info": {
+            "label": "Please use UTC time zone"
+          }
+        },
+        "s61": {
+          "info": {
+            "label": "The timer will be inserted above target element. If you leave this blank, the timer will display where you drag it."
+          }
+        },
+        "h63": {
+          "content": {
+            "content": "Save settings to see updates & section display"
+          }
+        },
+        "h64": {
+          "content": {
+            "content": "Text Settings"
+          }
+        },
+        "use_cross": {
+          "content": {
+            "content": "Background color"
+          }
+        }
+      },
+      "name": {
+        "label": "SS - Countdown Timer Bar"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        },
+        "timer": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        },
+        "button": {
+          "name": {
+            "label": "SS - Countdown Timer Bar"
+          }
+        }
+      }
+    },
+    "ss-testimonial-14": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Stars Count"
+          }
+        },
+        "stars_count": {
+          "label": {
+            "label": "Stars Icon"
+          }
+        },
+        "s141": {
+          "info": {
+            "label": "Replaces the default stars icon"
+          }
+        },
+        "rating_stars_icon": {
+          "info": {
+            "label": "Lazy load images for speed optimisation"
+          }
+        },
+        "h143": {
+          "content": {
+            "content": "Save settings to instantiate slider"
+          }
+        },
+        "h144": {
+          "content": {
+            "content": "Stars Settings"
+          }
+        },
+        "h145": {
+          "content": {
+            "content": "Heading Settings"
+          }
+        },
+        "h146": {
+          "content": {
+            "content": "Sub-Heading Settings"
+          }
+        },
+        "heading_align_mobile": {
+          "content": {
+            "content": "Slider Settings"
+          }
+        }
+      },
+      "name": {
+        "label": "SS - Testimonials #14"
+      },
+      "blocks": {
+        "slide": {
+          "name": {
+            "label": "SS - Testimonials #14"
+          }
+        }
+      }
+    },
+    "testimonials": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "The settings bellow are applied if this option is checked"
+          }
+        },
+        "s69": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h76": {
+          "content": {
+            "content": "General"
+          }
+        },
+        "h77": {
+          "content": {
+            "content": "Style"
+          }
+        },
+        "h78": {
+          "content": {
+            "content": "Cards style"
+          }
+        },
+        "h79": {
+          "content": {
+            "content": "Slider"
+          }
+        },
+        "h80": {
+          "content": {
+            "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+          }
+        },
+        "h81": {
+          "content": {
+            "content": "Desktop"
+          }
+        },
+        "h82": {
+          "content": {
+            "content": "Mobile"
+          }
+        },
+        "h83": {
+          "content": {
+            "content": "Media"
+          }
+        },
+        "image": {
+          "content": {
+            "content": "Content"
+          }
+        }
+      },
+      "name": {
+        "label": "Testimonials"
+      },
+      "blocks": {
+        "column": {
+          "name": {
+            "label": "Testimonials"
+          }
+        }
+      }
+    },
+    "track-order": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          }
+        },
+        "s9": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        }
+      },
+      "name": {
+        "label": "Track order"
+      }
+    },
+    "vertical-ticker": {
+      "settings": {
+        "s0": {
+          "label": {
+            "label": "Display section ID"
+          }
+        },
+        "display_id": {
+          "label": {
+            "label": "Mobile only"
+          },
+          "info": {
+            "label": "Leave the label blank to hide the Add to Cart button."
+          }
+        },
+        "s38": {
+          "info": {
+            "label": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section."
+          }
+        },
+        "h42": {
+          "content": {
+            "content": "Ticker"
+          }
+        },
+        "h43": {
+          "content": {
+            "content": "Content"
+          }
+        }
+      },
+      "name": {
+        "label": "Vertical Ticker"
+      },
+      "blocks": {
+        "text": {
+          "name": {
+            "label": "Vertical Ticker"
+          }
+        }
+      }
+    }
+  },
+  "blocks": {
+    "estimated-shipping": {
+      "name": "Geschätzter Versand",
+      "settings": {
+        "icon": {
+          "label": "Symbol",
+          "info": "[Alle verfügbaren Symbole anzeigen](https://fonts.google.com/icons?icon.set=Material+Symbols&icon.platform=web)."
+        },
+        "filled_icon": {
+          "label": "Gefülltes Symbol"
+        },
+        "custom_icon": {
+          "label": "Benutzerdefiniertes Symbol"
+        },
+        "icon_alignment": {
+          "label": "Symbol-Ausrichtung",
+          "options__1": {
+            "label": "Oben"
+          },
+          "options__2": {
+            "label": "Mitte"
+          }
+        },
+        "message": {
+          "label": "Text",
+          "info": "Verwenden Sie [start_date] für das früheste Ankunftsdatum und [end_date] für das späteste Ankunftsdatum. Verwenden Sie [carrier] für den Namen des Versanddienstleisters."
+        },
+        "icon_size": {
+          "label": "Symbolgröße",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "text_size": {
+          "label": "Textgröße",
+          "options__1": {
+            "label": "S"
+          },
+          "options__2": {
+            "label": "M"
+          },
+          "options__3": {
+            "label": "L"
+          }
+        },
+        "carrier_list": {
+          "label": "Versanddienstleister nach Land",
+          "info": "Format: LANDESCODE: Dienstleister-Name. Einer pro Zeile. Beispiel: DE: DHL Express"
+        },
+        "carrier_prefix": {
+          "label": "Dienstleister-Präfix",
+          "info": "Präposition, die vor dem Dienstleister-Namen angezeigt wird.",
+          "options__1": {
+            "label": "with (EN)"
+          },
+          "options__2": {
+            "label": "mit (DE)"
+          },
+          "options__3": {
+            "label": "com (PT)"
+          },
+          "options__4": {
+            "label": "avec (FR)"
+          },
+          "options__5": {
+            "label": "con (ES/IT)"
+          },
+          "options__6": {
+            "label": "met (NL)"
+          },
+          "options__7": {
+            "label": "via (universal)"
+          },
+          "options__8": {
+            "label": "por (PT/ES)"
+          },
+          "options__9": {
+            "label": "Keine (nur Dienstleister-Name)"
+          }
+        },
+        "carrier_fallback": {
+          "label": "Standard-Dienstleister-Name",
+          "info": "Wird angezeigt, wenn das Land des Besuchers nicht in der Liste oben steht. Leer lassen, um den Dienstleister auszublenden, wenn er nicht gefunden wird."
+        },
+        "min_shipping_days": {
+          "label": "Minimale Versandtage"
+        },
+        "max_shipping_days": {
+          "label": "Maximale Versandtage"
+        },
+        "date_format": {
+          "label": "Datumsformat",
+          "options__1": {
+            "label": "Mo, 21 April 2025"
+          },
+          "options__2": {
+            "label": "Mo, 21 April"
+          },
+          "options__3": {
+            "label": "21 April"
+          },
+          "options__4": {
+            "label": "21 Apr 2025"
+          },
+          "options__5": {
+            "label": "21.04.2025"
+          },
+          "options__6": {
+            "label": "21/04/2025"
+          }
+        },
+        "header__1": {
+          "content": "Einstellungen geschätzter Versand"
+        },
+        "header__2": {
+          "content": "Block-Abstand"
+        },
+        "margin_top": {
+          "label": "Oberer Abstand"
+        },
+        "margin_bottom": {
+          "label": "Unterer Abstand"
+        }
       }
     }
   }
